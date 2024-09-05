@@ -1,0 +1,3 @@
+	
+yield()
+gen.next()
