@@ -1,78 +1,49 @@
-/* CSS Reset */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Import CSS reset */
+@import url('reset.css');
 
-html, body {
-  height: 100%;
-  font-family: sans-serif;
-  line-height: 1.5;
-}
-
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
-input, button, textarea, select {
-  font: inherit; /* Ensure inputs and buttons inherit font styles */
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
-
-/* CSS Variables */
-:root {
-  --background-color: #ffffff;
-  --text-color: #333333;
-  --padding: 0px;
-  --margin: 10px;
-}
-
-
-/* Layout */
-body * {
+/* Testing style */
+* {
   border: blue 1px dashed;
-  padding: var(--padding);
-  margin: var(--margin);
-}
-
-.flex {
-  display: flex;
-}
-
-.box {
-  height: 100px; 
+  margin: 5px;
+  min-height: 10px;
 }
 
 .card {
+  min-height: 300px;
+}
+
+/* Layout */
+.horbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vercontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
   
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 92vh;
+  min-width: 320px;
+  max-width: 900px;
+  margin: 5px auto;
+}
+
+main {
+  flex: 1;
+
+}
+
+
+
+/* Design style */
+a {
+  text-decoration: underline;
 }

@@ -1,0 +1,98 @@
+/* Import CSS reset */
+@import url('reset.css');
+
+/* CSS variables */
+:root {
+  --card-grid-border: black 2px solid;
+}
+
+/* Testing style */
+* {
+  border: blue 1px dashed;
+  margin: 5px;
+  min-height: 10px;
+}
+
+
+/* Layout */
+.horbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+
+  min-width: 320px;
+  max-width: 900px;
+  margin: 5px auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  flex: 1;
+}
+
+
+/* Cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardtext {
+  display: grid;
+  grid-template-rows: 100px 100px; 
+  grid-template-columns: 100px auto;
+  gap: 0px; 
+}
+
+.cardtext > * {
+  margin: 0;
+  padding: 10px;
+}
+
+.cardtext h2:first-child {
+  grid-column: 1; 
+  border-right: var(--card-grid-border);
+}
+
+.cardtext h2:last-child {
+  grid-column: 2; 
+}
+
+.cardtext p {
+  grid-column: 1 / span 2; 
+  border-top: var(--card-grid-border) ;
+}
+
+
+
+/* Design style */
+img {
+  max-height: 500px;
+  border: black solid 5px;
+  border-radius: 20px;
+  margin: 20px 20px;
+}
+
+
+/* Media queries */
+@media (min-width: 900px) {
+  /* Cards */
+  .card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
