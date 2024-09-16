@@ -11,17 +11,16 @@ body {
 }
 
 
-/* Grouping main and footer */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 90vh;
+/* Max width of main, footer */
+main, footer {
   max-width: 900px;
   margin: 0px auto;
 }
 
 main {
   flex: 1;
+  min-height: 90vh;
+  margin: 0px auto;
 }
 
 

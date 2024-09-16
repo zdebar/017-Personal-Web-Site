@@ -1,0 +1,49 @@
+/* Import CSS reset */
+@import url('reset.css');
+
+/* Testing style */
+* {
+  border: blue 1px dashed;
+  margin: 5px;
+  min-height: 10px;
+}
+
+.card {
+  min-height: 300px;
+}
+
+/* Layout */
+.horbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vercontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 92vh;
+  min-width: 320px;
+  max-width: 900px;
+  margin: 5px auto;
+}
+
+main {
+  flex: 1;
+
+}
+
+
+
+/* Design style */
+a {
+  text-decoration: underline;
+}
