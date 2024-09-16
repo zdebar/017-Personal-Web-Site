@@ -1,0 +1,6 @@
+/* Testing style */
+* {
+  border: blue 1px dashed;
+  margin: 5px;
+  min-height: 10px;
+}

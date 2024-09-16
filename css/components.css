@@ -1,0 +1,26 @@
+/* Cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardtext {
+  display: grid;
+  grid-template-rows: 100px 100px; 
+  gap: 0px; 
+}
+
+.cardtext p {
+  border-top: var(--card-grid-border) ;
+}
+
+
+/* Media queries */
+@media (min-width: 700px) {
+  /* Cards */
+  .card {
+    flex-direction: row;
+  }
+}

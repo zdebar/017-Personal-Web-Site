@@ -1,103 +1,11 @@
 /* Import CSS reset */
 @import url('reset.css');
+@import url("tester.css");
+@import url("layout.css");
+@import url("components.css");
+@import url("design.css");
 
 /* CSS variables */
 :root {
   --card-grid-border: black 2px solid;
-}
-
-/* Testing style */
-* {
-  border: blue 1px dashed;
-  margin: 5px;
-  min-height: 10px;
-}
-
-
-/* Layout */
-.horbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 90vh;
-
-  min-width: 320px;
-  max-width: 900px;
-  margin: 5px auto;
-}
-
-.center {
-  display: flex;
-  padding-left: 30px;
-  align-items: center;
-}
-
-main {
-  flex: 1;
-}
-
-
-/* Cards */
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.cardtext {
-  display: grid;
-  grid-template-rows: 100px 100px 100px; 
-  grid-template-columns: 100%;
-  gap: 0px; 
-  width: 100%;
-}
-
-.cardtext p {
-  border-top: var(--card-grid-border) ;
-} 
-
-
-/* Design style */
-img {
-  max-height: 500px;
-  border: black solid 5px;
-  border-radius: 20px;
-  margin: 20px 20px;
-}
-
-
-/* Media queries */
-@media (min-width: 700px) {
-  /* Cards */
-  .card {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .cardtext {
-    display: grid;
-    grid-template-rows: 100px 100px; 
-    grid-template-columns: 100px auto;
-  }
-
-  .cardtext h2:first-child {
-    grid-column: 1; 
-    border-right: var(--card-grid-border);
-  }
-  
-  .cardtext h2:last-child {
-    grid-column: 2; 
-  }
-  
-  .cardtext p {
-    grid-column: 1 / span 2; 
-    border-top: var(--card-grid-border) ;
-  }
-
 }

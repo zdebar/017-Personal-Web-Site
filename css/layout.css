@@ -1,0 +1,29 @@
+/* Body style */
+body {
+  min-width: 320px;
+}
+
+
+/* Horizontal bars*/
+.horbar {
+  display: flex;
+  justify-content: end;
+}
+
+
+/* Grouping main and footer */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+main {
+  flex: 1;
+}
+
+
+
+ 
