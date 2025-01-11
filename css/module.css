@@ -18,6 +18,19 @@
   border-top: var(--card-grid-border) ;
 }
 
+/* Images */
+img {
+  max-height: 500px;
+  border: black solid 5px;
+  border-radius: 20px;
+  margin: 20px 20px;
+}
+
+/* Utility classes */
+.center {
+  display: flex;
+  align-items: center;
+}
 
 /* Media queries */
 @media (min-width: 700px) {

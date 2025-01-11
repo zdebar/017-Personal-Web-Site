@@ -1,0 +1,12 @@
+/* Import CSS reset */
+@import url('reset.css');
+@import url("layout.css");
+@import url("module.css");
+@import url("state.css");
+@import url("theme.css");
+
+/* CSS variables */
+:root {
+  --card-grid-border: black 5px solid;
+}
+
