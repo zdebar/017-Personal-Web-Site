@@ -1,6 +1,7 @@
 /* Import CSS reset */
 @import url('reset.css');
 @import url("modules.css");
+@import url("effects.css");
 
 /* CSS variables */
 :root {
@@ -39,11 +40,36 @@ hr {
 }
 
 img {
-  max-height: 500px;
+  height: 500px;
+  width: auto;
   border: white solid 5px;
   border-radius: 20px;
   margin: 20px 20px;
   box-shadow: 
     -5px -5px 15px rgba(0, 0, 0, 0.2),  /* top-left shadow */
     5px 5px 50px rgba(0, 0, 0, 0.3);
+}
+
+html, body {
+  font-size: 16px; /* Base size for rem scaling */
+  font-family: 'Ubuntu', serif;
+  font-weight: 300;
+  
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+a {
+  font-size: 1rem;
 }
