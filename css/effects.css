@@ -14,7 +14,7 @@
 
     /* Positioning */
     position: absolute;
-    bottom: -200%; /* Place above the tooltip trigger */
+    bottom: -200%; 
     left: 6%;
     transform: translateX(-50%);
     white-space: nowrap;
