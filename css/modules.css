@@ -1,8 +1,7 @@
 footer {
     display: flex;
-    justify-content: left;
-    
-  }
+    justify-content: left;    
+}
   
 header {
     display: flex;
@@ -34,6 +33,7 @@ header {
     align-items: center;
 
     padding: 50px;
+    margin: 50px 0px;
     background: linear-gradient(90deg, #F66235, #F4382E);
     box-shadow: var(--card-shadow);
     border-radius: 5px;
