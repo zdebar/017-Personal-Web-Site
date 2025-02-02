@@ -13,6 +13,8 @@ form > label {
 input, textarea, button {
     width: 80%;
     font-weight: 300;
+    border-radius: var(--border-radius);
+    border: 1px black solid;
 }
 
 textarea {
@@ -28,11 +30,13 @@ form button {
     cursor: pointer;
     background: linear-gradient(to right, #23ae19, #018f06);
     border-radius: var(--border-radius);
+    border: none;
 }
 
 form p {
     align-self: flex-end;
 }
+
 @media (max-width: 600px) {
     label {
         flex-direction: column;
