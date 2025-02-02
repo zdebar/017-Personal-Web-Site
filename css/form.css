@@ -1,0 +1,43 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form > label {
+    display: flex;
+    justify-content: space-between;
+}
+
+input, textarea, button {
+    width: 80%;
+
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    align-self: flex-end;
+    cursor: pointer;
+    background-color: green;
+    border-radius: var(--border-radius);
+}
+
+form p {
+    align-self: flex-end;
+}
+@media (max-width: 600px) {
+    label {
+        flex-direction: column;
+    }
+
+    input, textarea, button {
+        width: 100%;
+    }
+}

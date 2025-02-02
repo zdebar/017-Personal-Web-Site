@@ -4,7 +4,7 @@
     cursor: pointer;
   }
   
-.tooltip__text {
+.tooltip-text {
     visibility: hidden;
     background-color: #333;
     color: #fff;
@@ -15,7 +15,7 @@
     /* Positioning */
     position: absolute;
     bottom: -200%; 
-    left: 6%;
+    left: 30%;
     transform: translateX(-50%);
     white-space: nowrap;
 
@@ -24,10 +24,10 @@
     transition: opacity 0.2s;
 }
 
-.tooltip:hover{    
+.tooltip:hover {    
     text-decoration: underline;
 
-    & .tooltip__text {
+    & .tooltip-text {
         visibility: visible;
     opacity: 1;
     }

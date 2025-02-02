@@ -1,0 +1,14 @@
+.title {
+    white-space: nowrap;
+
+}
+
+@media (max-width: 560px) {  
+    .title {
+        white-space: normal;
+    }
+    
+    span {
+        display: block;
+    }    
+}
