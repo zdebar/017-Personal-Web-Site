@@ -7,11 +7,12 @@ form {
 form > label {
     display: flex;
     justify-content: space-between;
+    font-weight: 500;
 }
 
 input, textarea, button {
     width: 80%;
-
+    font-weight: 300;
 }
 
 textarea {
@@ -25,7 +26,7 @@ form button {
     padding: 10px 20px;
     align-self: flex-end;
     cursor: pointer;
-    background-color: green;
+    background: linear-gradient(to right, #23ae19, #018f06);
     border-radius: var(--border-radius);
 }
 

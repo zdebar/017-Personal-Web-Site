@@ -8,15 +8,15 @@
     visibility: hidden;
     background-color: #333;
     color: #fff;
-    text-align: center;
+    text-align: right;
     padding: 5px 10px;
     border-radius: 4px;
 
     /* Positioning */
     position: absolute;
     bottom: -200%; 
-    left: 30%;
-    transform: translateX(-50%);
+    right: 0%;    
+    transform: translateX(00%);
     white-space: nowrap;
 
     /* Transition effect */
