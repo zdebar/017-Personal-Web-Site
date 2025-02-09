@@ -1,7 +1,10 @@
 import React from 'react';
+import Intro from "../components/Intro";
 
-const HomePage = () => {
-  return <h1>Welcome to my website!</h1>;
+export default function HomePage () {
+  return (
+    <div>
+      <Intro /> 
+    </div>
+  );
 };
-
-export default HomePage;
