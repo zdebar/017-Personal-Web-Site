@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import Footer from "../components/Footer";
 import '../styles/globals.css';
 import "../styles/index.css";
 
@@ -13,6 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="Zdeněk Barth's personal website" /> 
       </Head>
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
