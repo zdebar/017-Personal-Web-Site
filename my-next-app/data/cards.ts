@@ -1,4 +1,5 @@
 export type CardData = {
+  id: number;
   title: string;
   description: string;
   image?: string;
@@ -7,15 +8,15 @@ export type CardData = {
 
 export const cards: CardData[] = [
   {
+    id: 0,
     title: "Flash Card App",
     description: "Simple personal flash card for collecting data and testing repetition algorithms",
-    image: "",
     link: "#"
   },
   {
+    id: 1,
     title: "Eshop",
     description: "Description for another project",
-    image: "",
     link: "#"
   }
 ];
