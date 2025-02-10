@@ -3,7 +3,7 @@ import './Intro.css';
 export default function Intro() {
   return (
     <section>
-      <h1 className="title">
+      <h1 className="title" id='intro'>
         <span>Hi, I&apos;m</span> <span>Zdeněk Barth</span>
       </h1>
       <h1 className="title">

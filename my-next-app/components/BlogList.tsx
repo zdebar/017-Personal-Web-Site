@@ -10,7 +10,7 @@ export default function BlogList() {
   };
 
   return (
-    <section className="blog-container">
+    <section className="blog-container" id="blog">
       <h2>Blog</h2>
       {blogPosts.map((post) => (
         <article key={post.id} className="blog-post">
