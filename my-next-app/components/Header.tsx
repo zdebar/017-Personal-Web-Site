@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Header.css";
 
 export default function Header() {
   const [formVisible, setFormVisible] = useState(false);
@@ -33,13 +34,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="nav-container">
-        <nav className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#intro">Intro</a>
-          <a href="#projects">Projects</a>
-          <a href="#blog">Blog</a>
-        </nav>
+      <header>
         <a href="#" className="tooltip" onClick={toggleForm} id="emailAddress">
           zdebarth@gmail.com
           <span className="tooltip-text" id="tooltip-text">
@@ -49,7 +44,7 @@ export default function Header() {
           </span>
         </a>
       </header>
-      <main>
+      <section>
         <form
           id="contactForm"
           action="https://formspree.io/f/xdkazldg"
@@ -94,7 +89,7 @@ export default function Header() {
             {responseMessage}
           </p>
         )}
-      </main>
+      </ section>
     </>
   );
 }

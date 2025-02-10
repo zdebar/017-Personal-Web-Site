@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { CardData } from "../data/cards";
+import './Card.css'; 
 
 export default function Card({ id, title, description, image }: CardData) {
   return (

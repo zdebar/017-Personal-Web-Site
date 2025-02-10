@@ -6,20 +6,27 @@ form {
 
 form > label {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     font-weight: 500;
 }
 
 input, textarea, button {
-    width: 80%;
+    width: 100%;
     font-weight: 300;
     border-radius: var(--border-radius);
     border: 1px black solid;
+    font-size: 1rem;
+}
+
+form input {
+    height: 25px;
+    padding: 5px;
 }
 
 textarea {
     height: 100px;
     resize: vertical;
+    padding: 5px;
 }
 
 form button {

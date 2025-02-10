@@ -13,6 +13,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta charSet="UTF-8" />  
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         <meta name="description" content="Zdeněk Barth's personal website" /> 
+        <meta name="keywords" content="programování, web development, react, next.js" />
+        <meta name="author" content="Zdeněk Barth" />
       </Head>
       <Header />
       <Component {...pageProps} />

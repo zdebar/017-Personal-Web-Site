@@ -1,8 +1,8 @@
 export default function FlashCardApp () {
   return (
-    <div className="project-page">
+    <main className="project-page">
       <h1>Flash Card App</h1>
       <p>Simple personal flash card for collecting data and testing repetition algorithms</p>
-    </div>
+    </main>
   );
 };
