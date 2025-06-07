@@ -3,17 +3,14 @@ export type CardData = {
   title: string;
   description: string;
   image?: string;
+  link: string; // Made `link` mandatory
 };
 
 export const cards: CardData[] = [
   {
     id: 0,
-    title: "Flash Card App",
-    description: "Simple personal flash card for collecting data and testing repetition algorithms",
+    title: "English Language App",
+    description: "English language learning app focused on simplicity of use.",
+    link: "/projects/0",
   },
-  {
-    id: 1,
-    title: "Eshop",
-    description: "Description for another project",
-  }
 ];
