@@ -13,8 +13,11 @@ export default function Intro() {
 
       <p className="intro">
         I am a Full Stack Web Developer with experience in developing both
-        frontend and backend.
+        frontend and backend. I have a background in architecture and civil
+        engineering, but for the last year, I have been focused on full stack
+        web development.
       </p>
+      <p className="intro">I am currently open for work.</p>
       <p className="intro">
         Latest project is below. Rest is on my{" "}
         <a
