@@ -1,7 +1,8 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import "./Header.css";
+import Link from "next/link";
 
 export default function Header() {
   const [formVisible, setFormVisible] = useState(false);
@@ -37,6 +38,7 @@ export default function Header() {
   return (
     <>
       <header>
+        <Link href="/">home</Link>
         <a href="#" className="tooltip" onClick={toggleForm} id="emailAddress">
           zdebarth@gmail.com
           <span className="tooltip-text" id="tooltip-text">
@@ -56,7 +58,7 @@ export default function Header() {
         >
           <input type="text" name="_gotcha" style={{ display: "none" }} />
           <label htmlFor="email">
-            Your email:
+            your email:
             <input
               type="email"
               id="email"
@@ -66,12 +68,12 @@ export default function Header() {
           </label>
 
           <label htmlFor="subject">
-            Subject:
+            subject:
             <input type="text" id="subject" name="subject" required />
           </label>
 
           <label htmlFor="message">
-            Message:
+            message:
             <textarea name="message" id="message" required></textarea>
           </label>
           <button type="submit">Send</button>
@@ -91,7 +93,7 @@ export default function Header() {
             {responseMessage}
           </p>
         )}
-      </ section>
+      </section>
     </>
   );
 }

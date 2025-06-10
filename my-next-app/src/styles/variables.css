@@ -1,23 +1,23 @@
 /* CSS variables */
 :root {
-    --card-grid-border: black 5px solid;
-    --border-radius: 5px;
+  --card-grid-border: black 2px solid;
+  --border-radius: 2px;
 }
 
 /* Light and Dark modes */
 @media (prefers-color-scheme: dark) {
-    body {
-        --background-color: #121212;
-        --color: #ffffff;
-        --card-grid-border: var(--color) 5px solid;
-        --card-shadow: 6px 6px 0px rgba(255, 255, 255, 1);
-    }
+  body {
+    --background-color: #111111;
+    --color: #eeeeee;
+    --card-grid-border: var(--color) 2px solid;
+    --card-shadow: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        --background-color: #fffffff7;
-        --color: black;
-        --card-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
-    }
+  body {
+    --background-color: #fafafa;
+    --color: black;
+    --card-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
+  }
 }

@@ -13,19 +13,30 @@ export default function Intro() {
 
       <p className="intro">
         I am a Full Stack Web Developer with experience in developing both
-        frontend and backend, predominantly with React, TypeScript, Nodejs and
-        PostgreSQL.
+        frontend and backend.
+      </p>
+      <p className="intro">
+        Latest project is below. Rest is on my{" "}
+        <a
+          href="https://github.com/zdebar"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "blue" }}
+        >
+          GitHub.
+        </a>
       </p>
       <p>
-        <strong>Frontend:</strong> HTML, CSS, Tailwind CSS, React, JavaScript,
-        TypeScript, Next.js
+        <strong>Frontend:</strong> HTML, CSS, Tailwind CSS, JavaScript,
+        TypeScript, React, Vite, Vitest, Next.js
       </p>
       <p>
         <strong>Backend:</strong> Node.js, Express.js, SQL, PostgreSQL, SQLite,
         Python, RestAPI
       </p>
       <p>
-        <strong>General:</strong> Docker, Github, Vite, Vitest, Jest, DBeaver
+        <strong>General:</strong> Git, Github, Bash, VS Code, Docker, DBeaver,
+        Postman
       </p>
       <p>
         <strong>Cloud:</strong> Google Cloud, Supabase, Firebase, Vercel,
