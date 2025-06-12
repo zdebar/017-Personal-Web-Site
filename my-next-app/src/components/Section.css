@@ -1,0 +1,24 @@
+.group {
+  border-bottom: 2px solid linear-gradient(90deg, #f66235, #f4382e);
+  margin: 10px 0px;
+  /* border-bottom: 1px solid #f4382e; */
+}
+
+.bar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0px 20px;
+  color: white;
+  background: linear-gradient(90deg, #f66235, #f4382e);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--border-radius);
+}
+
+.text-container {
+  padding: 20px;
+  border: 1px dashed #f4382e;
+  border-radius: var(--border-radius);
+}

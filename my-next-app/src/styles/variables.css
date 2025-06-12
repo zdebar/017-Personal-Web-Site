@@ -7,8 +7,8 @@
 /* Light and Dark modes */
 @media (prefers-color-scheme: dark) {
   body {
-    --background-color: #111111;
-    --color: #eeeeee;
+    --background-color: #202020;
+    --color: #ffffff;
     --card-grid-border: var(--color) 2px solid;
     --card-shadow: none;
   }

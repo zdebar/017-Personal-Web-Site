@@ -16,15 +16,19 @@
     height: 220px;
     gap: 20px;
     padding: 50px;
-    margin: 50px 0px;
+    margin: 25px 0px;
   }
 }
 
-/* Add hover effect for the card */
 .card:hover {
-  transform: scale(1.025); /* Slightly enlarges the card */
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.card:hover {
+  transform: scale(1.025);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Adds a more prominent shadow */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card-text {
@@ -34,7 +38,7 @@
   color: white;
 
   & h2 {
-    padding: 20px 0px;
+    padding: 40px 0px 20px 0px;
   }
 
   & p {
@@ -43,12 +47,7 @@
   }
 
   @media (min-width: 760px) {
-    & h2 {
-      padding: 20px 0px;
-    }
-
     & p {
-      border-top: white 5px solid;
       padding: 30px 0px;
     }
   }
