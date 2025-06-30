@@ -7,17 +7,29 @@ export default function FlashCardApp() {
     <main className="project-page">
       <Section title="Introduction">
         <p>
-          I have always been dissatisfied with how languages are taught. The
-          school approach is overcomplicated and a massive waste of time. This
-          is my attempt to try something more straightforward.
+          Like most people, I haven&#39;t learned English at school but rather
+          by being exposed to it online, mostly on YouTube. This has led to a
+          situation that is quite common: I understand everything, but my
+          pronunciation is subpar at best.
+        </p>
+        <br />
+        <p>
+          This app is my attempt to improve my pronunciation and help others
+          master English in a more natural and efficient way.
         </p>
       </Section>
       <Section title="Main Idea">
         <p>
-          In the end it is just about the sheer amount of repetition to
-          completely automatize some knowledge. This app is designed to maximize
-          amount of progressively harder repetitions per day.
+          Ultimately, learning is about the sheer amount of repetition to fully
+          automate knowledge. This app is designed to maximize the number of
+          words spoken and listened to each day.
         </p>
+        <br />
+        <p>
+          Using the flashcard method for both words and grammar, you can
+          practice at a fast pace—up to 1,000 repetitions per hour.
+        </p>
+        <p></p>
       </Section>
       <Section title="Links">
         <div className="links">
@@ -45,7 +57,7 @@ export default function FlashCardApp() {
         </p>
 
         <Image
-          src="/images/00_01.png"
+          src="/images/001.png"
           alt="Image 1"
           width={560}
           height={995}
@@ -59,61 +71,55 @@ export default function FlashCardApp() {
           switch focus between tasks. Simply click the button to start
           practicing, and the app will handle the rest.
         </p>
-
-        <h4>Přehled gramatiky / Grammar Overview</h4>
-        <p>
-          Contextual help is always available for any grammar item. You can also
-          review all unlocked grammar concepts here.
-        </p>
-        <h4>Blocks Overview Dashboard</h4>
-        <p>
-          Track your practice over the last seven days. Each bar represents 100
-          practice blocks, with 10 items per block. The recommended goal is
-          1,000 repetitions per day.
-        </p>
         <Image
-          src="/images/00_02.png"
+          src="/images/002.png"
           alt="Image 2"
           width={560}
           height={995}
           className="screenshot"
         />
+
+        <h4>Přehled gramatiky / Grammar Overview</h4>
+        <p>
+          Contextual help is always available for any practiced sentence. You
+          can also review all already unlocked grammar principles.
+        </p>
+        <Image
+          src="/images/005.png"
+          alt="Image 5"
+          width={560}
+          height={995}
+          className="screenshot"
+        />
+        <h4>Blocks Overview Dashboard</h4>
+        <p>
+          Tracks your progress over the last two CEFR levels and monitors
+          repetition blocks for the past five days. Each bar represents 100
+          practice blocks, with 10 items per block. The recommended goal is
+          1,000 repetitions per day.
+        </p>
       </Section>
       <Section title="Practice Card">
         <p>
-          This is the core of the app. Entire app is designed aroung this
-          flashcard, every word, every grammar block, every sentence is practice
-          the same way. Just one continuous flow without chapters, levels, or
-          lesson. You can practice for a minute, or for entire day. This
-          seamless approach will maximize amount of repetition in a given time.
+          This is the core of the app. The entire app is designed around this
+          flashcard. Every word and sentence is practiced the same way, in one
+          continuous flow without chapters, levels, or lessons. You can practice
+          for a minute or an entire day. This seamless approach maximizes the
+          number of repetitions in a given time.
         </p>
         <h4>Context guide</h4>
         <p>
-          No one actually reads separate help pages, so I generally use
-          contextual help whenever possible.
+          Separate help pages are rarely read, so I generally use contextual
+          help whenever possible.
         </p>
-        <div className="flex-container">
-          <Image
-            src="/images/00_03.png"
-            alt="Image 3"
-            width={560}
-            height={995}
-            className="screenshot"
-          />
-          <Image
-            src="/images/00_04.png"
-            alt="Image 4"
-            width={560}
-            height={995}
-            className="screenshot"
-          />
-        </div>
+
         <h4>Practice flow</h4>
         <p>
-          You are presented with a hidden word, alternating between Czech and
-          English for each word. When you reveal the translation (odhalit
-          překlad), the card is displayed.
+          You are presented with a word or sentence, alternating between written
+          Czech and listening to English for each word. When you reveal the
+          translation (odhalit překlad), the full translation is displayed.
         </p>
+        <br />
         <p>
           Using the plus or minus buttons, you evaluate your knowledge. Plus
           increases the interval for the next repetition, while minus decreases
@@ -122,14 +128,14 @@ export default function FlashCardApp() {
 
         <div className="flex-container">
           <Image
-            src="/images/00_03.png"
+            src="/images/003.png"
             alt="Image 3"
             width={560}
             height={995}
             className="screenshot"
           />
           <Image
-            src="/images/00_04.png"
+            src="/images/004.png"
             alt="Image 4"
             width={560}
             height={995}
@@ -139,11 +145,11 @@ export default function FlashCardApp() {
       </Section>
       <Section title="User Settings">
         <p>
-          Contains basic user management. So far, only Logout and theme settings
-          are available.
+          Contains basic user management. Currently, only Logout and theme
+          settings are available.
         </p>
         <Image
-          src="/images/00_05.png"
+          src="/images/006.png"
           alt="Image 5"
           width={560}
           height={995}
@@ -154,19 +160,12 @@ export default function FlashCardApp() {
         <h4>Automatic pronunciation feedback</h4>
         <p>
           I tested several tools (Vosk, Gentle, Google Speech-to-Text API). All
-          are too inaccurate to be really useful. Maybe will try again in the
-          future.
+          are too inaccurate to be really useful.
         </p>
         <h4>Vocabulary overview</h4>
         <p>
           Tested a vocabulary overview page with filters, etc. It was
           unnecessary. It just overwhelmed users with too much information.
-        </p>
-        <h4>Progress feedback</h4>
-        <p>
-          Tested multiple progress overviews, from learned words to daily
-          practice repetition. None worked as I imagined so far, but I plan to
-          keep on testing.
         </p>
       </Section>
       <Section title="Technical">
@@ -196,7 +195,7 @@ export default function FlashCardApp() {
             and inserted into the basic practice flow.
           </p>
           <Image
-            src="/images/DatabaseScheme.jpg"
+            src="/images/007.jpg"
             alt="Zoomed"
             width={560}
             height={995}
@@ -210,11 +209,11 @@ export default function FlashCardApp() {
           <p>Node.js, Express.js, Winston Logger, Railway for hosting</p>
           <p>
             The function getItemsRepository is crucial for incorporating
-            individual words and grammar blocks.
+            individual words and sentences together.
           </p>
           <div style={{ width: "100%", overflow: "hidden" }}>
             <Image
-              src="/images/getItemsRepository.jpg"
+              src="/images/008.jpg"
               alt="Zoomed"
               width={560}
               height={995}
@@ -234,7 +233,7 @@ export default function FlashCardApp() {
           </p>
           <div style={{ width: "100%", overflow: "hidden" }}>
             <Image
-              src="/images/PracticeCard.jpg"
+              src="/images/009.jpg"
               alt="Zoomed"
               width={560}
               height={995}
@@ -249,7 +248,7 @@ export default function FlashCardApp() {
           <h4>Testing</h4>
           <p>Vitest, Jest, React Testing</p>
           <p>
-            I initially created plethora of tests, only to realize that I was
+            I initially created plethora of tests, only to realize that as I was
             constantly changing features, I ended up spending about 50% of my
             time rewriting the tests. Once the app stabilizes, I plan to add
             comprehensive tests to cover all necessary cases.
@@ -269,9 +268,9 @@ export default function FlashCardApp() {
       <Section title="What&#39;s next?">
         <p>
           I am quite satisfied with the technical state of the app, but the data
-          still require a lot of work. So far, there are about 10,000 words but
-          very little grammar. In the coming weeks, I will continue with testing
-          and adding content.
+          still require a lot of work. Currently, there are about 10,000 words
+          but very little grammar. In the coming weeks, I will just continue
+          adding content.
         </p>
       </Section>
     </main>

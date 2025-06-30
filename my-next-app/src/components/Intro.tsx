@@ -31,15 +31,14 @@ export default function Intro() {
           </a>
         </p>
       </article>
-
       <article className="block">
         <p>
           <strong>Frontend:</strong> HTML, CSS, Tailwind CSS, JavaScript,
-          TypeScript, React, Vite, Vitest, Next.js
+          TypeScript, React, Vite, Vitest
         </p>
         <p>
-          <strong>Backend:</strong> Node.js, Express.js, SQL, PostgreSQL,
-          SQLite, Python, RestAPI
+          <strong>Backend:</strong> Next.js, Node.js, Express.js, SQL,
+          PostgreSQL, SQLite, Python, RestAPI
         </p>
         <p>
           <strong>General:</strong> Git, Github, Bash, VS Code, Docker, DBeaver,

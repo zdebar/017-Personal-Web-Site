@@ -10,8 +10,7 @@ export const cards: CardData[] = [
   {
     id: 0,
     title: "English App",
-    description:
-      "A1 in 10 days, A2 in 20 days, B1 in 40 days, B2 in 80 days, C1 in 160 days, C2 in 320 days.",
+    description: "English in more natural, less stressing way.",
     link: "/projects/0",
   },
 ];
