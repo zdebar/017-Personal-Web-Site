@@ -8,26 +8,28 @@ export default function FlashCardApp() {
       <Section title="Introduction">
         <p>
           Like most people, I haven&#39;t learned English at school but rather
-          by being exposed to it online, mostly on YouTube. This has led to a
-          situation that is quite common: I understand everything, but my
-          pronunciation is subpar at best.
+          by being exposed to it online. This has led to a situation that is
+          quite common: I understand everything, but my pronunciation is subpar
+          at best.
         </p>
         <br />
         <p>
           This app is my attempt to improve my pronunciation and help others
-          master English in a more natural and efficient way.
+          master English in a more natural way.
         </p>
       </Section>
       <Section title="Main Idea">
         <p>
-          Ultimately, learning is about the sheer amount of repetition to fully
-          automate knowledge. This app is designed to maximize the number of
-          words spoken and listened to each day.
+          Ultimately, learning is about the sheer amount of practice repetition
+          to fully automate knowledge. This app is designed to maximize the
+          number of words spoken and listened to each day.
         </p>
         <br />
         <p>
-          Using the flashcard method for both words and grammar, you can
-          practice at a fast pace—up to 1,000 repetitions per hour.
+          The app is intentionally designed to be as simple as possible, with
+          focus on just time efficient approach. Using the flashcard method for
+          both words and grammar, you can practice at a fast pace—up to 1,000
+          repetitions per hour.
         </p>
         <p></p>
       </Section>
@@ -50,12 +52,6 @@ export default function FlashCardApp() {
         </div>
       </Section>
       <Section title="Home Screen">
-        <p>
-          The app is intentionally designed to be as simple as possible, with a
-          primary focus on mobile devices and a responsive layout to ensure a
-          seamless user experience across all screen sizes.
-        </p>
-
         <Image
           src="/images/001.png"
           alt="Image 1"
@@ -101,11 +97,9 @@ export default function FlashCardApp() {
       </Section>
       <Section title="Practice Card">
         <p>
-          This is the core of the app. The entire app is designed around this
-          flashcard. Every word and sentence is practiced the same way, in one
-          continuous flow without chapters, levels, or lessons. You can practice
-          for a minute or an entire day. This seamless approach maximizes the
-          number of repetitions in a given time.
+          This is the core of the app. Every word and sentence is practiced the
+          same way, in one continuous flow without chapters, levels, or lessons.
+          You can practice for a minute or an entire day.
         </p>
         <h4>Context guide</h4>
         <p>
@@ -271,6 +265,16 @@ export default function FlashCardApp() {
           still require a lot of work. Currently, there are about 10,000 words
           but very little grammar. In the coming weeks, I will just continue
           adding content.
+        </p>
+        <br />
+        <p>
+          In the future, I plan to add more languages, probably Spanish and
+          German.
+        </p>
+        <br />
+        <p>
+          If application will prove itself useful (to me and my friends), I
+          might consider releasing it for public.
         </p>
       </Section>
     </main>

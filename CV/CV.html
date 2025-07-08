@@ -10,6 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <style>
+    :root {
+      --primary-color: #2b2b2b;
+      --background-color: #FCFBF8;
+    }
+
     html {
       font-size: 16px;
       font-family: Arial, sans-serif;
@@ -19,8 +24,9 @@
 
     body {
       line-height: 1.5;
-      background-color: #FCFBF8;
-      color: #2b2b2b;
+      background-color: white;
+      color: var(--primary-color);
+      ;
     }
 
     h1 {
@@ -53,16 +59,24 @@
       margin: 2px 0;
     }
 
+    hr {
+      border: none;
+      height: 2px;
+      background-color: var(--primary-color);
+      margin: 30px 0;
+    }
+
     .container {
       max-width: 800px;
       margin: 0 auto;
-      border: 1px solid #bdc3c7;
+      background-color: var(--background-color);
       overflow: hidden;
+      margin: 0px auto;
+      padding: 80px;
     }
 
     .header {
-      margin: 50px 0px;
-      padding: 30px 30px;
+      margin-bottom: 50px;
     }
 
     .group {
@@ -70,14 +84,24 @@
       margin: 20px 0px;
     }
 
-    .column {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 150px 1fr;
       gap: 10px;
     }
 
     .item-span {
       grid-column: span 2;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .flex-col {
+      display: flex;
+      flex-direction: column;
     }
 
     .montserrat-light {
@@ -102,55 +126,82 @@
       <h1><strong>ZDENĚK BARTH</strong></h1>
       <h2>FULL STACK WEB DEVELOPER</h3>
     </div>
-    <div class="column">
-      <div class="group">
+    <div>
+      <div class="grid">
         <h2>KONTAKTY</h2>
-        <p>zdebarth@gmail.com</p>
-        <p>+420 723 803 518</p>
-        <p>Kralupy nad Vltavou</p>
-        <p>my website</p>
+        <div>
+          <p>zdebarth@gmail.com</p>
+          <p>+420 723 803 518</p>
+          <p>Kralupy nad Vltavou</p>
+          <p>my website</p>
+        </div>
       </div>
-      <div class="group">
-        <h2>PROFIL</h2>
-        <p>Jsem full stack web developer s převážně samostatně nabytými zkušenostmi. Aktivně pracuji s technologiemi
-          jako
-          React, TypeScript, Tailwind CSS, Next.js, Node.js, Express, PostgreSQL, Python, Bash, Github, Docker.</p>
+      <hr>
+      <p>Jsem full stack web developer s převážně samostatně nabytými zkušenostmi. Aktivně pracuji s technologiemi
+        jako
+        React, TypeScript, Tailwind CSS, Next.js, Node.js, Express, PostgreSQL, Python, Bash, Github, Docker.</p>
+      <hr>
+      <div class="grid">
+        <h2>DOVEDNOSTI</h2>
+        <div>
+          <h2>FRONTEND</h2>
+          </p>
+          <p>HTML, CSS, Tailwind CSS, JavaScript, TypeScript, React, Vite, Vitest, Next.js</p>
+          <h2>BACKEND</h2>
+          <p>Node.js, Express.js, SQL, PostgreSQL, SQLite, Python, RestAPI</p>
+          <h2>GENERAL</h2>
+          <p>Git, Github, Bash, VS Code, Docker, DBeaver, Postman</p>
+          <h2>CLOUD</h2>
+          <p>Google Cloud, Supabase, Firebase, Vercel, Railway</p>
+          <h2>GRAPHICAL</h2>
+          <p>Figma, Photoshop, Autocad, Revit, 3ds Max</p>
+          <h2>JAZYKY</h2>
+          <p>Čeština - mateřský jazyk, Angličtina - C1</p>
+          <h2>OTHER</h2>
+          <p>Desetiprsté psaní, Řidičský průkaz skupiny B</p>
+        </div>
       </div>
-      <div class="group item-span">
-        <h2>VZDĚLÁNÍ</h2>
-        <h3>ČESKÉ VYSOKÉ UČENÍ TECHNICKÉ V PRAZE (ČVUT)</h3>
-        <p>Architektura a územní plánování</p>
-        <p>09/2000 - 05/2025</p>
-        <h3>DVOŘÁKOVO GYMNÁZIUM KRALUPY NAD VLTAVOU</h3>
-        <p>víceleté gymnázium</p>
-        <p>09/1993 - 05/2000</p>
-      </div>
-      <div class="group item-span">
-        <h2>PRAXE</h2>
-        <h3>PROJEKTANT VE STAVEBNICTVÍ</h3>
-        <p>OSVČ</p>
-        <p>09/2002 - 05/2025</p>
-        <p>Stavební projekce, management projektů (až 6 členů projektového týmu, koordinace profesí, projednávání s
-          klienty),
-          práce v týmu i samostatná spolupráce jako subdodavatel</p>
-      </div>
-      <div class="group item-span">
-        <h2>TECHNICKÉ ZNALOSTI</h2>
-        <p><strong>Frontend:</strong> HTML, CSS, Tailwind CSS, JavaScript, TypeScript, React, Vite, Vitest, Next.js</p>
-        <p><strong>Backend:</strong> Node.js, Express.js, SQL, PostgreSQL, SQLite, Python, RestAPI</p>
-        <p><strong>General:</strong> Git, Github, Bash, VS Code, Docker, DBeaver, Postman</p>
-        <p><strong>Cloud:</strong> Google Cloud, Supabase, Firebase, Vercel, Railway</p>
-        <p><strong>Graphical:</strong> Figma, Photoshop, Autocad, Revit, 3ds Max</p>
-      </div>
-      <div class="group">
+      <hr>
+      <div class="grid">
         <h2>JAZYKY</h2>
-        <p>Čeština - mateřský jazyk</p>
-        <p>Angličtina - C1</p>
+        <div>
+          <p>Čeština - mateřský jazyk</p>
+          <p>Angličtina - C1</p>
+        </div>
       </div>
-      <div class="group">
-        <h2>DALŠÍ ZNALOSTI</h2>
-        <p>Desetiprsté psaní</p>
-        <p>Řidičský průkaz skupiny B</p>
+      <hr>
+      <div class="grid">
+        <h2>DALŠÍ DOVEDNOSTI</h2>
+        <div>
+          <p>Desetiprsté psaní</p>
+          <p>Řidičský průkaz skupiny B</p>
+        </div>
+      </div>
+      <hr>
+      <div class="grid">
+        <h2>PRACOVNÍ ZKUŠENOSTI</h2>
+        <div>
+          <h3>FULL STACK WEB DEVELOPER</h3>
+          <p>OSVČ 2025 - dosud</p>
+          <h3>PROJEKTANT VE STAVEBNICTVÍ</h3>
+          <p>OSVČ</p>
+          <p>09/2002 - 05/2025</p>
+          <p>Stavební projekce, management projektů (až 6 členů projektového týmu, koordinace profesí, projednávání s
+            klienty),
+            práce v týmu i samostatná spolupráce jako subdodavatel</p>
+        </div>
+      </div>
+      <hr>
+      <div class="grid">
+        <h2>VZDĚLÁNÍ</h2>
+        <div>
+          <h3>ČESKÉ VYSOKÉ UČENÍ TECHNICKÉ V PRAZE (ČVUT)</h3>
+          <p>Architektura a územní plánování</p>
+          <p>09/2000 - 05/2025</p>
+          <h3>DVOŘÁKOVO GYMNÁZIUM KRALUPY NAD VLTAVOU</h3>
+          <p>víceleté gymnázium</p>
+          <p>09/1993 - 05/2000</p>
+        </div>
       </div>
     </div>
   </div>

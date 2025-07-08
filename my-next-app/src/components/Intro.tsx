@@ -52,8 +52,10 @@ export default function Intro() {
           <strong>Graphical:</strong> Figma, Photoshop, Autocad, Revit, 3ds Max
         </p>
         <p>
-          <strong>Other:</strong> Czech native speaker, English C1, Touch
-          typing, Driving license B
+          <strong>Languages:</strong> Czech - native speaker, English - C1
+        </p>
+        <p>
+          <strong>Other:</strong> Touch typing, Driving license B
         </p>
       </article>
     </section>
