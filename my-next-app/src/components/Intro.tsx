@@ -25,7 +25,7 @@ export default function Intro() {
             href="https://github.com/zdebar"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "blue" }}
+            className="link"
           >
             GitHub.
           </a>

@@ -7,7 +7,7 @@
 /* Light and Dark modes */
 @media (prefers-color-scheme: dark) {
   body {
-    --background-color: #202020;
+    --background-color: #030712;
     --color: #ffffff;
     --card-grid-border: var(--color) 2px solid;
     --card-shadow: none;
@@ -16,7 +16,7 @@
 
 @media (prefers-color-scheme: light) {
   body {
-    --background-color: ##fcfbf8;
+    --background-color: #fcfbf8;
     --color: black;
     --card-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
   }

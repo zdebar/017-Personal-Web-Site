@@ -7,31 +7,59 @@ export default function FlashCardApp() {
     <main className="project-page">
       <Section title="Introduction">
         <p>
-          Like most people, I haven&#39;t learned English at school but rather
-          by being exposed to it online. This has led to a situation that is
-          quite common: I understand everything, but my pronunciation is subpar
-          at best.
-        </p>
-        <br />
-        <p>
-          This app is my attempt to improve my pronunciation and help others
-          master English in a more natural way.
+          Like many others, I didn&#39;t learn English at school but rather by
+          being exposed to it online. Schools often fail to provide enough
+          practice for most students. Despite years spent in school, the amount
+          of practice is simply insufficient.
         </p>
       </Section>
       <Section title="Main Idea">
         <p>
-          Ultimately, learning is about the sheer amount of practice repetition
-          to fully automate knowledge. This app is designed to maximize the
-          number of words spoken and listened to each day.
+          Ultimately, learning languages is about the sheer amount of practice
+          repetition to fully automate knowledge. This app is designed to
+          maximize the amount of practice you can manage per hour. It is easily
+          achievable to practice 1,000 words or 500 sentences per hour.
         </p>
         <br />
-        <p>
-          The app is intentionally designed to be as simple as possible, with
-          focus on just time efficient approach. Using the flashcard method for
-          both words and grammar, you can practice at a fast pace—up to 1,000
-          repetitions per hour.
-        </p>
-        <p></p>
+        <p>This is achiever by several key principles:</p>
+        <h4>Fast pace of practice</h4>
+        <li>
+          The greater the amount of daily repetition, the faster the learning
+          process.
+        </li>
+        <h4>Speaking and listening</h4>
+        <li>
+          Listening and especially speaking are the hardest parts of language
+          learning. Focus exclusively on these from the start. Practicing
+          writing is slower and limits the number of daily repetitions, thereby
+          slowing down the learning process.
+        </li>
+        <h4>Continuous flow of practice</h4>
+        <li>
+          Vocabulary and grammar are learned in one continuous flow. Stress is
+          reduced by removing options—just follow what the app provides.
+        </li>
+        <h4>Flexible schedule</h4>
+        <li>
+          Although there is a recommended amount of daily practice, there is no
+          strict limit. You can practice for one minute or 10 hours per day.
+        </li>
+        <h4>Visual Feedback</h4>
+        <li>
+          The app visualizes progress across individual CEFR levels (Common
+          European Framework of Reference for Languages) from A1 (beginner) to
+          C2 (proficient). This motivates users to practice more and achieve
+          their goals sooner.
+        </li>
+        <br />
+        <p>Achieved through:</p>
+        <h4>Flashcards</h4>
+        <li>
+          Using only most time efficient methods. For me it is
+          &quot;flashcard&quot; method. It is very fast, can alternate
+          translation direction (EN to CZ, CZ to EN) , and incorporates both
+          vocabulary and grammar into single flow.
+        </li>
       </Section>
       <Section title="Links">
         <div className="links">
@@ -138,10 +166,7 @@ export default function FlashCardApp() {
         </div>
       </Section>
       <Section title="User Settings">
-        <p>
-          Contains basic user management. Currently, only Logout and theme
-          settings are available.
-        </p>
+        <p>Contains basic user management.</p>
         <Image
           src="/images/006.png"
           alt="Image 5"
@@ -186,10 +211,10 @@ export default function FlashCardApp() {
             The database schema is quite simple, with just a few tables, but it
             provides significant flexibility in organizing the practice flow.
             Generally, some items are grouped together in various grammar blocks
-            and inserted into the basic practice flow.
+            and inserted into the basic practice sequence.
           </p>
           <Image
-            src="/images/007.jpg"
+            src="/images/007.png"
             alt="Zoomed"
             width={560}
             height={995}
@@ -207,7 +232,7 @@ export default function FlashCardApp() {
           </p>
           <div style={{ width: "100%", overflow: "hidden" }}>
             <Image
-              src="/images/008.jpg"
+              src="/images/008.png"
               alt="Zoomed"
               width={560}
               height={995}
@@ -227,7 +252,7 @@ export default function FlashCardApp() {
           </p>
           <div style={{ width: "100%", overflow: "hidden" }}>
             <Image
-              src="/images/009.jpg"
+              src="/images/009.png"
               alt="Zoomed"
               width={560}
               height={995}
@@ -260,22 +285,11 @@ export default function FlashCardApp() {
         </section>
       </Section>
       <Section title="What&#39;s next?">
-        <p>
-          I am quite satisfied with the technical state of the app, but the data
-          still require a lot of work. Currently, there are about 10,000 words
-          but very little grammar. In the coming weeks, I will just continue
-          adding content.
-        </p>
-        <br />
-        <p>
-          In the future, I plan to add more languages, probably Spanish and
-          German.
-        </p>
-        <br />
-        <p>
-          If application will prove itself useful (to me and my friends), I
-          might consider releasing it for public.
-        </p>
+        <ol>
+          <li>Fill english data.</li>
+          <li>Adding more languages - Spanish and German</li>
+          <li>Release for public</li>
+        </ol>
       </Section>
     </main>
   );

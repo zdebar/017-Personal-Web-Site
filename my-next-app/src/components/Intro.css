@@ -14,6 +14,19 @@ strong {
   margin: 50px 0px;
 }
 
+.link {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Light and Dark modes */
+@media (prefers-color-scheme: dark) {
+  .link {
+    color: #138ef2;
+    text-decoration: none;
+  }
+}
+
 @media (max-width: 560px) {
   .title span {
     display: block;

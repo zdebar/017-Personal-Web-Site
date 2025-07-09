@@ -28,3 +28,7 @@
   align-items: center;
   margin: 10px 0px;
 }
+
+ol {
+  padding-left: 20px;
+}
