@@ -5,60 +5,88 @@ import Section from "@/components/Section";
 export default function FlashCardApp() {
   return (
     <main className="project-page">
+      <Section title="version v0.1.0">
+        <ul>
+          <h4>Changes</h4>
+          <li>Added multiple languages support (added Spanish vocabulary)</li>
+          <li>Added skip button</li>
+        </ul>
+        <h4>Testing</h4>
+        <p>
+          Testing new version was quite a wake-up call. All flashcard approach
+          works very well for correcting my english pronunctiation, but when I
+          tried it for initial learning of Spanish, memory retention of new
+          words was terrible.
+        </p>
+        <h4>Future changes</h4>
+        <ul>
+          <li>
+            Keep flashcard for longtem memory inprint, but it won&#39;t be used
+            for initial learning. Shuffle character of flashcards is great for
+            inprinting words in different context, but bad for initial learning.
+          </li>
+          <li>
+            Create smaller blocks of vocabulary and grammar, that will be first
+            drilled in isolation, before being further practiced with
+            flashcards.
+          </li>
+        </ul>
+        <h4>Next steps</h4>
+        <ol>
+          <li>
+            Finish my own english pronunciation correction - create and practice
+            at least 20k english words.
+          </li>
+          <li>
+            Create &quot;drill lesson&quot; for grammar and vocabulary. Because
+            I am the first tester, and I need to test it on language I dont
+            know, i probably would be or Spanish or German.
+          </li>
+        </ol>
+        <br />
+        <p>
+          Also I want to finish some Leetcode practice. I have done some
+          datastructure and algorithms course, it is easy, but I need practice
+          to automate it. So, 20k english words and Leetcode would take me about
+          2 months, after that I will create new version and continue with
+          development.
+        </p>
+      </Section>
       <Section title="Introduction">
         <p>
-          Like many others, I didn&#39;t learn English at school but rather by
-          being exposed to it online. Schools often fail to provide enough
-          practice for most students. Despite years spent in school, the amount
-          of practice is simply insufficient.
+          I was dissatisfied with existing language learning apps and wanted to
+          create a simple app that focuses only on the features I find useful.
+          Just focus on most important features and ideally lower time to
+          passive knowledge to minimum.
         </p>
       </Section>
       <Section title="Main Idea">
         <p>
           Ultimately, learning languages is about the sheer amount of practice
-          repetition to fully automate knowledge. This app is designed to
-          maximize the amount of practice you can manage per hour. It is easily
+          repetition to fully internalize knowledge. With fast pace it is easily
           achievable to practice 1,000 words or 500 sentences per hour.
         </p>
         <br />
-        <p>This is achiever by several key principles:</p>
-        <h4>Fast pace of practice</h4>
+        <p>
+          Basis structure is similar to common language learning approaches, so
+          I will only emphasize key differences:
+        </p>
+        <h4>Flashcards</h4>
         <li>
-          The greater the amount of daily repetition, the faster the learning
-          process.
+          The most time-efficient method, enabling a fast-paced practice. Both
+          vocabulary and grammar is taught in one continuous flow of flashcards.
         </li>
-        <h4>Speaking and listening</h4>
-        <li>
-          Listening and especially speaking are the hardest parts of language
-          learning. Focus exclusively on these from the start. Practicing
-          writing is slower and limits the number of daily repetitions, thereby
-          slowing down the learning process.
-        </li>
-        <h4>Continuous flow of practice</h4>
-        <li>
-          Vocabulary and grammar are learned in one continuous flow. Stress is
-          reduced by removing options—just follow what the app provides.
-        </li>
-        <h4>Flexible schedule</h4>
+        <h4>No fix schedule</h4>
         <li>
           Although there is a recommended amount of daily practice, there is no
           strict limit. You can practice for one minute or 10 hours per day.
+          This makes it easy to start practicing at any time of the day. Overall
+          daily practice time will quickly start to pile up.
         </li>
-        <h4>Visual Feedback</h4>
+        <h4>Listening and speaking</h4>
         <li>
-          The app visualizes progress across individual CEFR levels (Common
-          European Framework of Reference for Languages) from A1 (beginner) to
-          C2 (proficient). This motivates users to practice more and achieve
-          their goals sooner.
-        </li>
-        <br />
-        <p>Achieved through:</p>
-        <h4>Flashcards</h4>
-        <li>
-          Using only most time efficient methods. For me it is
-          &quot;flashcard&quot; method. It is very fast, can alternate
-          translation direction (EN to CZ, CZ to EN) , and incorporates both
-          vocabulary and grammar into single flow.
+          Exclusive emphasis on listening and speaking. Writing slows down
+          practice, and most people do not struggle with it.
         </li>
       </Section>
       <Section title="Links">
@@ -88,12 +116,20 @@ export default function FlashCardApp() {
           className="screenshot"
         />
       </Section>
+      <Section title="Language Selection">
+        <Image
+          src="/images/010.png"
+          alt="Image 1"
+          width={560}
+          height={995}
+          className="screenshot"
+        />
+      </Section>
       <Section title="User Dashboard">
         <h4>Procvičovat / Practice</h4>
         <p>
-          The app provides a continuous practice flow, eliminating the need to
-          switch focus between tasks. Simply click the button to start
-          practicing, and the app will handle the rest.
+          The only practice button. Will provide a continuous practice flow,
+          eliminating the need to switch focus between tasks.
         </p>
         <Image
           src="/images/002.png"
@@ -124,11 +160,6 @@ export default function FlashCardApp() {
         </p>
       </Section>
       <Section title="Practice Card">
-        <p>
-          This is the core of the app. Every word and sentence is practiced the
-          same way, in one continuous flow without chapters, levels, or lessons.
-          You can practice for a minute or an entire day.
-        </p>
         <h4>Context guide</h4>
         <p>
           Separate help pages are rarely read, so I generally use contextual
@@ -193,9 +224,8 @@ export default function FlashCardApp() {
           <h4>Scripts</h4>
           <p>Python, Google API</p>
           <p>
-            I downloaded the 10,000 most frequent English words and, using
-            various APIs, generated Czech translations, pronunciations, and
-            audio files.
+            Translation, pronunciation, and audio files are all generated using
+            Google Translate API and other.
           </p>
         </article>
         {/* Authentication */}
@@ -208,10 +238,10 @@ export default function FlashCardApp() {
           <h4>Database</h4>
           <p>PostgreSQL, Supabase for hosting</p>
           <p>
-            The database schema is quite simple, with just a few tables, but it
-            provides significant flexibility in organizing the practice flow.
-            Generally, some items are grouped together in various grammar blocks
-            and inserted into the basic practice sequence.
+            Basic SQL database schema. It is quite simple, with just a few
+            tables, but it provides significant flexibility in organizing the
+            practice flow. Generally, some items are grouped together in various
+            grammar blocks and inserted into the basic practice sequence.
           </p>
           <Image
             src="/images/007.png"
@@ -267,10 +297,10 @@ export default function FlashCardApp() {
           <h4>Testing</h4>
           <p>Vitest, Jest, React Testing</p>
           <p>
-            I initially created plethora of tests, only to realize that as I was
-            constantly changing features, I ended up spending about 50% of my
-            time rewriting the tests. Once the app stabilizes, I plan to add
-            comprehensive tests to cover all necessary cases.
+            I initially created numerous tests but realized that constant
+            feature changes required rewriting them, consuming about 50% of my
+            time. Once the app stabilizes, I plan to add comprehensive tests to
+            cover all necessary cases.
           </p>
         </article>
       </Section>
@@ -279,16 +309,29 @@ export default function FlashCardApp() {
           <p>
             Technical solution is the easy part. You just need to read the
             manual and apply it. Developing the desired user experience is the
-            hard part. You need to try and test a lot. It’s good to start with
-            the &quot;minimum viable product&quot; and develop from there.
+            hard part.
           </p>
+          <br />
+          <h4>Next time I will continue this way:</h4>
+          <ol>
+            <li>Start with planning as much as possible on paper.</li>
+            <li>
+              Even though planned still work in iteration from &quot;minimum
+              viable product&quot; and get to user testing as fast as possible.
+              Having original plan is great to limit scope, but it will for sure
+              change.
+            </li>
+          </ol>
         </section>
       </Section>
       <Section title="What&#39;s next?">
         <ol>
-          <li>Fill english data.</li>
-          <li>Adding more languages - Spanish and German</li>
-          <li>Release for public</li>
+          <li>Fill english, spanish, and later german data.</li>
+          <li>Test on myself, friends and relatives.</li>
+          <li>
+            If it will prove useful, I will consider finishing it and releasing
+            to public.
+          </li>
         </ol>
       </Section>
     </main>

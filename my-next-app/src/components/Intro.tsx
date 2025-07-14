@@ -34,7 +34,7 @@ export default function Intro() {
       <article className="block">
         <p>
           <strong>Frontend:</strong> HTML, CSS, Tailwind CSS, JavaScript,
-          TypeScript, React, Vite, Vitest
+          TypeScript, React, Vite, Vitest, Wordpress
         </p>
         <p>
           <strong>Backend:</strong> Next.js, Node.js, Express.js, SQL,

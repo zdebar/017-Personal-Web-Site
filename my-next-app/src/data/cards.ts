@@ -9,8 +9,9 @@ export type CardData = {
 export const cards: CardData[] = [
   {
     id: 0,
-    title: "English App",
-    description: "English in more natural, less stressing way.",
+    title: "Language App",
+    description:
+      "Language learning focused on maximizing daily spoken practice repetitions.",
     link: "/projects/0",
   },
 ];
