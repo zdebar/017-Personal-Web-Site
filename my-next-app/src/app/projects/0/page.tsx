@@ -39,17 +39,16 @@ export default function FlashCardApp() {
           </li>
           <li>
             Create &quot;drill lesson&quot; for grammar and vocabulary. Because
-            I am the first tester, and I need to test it on language I dont
-            know, i probably would be or Spanish or German.
+            I am the first tester, and I need to test it on language I don&#39;t
+            know, it probably would be or Spanish or German.
           </li>
         </ol>
         <br />
         <p>
-          Also I want to finish some Leetcode practice. I have done some
-          datastructure and algorithms course, it is easy, but I need practice
-          to automate it. So, 20k english words and Leetcode would take me about
-          2 months, after that I will create new version and continue with
-          development.
+          Also I want to finish some Leetcode practice. I have done
+          datastructure and algorithms course, it is easy, but I need practice.
+          So, 20k english words and Leetcode would take me about 2 months, after
+          that I will create new version and continue with development.
         </p>
       </Section>
       <Section title="Introduction">
