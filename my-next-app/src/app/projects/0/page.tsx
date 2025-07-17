@@ -5,6 +5,40 @@ import Section from "@/components/Section";
 export default function FlashCardApp() {
   return (
     <main className="project-page">
+      <Section title="Links">
+        <div className="links">
+          <a
+            href="https://github.com/zdebar/020-flash-card-app-typescript"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the Flash Card App source code on GitHub
+          </a>
+          <a
+            href="https://020-flash-card-app-typescript.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Try the Flash Card App live on Vercel
+          </a>
+        </div>
+      </Section>
+      <Section
+        title="version v0.2.0"
+        barColor="inactive-bar-color"
+        containerColor="inactive-text-container"
+      >
+        <ul>
+          <h4>Changes</h4>
+          <li>
+            TODO - Redo grammar blocks. For first several practice the blocks
+            are practiced together. Probably via user_blocks table.
+          </li>
+          <li>TODO - Fill in complete English learning data.</li>
+          <li>TODO - Change english IPA generation to more correct version</li>
+          <li>TODO - Incoporate &quot;parts of speech&quot; for clarity</li>
+        </ul>
+      </Section>
       <Section title="version v0.1.0">
         <ul>
           <h4>Changes</h4>
@@ -13,24 +47,20 @@ export default function FlashCardApp() {
         </ul>
         <h4>Testing</h4>
         <p>
-          Testing new version was quite a wake-up call. All flashcard approach
-          works very well for correcting my english pronunctiation, but when I
-          tried it for initial learning of Spanish, memory retention of new
-          words was terrible.
+          I have added support for multiple languages for testing purposes. I
+          cannot test myself properly on English, as I already know it too well.
+          So I added Spanish and German, so I can test it on myself. It works
+          well, If user is disciplined with evaluation of his knowledge. I am
+          not entirely happy how grammar block work, though.
         </p>
-        <h4>Future changes</h4>
-        <ul>
-          <li>
-            Keep flashcard for longtem memory inprint, but it won&#39;t be used
-            for initial learning. Shuffle character of flashcards is great for
-            inprinting words in different context, but bad for initial learning.
-          </li>
-          <li>
-            Create smaller blocks of vocabulary and grammar, that will be first
-            drilled in isolation, before being further practiced with
-            flashcards.
-          </li>
-        </ul>
+        <br />
+        <p>
+          At the moment, every grammar block when is first triggered, will be
+          presented as continuous block only at first time. After that, it will
+          be shuffled among other items. I will change it so it practiced as
+          continuous block several times.
+        </p>
+
         <h4>Next steps</h4>
         <ol>
           <li>
@@ -38,18 +68,11 @@ export default function FlashCardApp() {
             at least 20k english words.
           </li>
           <li>
-            Create &quot;drill lesson&quot; for grammar and vocabulary. Because
-            I am the first tester, and I need to test it on language I don&#39;t
-            know, it probably would be or Spanish or German.
+            Change grammar blocks feature. Every block should be at first
+            practiced independently.
           </li>
         </ol>
         <br />
-        <p>
-          Also I want to finish some Leetcode practice. I have done
-          datastructure and algorithms course, it is easy, but I need practice.
-          So, 20k english words and Leetcode would take me about 2 months, after
-          that I will create new version and continue with development.
-        </p>
       </Section>
       <Section title="Introduction">
         <p>
@@ -88,24 +111,7 @@ export default function FlashCardApp() {
           practice, and most people do not struggle with it.
         </li>
       </Section>
-      <Section title="Links">
-        <div className="links">
-          <a
-            href="https://github.com/zdebar/020-flash-card-app-typescript"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View the Flash Card App source code on GitHub
-          </a>
-          <a
-            href="https://020-flash-card-app-typescript.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Try the Flash Card App live on Vercel
-          </a>
-        </div>
-      </Section>
+
       <Section title="Home Screen">
         <Image
           src="/images/001.png"
@@ -322,16 +328,6 @@ export default function FlashCardApp() {
             </li>
           </ol>
         </section>
-      </Section>
-      <Section title="What&#39;s next?">
-        <ol>
-          <li>Fill english, spanish, and later german data.</li>
-          <li>Test on myself, friends and relatives.</li>
-          <li>
-            If it will prove useful, I will consider finishing it and releasing
-            to public.
-          </li>
-        </ol>
       </Section>
     </main>
   );
