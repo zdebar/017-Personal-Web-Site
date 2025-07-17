@@ -47,20 +47,20 @@ export default function FlashCardApp() {
         </ul>
         <h4>Testing</h4>
         <p>
-          I have added support for multiple languages for testing purposes. I
-          cannot test myself properly on English, as I already know it too well.
-          So I added Spanish and German, so I can test it on myself. It works
-          well, If user is disciplined with evaluation of his knowledge. I am
-          not entirely happy how grammar block work, though.
+          I have added support for multiple languages for testing purposes.
+          Since I already know English too well, I cannot properly test myself
+          on it. Therefore, I added Spanish and German to test the app on
+          myself. It works well if the user is disciplined in evaluating their
+          knowledge. However, I am not entirely satisfied with how the grammar
+          blocks function.
         </p>
         <br />
         <p>
-          At the moment, every grammar block when is first triggered, will be
-          presented as continuous block only at first time. After that, it will
-          be shuffled among other items. I will change it so it practiced as
+          Currently, when a grammar block is first triggered, it is presented as
+          a continuous block only the first time. After that, it is shuffled
+          among other items. I plan to change this so that it is practiced as a
           continuous block several times.
         </p>
-
         <h4>Next steps</h4>
         <ol>
           <li>
