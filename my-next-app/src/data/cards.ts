@@ -17,8 +17,7 @@ export const cards: CardData[] = [
   {
     id: 1,
     title: "Leetcode 19 / 75",
-    description:
-      "Basic Data Structures and Algorithms practice.Leetcode 75 is a curated list of 75 essential problems.",
+    description: "Basic Data Structures and Algorithms practice.",
     link: "/projects/1",
   },
 ];

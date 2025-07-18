@@ -34,6 +34,8 @@ export default function FlashCardApp() {
           <li>TODO - Fill in complete English learning data.</li>
           <li>TODO - Change english IPA generation to more correct version</li>
           <li>TODO - Context guide switchable by user</li>
+          <li>TODO - Integrate &quot;parts of speech&quot; table</li>
+          <li>Added daily finished blocks on PracticeCard</li>
         </ul>
       </Section>
       <Section title="version v0.1.0">
