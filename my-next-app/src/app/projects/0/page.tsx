@@ -23,21 +23,6 @@ export default function FlashCardApp() {
           </a>
         </div>
       </Section>
-      <Section
-        title="version v0.2.0"
-        barColor="inactive-bar-color"
-        containerColor="inactive-text-container"
-      >
-        <ul>
-          <h4>Changes</h4>
-          <li>TODO - Redo grammar blocks</li>
-          <li>TODO - Fill in complete English learning data.</li>
-          <li>TODO - Change english IPA generation to more correct version</li>
-          <li>TODO - Context guide switchable by user</li>
-          <li>TODO - Integrate &quot;parts of speech&quot; table</li>
-          <li>Added daily finished blocks on PracticeCard</li>
-        </ul>
-      </Section>
       <Section title="version v0.1.0">
         <ul>
           <h4>Changes</h4>
@@ -50,25 +35,14 @@ export default function FlashCardApp() {
           Since I already know English too well, I cannot properly test myself
           on it. Therefore, I added Spanish to test the app on myself. It works
           well if the user is disciplined in evaluating their knowledge.
-          However, I am not entirely satisfied with how the grammar blocks
-          function.
         </p>
-        <br />
-        <p>
-          Currently, when a grammar block is first triggered, it is presented as
-          a continuous block only the first time. After that, it is shuffled
-          among other items. I plan to change this so that it is practiced as a
-          continuous block several times.
-        </p>
+
         <h4>Next steps</h4>
         <ol>
           <li>
-            Finish my own english pronunciation correction - create and practice
-            at least 20k english words.
-          </li>
-          <li>
-            Change grammar blocks feature. Every block should be at first
-            practiced independently.
+            I will continue practicing my own english pronunciation (that was
+            original goal anyway), otherwise I will let it rest for a while
+            until personal need for more upgrades arises.
           </li>
         </ol>
         <br />

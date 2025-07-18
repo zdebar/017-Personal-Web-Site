@@ -1,4 +1,5 @@
 .project-list li {
+  font-size: 0.9rem;
   display: grid;
   grid-template-columns: 200px 100px;
   gap: 10px;
