@@ -10,8 +10,8 @@ export default function FlashCardApp() {
         <p>
           I already did basic data structures and algorithms course. It is quite
           easy, I just need some practice to properly memorize them. I decided
-          to Leetcode 75, which is a curated list of 75 essential problems. I
-          will
+          to complete Leetcode 75, which is a curated list of 75 essential
+          problems.
         </p>
         <br />
         <h4></h4>
