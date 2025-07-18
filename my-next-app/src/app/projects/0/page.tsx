@@ -30,29 +30,26 @@ export default function FlashCardApp() {
       >
         <ul>
           <h4>Changes</h4>
-          <li>
-            TODO - Redo grammar blocks. For first several practice the blocks
-            are practiced together. Probably via user_blocks table.
-          </li>
+          <li>TODO - Redo grammar blocks</li>
           <li>TODO - Fill in complete English learning data.</li>
           <li>TODO - Change english IPA generation to more correct version</li>
-          <li>TODO - Incoporate &quot;parts of speech&quot; for clarity</li>
+          <li>TODO - Context guide switchable by user</li>
         </ul>
       </Section>
       <Section title="version v0.1.0">
         <ul>
           <h4>Changes</h4>
-          <li>Added multiple languages support (added Spanish vocabulary)</li>
+          <li>Added multiple languages support (with Spanish vocabulary)</li>
           <li>Added skip button</li>
         </ul>
         <h4>Testing</h4>
         <p>
           I have added support for multiple languages for testing purposes.
           Since I already know English too well, I cannot properly test myself
-          on it. Therefore, I added Spanish and German to test the app on
-          myself. It works well if the user is disciplined in evaluating their
-          knowledge. However, I am not entirely satisfied with how the grammar
-          blocks function.
+          on it. Therefore, I added Spanish to test the app on myself. It works
+          well if the user is disciplined in evaluating their knowledge.
+          However, I am not entirely satisfied with how the grammar blocks
+          function.
         </p>
         <br />
         <p>
@@ -103,7 +100,8 @@ export default function FlashCardApp() {
           Although there is a recommended amount of daily practice, there is no
           strict limit. You can practice for one minute or 10 hours per day.
           This makes it easy to start practicing at any time of the day. Overall
-          daily practice time will quickly start to pile up.
+          daily practice time will quickly start to pile up allowing full
+          immersion in learned language.
         </li>
         <h4>Listening and speaking</h4>
         <li>

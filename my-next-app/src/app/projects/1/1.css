@@ -1,0 +1,9 @@
+.project-list li {
+  display: grid;
+  grid-template-columns: 200px 100px;
+  gap: 10px;
+}
+
+.crossed {
+  color: lightgray;
+}

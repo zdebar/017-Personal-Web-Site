@@ -1,4 +1,5 @@
 import "../Projects.css";
+import "./1.css";
 
 import Section from "@/components/Section";
 
@@ -8,15 +9,28 @@ export default function FlashCardApp() {
       <Section title="Leetcode 75">
         <p>
           I wanted to ensure a solid understanding of data structures and
-          algorithms through basic Leetcode practice, primarily using Python.
+          algorithms through basic Leetcode practice. Leetcode 75 is a curated
+          list of 75 essential problems.
         </p>
         <br />
         <h4></h4>
-        <ul>
-          <li className="crossed">Array / String - 17.07.25</li>
-          <li className="crossed">Two pointers - 17.07.25</li>
-          <li>Sliding Window</li>
-          <li>Prefix Sum</li>
+        <ul className="project-list">
+          <li className="crossed">
+            <span>Array / String</span>
+            <span>17.07.25</span>
+          </li>
+          <li className="crossed">
+            <span>Two pointers</span>
+            <span>17.07.25</span>
+          </li>
+          <li className="crossed">
+            <span>Sliding Window</span>
+            <span>18.07.25</span>
+          </li>
+          <li className="crossed">
+            <span>Prefix Sum</span>
+            <span>18.07.25</span>
+          </li>
           <li>Hash Map / Set</li>
           <li>Stack</li>
           <li>Queue</li>

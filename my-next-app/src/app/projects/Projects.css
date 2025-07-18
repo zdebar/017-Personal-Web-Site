@@ -33,8 +33,3 @@ li {
   margin-left: 20px;
   font-size: 0.9rem;
 }
-
-.crossed {
-  text-decoration: line-through;
-  color: gray;
-}
