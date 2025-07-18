@@ -48,7 +48,7 @@ export default function FlashCardApp() {
           <li>DP – Multimensional</li>
           <li>Bit Manipulation</li>
           <li>Trie</li>
-          <li>Interavals</li>
+          <li>Intervals</li>
           <li>Monotonic Stack</li>
         </ul>
         <br />

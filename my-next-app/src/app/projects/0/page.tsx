@@ -191,11 +191,6 @@ export default function FlashCardApp() {
           I tested several tools (Vosk, Gentle, Google Speech-to-Text API). All
           are too inaccurate to be really useful.
         </p>
-        <h4>Vocabulary overview</h4>
-        <p>
-          Tested a vocabulary overview page with filters, etc. It was
-          unnecessary. It just overwhelmed users with too much information.
-        </p>
       </Section>
       <Section title="Technical">
         {/* Scripts */}
