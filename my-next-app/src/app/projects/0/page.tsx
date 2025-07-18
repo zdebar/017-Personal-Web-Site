@@ -34,7 +34,7 @@ export default function FlashCardApp() {
           I have added support for multiple languages for testing purposes.
           Since I already know English too well, I cannot properly test myself
           on it. Therefore, I added Spanish to test the app on myself. It works
-          well if the user is disciplined in evaluating their knowledge.
+          well if the user is disciplined in evaluating his knowledge.
         </p>
 
         <h4>Next steps</h4>
