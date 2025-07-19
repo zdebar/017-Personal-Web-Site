@@ -23,36 +23,12 @@ export default function FlashCardApp() {
           </a>
         </div>
       </Section>
-      <Section title="version v0.1.0">
-        <ul>
-          <h4>Changes</h4>
-          <li>Added multiple languages support (with Spanish vocabulary)</li>
-          <li>Added skip button</li>
-        </ul>
-        <h4>Testing</h4>
-        <p>
-          I have added support for multiple languages for testing purposes.
-          Since I already know English too well, I cannot properly test myself
-          on it. Therefore, I added Spanish to test the app on myself. It works
-          well if the user is disciplined in evaluating his knowledge.
-        </p>
 
-        <h4>Next steps</h4>
-        <ol>
-          <li>
-            I will continue practicing my own english pronunciation (that was
-            original goal anyway), otherwise I will let it rest for a while
-            until personal need for more upgrades arises.
-          </li>
-        </ol>
-        <br />
-      </Section>
       <Section title="Introduction">
         <p>
           I was dissatisfied with existing language learning apps and wanted to
-          create a simple app that focuses only on the features I find useful.
-          Just focus on most important features and ideally lower time to
-          passive knowledge to minimum.
+          create a simple app just for myself. Hopefully it will help me improve
+          my english pronunciation and potentially learn other languages.
         </p>
       </Section>
       <Section title="Main Idea">
@@ -76,13 +52,12 @@ export default function FlashCardApp() {
           Although there is a recommended amount of daily practice, there is no
           strict limit. You can practice for one minute or 10 hours per day.
           This makes it easy to start practicing at any time of the day. Overall
-          daily practice time will quickly start to pile up allowing full
-          immersion in learned language.
+          daily practice time will quickly start to pile up.
         </li>
         <h4>Listening and speaking</h4>
         <li>
           Exclusive emphasis on listening and speaking. Writing slows down
-          practice, and most people do not struggle with it.
+          practice, and it is relative very easy compared to speaking.
         </li>
       </Section>
 
@@ -280,23 +255,57 @@ export default function FlashCardApp() {
       </Section>
       <Section title="What I've learned">
         <section className="group">
-          <p>
-            Technical solution is the easy part. You just need to read the
-            manual and apply it. Developing the desired user experience is the
-            hard part.
-          </p>
-          <br />
-          <h4>Next time I will continue this way:</h4>
           <ol>
-            <li>Start with planning as much as possible on paper.</li>
             <li>
-              Even though planned still work in iteration from &quot;minimum
-              viable product&quot; and get to user testing as fast as possible.
-              Having original plan is great to limit scope, but it will for sure
-              change.
+              The technical solution is the easy part; the real challenge lies
+              in properly defining the desired features.
+            </li>
+            <br />
+            <li>
+              Start with a &quot;minimum viable product.&quot; Even if you have
+              a plan, it will likely change as soon as you begin testing.
+            </li>
+            <br />
+            <li>
+              Feature creep is a real issue. Even now, I feel the urge to add
+              more features. It&#39;s better to sit down and plan carefully on
+              paper, as most ideas often turn out to be unnecessary in practice.
+            </li>
+            <br />
+            <li>
+              Writing clean code saves a lot of time in the long run. It&#39;s
+              worth taking the time to think things through and redo work
+              properly instead of rushing.
             </li>
           </ol>
         </section>
+      </Section>
+      <Section title="version v0.1.0">
+        <ul>
+          <h4>Changes</h4>
+          <li>Added multiple languages support</li>
+          <li>Added skip button</li>
+        </ul>
+        <h4>Testing</h4>
+        <p>
+          I have added support for multiple languages for testing purposes.
+          Since I already know English too well, I cannot properly test myself
+          on it. Therefore, I added Spanish to test the app on myself. It works
+          well if the user is disciplined in evaluating his knowledge.
+        </p>
+      </Section>
+      <Section title="version v0.2.0">
+        <h4>Changes</h4>
+        <ul>
+          <li>UI changes - more information on Practice Card</li>
+          <li>Winstong logger changes</li>
+        </ul>
+        <h4>Missing data</h4>
+        <p>
+          The app just needs to be filled with more data. I already did some
+          english and spanish words, but in the future I will look for
+          cooperation with someone who specialize in specific languages.
+        </p>
       </Section>
     </main>
   );

@@ -8,30 +8,16 @@ export default function FlashCardApp() {
     <main className="project-page">
       <Section title="Leetcode 75">
         <p>
-          I already did basic data structures and algorithms course. It is quite
-          easy, I just need some practice to properly memorize them. I decided
-          to complete Leetcode 75, which is a curated list of 75 essential
-          problems.
+          I already did basic data structures and algorithms course to know
+          basics of Computer Science. I decided to complete Leetcode 75, which
+          is a curated list of 75 essential problems divided into 22 groups.
         </p>
         <br />
-        <h4></h4>
-        <ul className="project-list">
-          <li className="crossed">
-            <span>Array / String</span>
-            <span>17.07.25</span>
-          </li>
-          <li className="crossed">
-            <span>Two pointers</span>
-            <span>17.07.25</span>
-          </li>
-          <li className="crossed">
-            <span>Sliding Window</span>
-            <span>18.07.25</span>
-          </li>
-          <li className="crossed">
-            <span>Prefix Sum</span>
-            <span>18.07.25</span>
-          </li>
+        <ol className="project-list">
+          <li className="crossed">Array / String</li>
+          <li>Two pointers</li>
+          <li>Sliding Window</li>
+          <li>Prefix Sum</li>
           <li>Hash Map / Set</li>
           <li>Stack</li>
           <li>Queue</li>
@@ -50,8 +36,7 @@ export default function FlashCardApp() {
           <li>Trie</li>
           <li>Intervals</li>
           <li>Monotonic Stack</li>
-        </ul>
-        <br />
+        </ol>
       </Section>
     </main>
   );
