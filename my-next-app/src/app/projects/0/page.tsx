@@ -312,26 +312,17 @@ export default function FlashCardApp() {
         </p>
       </Section>
       <Section
-        title="version v0.3.0"
+        title="what's next"
         barColor="inactive-bar-color"
         containerColor="inactive-text-container"
       >
-        <h4>Changes</h4>
-        <ul>
-          <li>
-            TODO - Improve IPA transcription. Especially english is sometimes
-            off
-          </li>
-          <li>
-            TODO - Add more content. English grammar, basic german vocabulary.
-          </li>
-          <li>
-            TODO - Redo grammar blocks, lesson. I will remake entire structure
-            to something more universal. Probably reintroduce lessson. After all
-            they create certain structure, and finishing them provides
-            satisfying feedback to user.
-          </li>
-        </ul>
+        <p>
+          Right now probably nothing. But in the future I will probalby redo in
+          into more flexible learning app with not just only english, but also
+          basic math etc. In my opinion biggest failure of current education is
+          that most of it completely useless, and more valuable time for kids it
+          is employment programn for just another state employees.
+        </p>
       </Section>
     </main>
   );

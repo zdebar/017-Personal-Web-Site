@@ -12,12 +12,13 @@
   justify-content: start;
   padding: 0px 20px;
   color: white;
-  border-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
 .default-bar-color {
   background: linear-gradient(90deg, #f66235, #f4382e);
-  box-shadow: var(--card-shadow);
+  /* box-shadow: var(--card-shadow); */
 }
 
 .inactive-bar-color {
@@ -26,10 +27,14 @@
 
 .text-container {
   padding: 20px;
-  border: 1px dashed #f4382e;
-  border-radius: var(--border-radius);
+
+  border-left: 1px dashed #f4382e;
+  border-right: 1px dashed #f4382e;
+  border-bottom: 1px dashed #f4382e;
 }
 
 .inactive-text-container {
-  border: 1px dashed #969696;
+  border-left: 1px dashed #969696;
+  border-right: 1px dashed #969696;
+  border-bottom: 1px dashed #969696;
 }
