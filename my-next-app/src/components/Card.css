@@ -6,7 +6,8 @@
   min-height: 220px;
   padding: 0px 10px;
   margin: 10px 0px;
-  background: linear-gradient(90deg, #f66235, #f4382e);
+  /* background: linear-gradient(90deg, #f66235, #f4382e); */
+  background: linear-gradient(90deg, var(--card-color-1), var(--card-color-2));
   box-shadow: var(--card-shadow);
   border-radius: var(--border-radius);
 

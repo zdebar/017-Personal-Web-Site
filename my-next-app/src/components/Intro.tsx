@@ -4,7 +4,7 @@ export default function Intro() {
   return (
     <section>
       <div className="title">
-        <h1 className="nowrap" id="intro">
+        <h1 className="nowrap">
           <span>Hi, I&apos;m</span> <span>Zdeněk Barth</span>
         </h1>
         <h1 className="nowrap">
@@ -20,7 +20,7 @@ export default function Intro() {
         </p>
         <br />
         <p>
-          Latest project is below. Rest is on my{" "}
+          Latest projects are listed below. Rest is on my{" "}
           <a
             href="https://github.com/zdebar"
             target="_blank"

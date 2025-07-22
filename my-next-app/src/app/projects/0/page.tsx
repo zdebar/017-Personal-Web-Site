@@ -28,14 +28,17 @@ export default function FlashCardApp() {
         <p>
           I was dissatisfied with existing language learning apps and wanted to
           create a simple app just for myself. Hopefully it will help me improve
-          my english pronunciation and potentially learn other languages.
+          my english pronunciation and potentially help others.
         </p>
       </Section>
       <Section title="Main Idea">
         <p>
           Ultimately, learning languages is about the sheer amount of practice
-          repetition to fully internalize knowledge. With fast pace it is easily
-          achievable to practice 1,000 words or 500 sentences per hour.
+          repetition. With fast pace it is easily achievable to practice 1,000
+          words or 500 sentences per hour. And with fast pace I can achieve the
+          same learning daily effect with fraction of time. I generally consider
+          better to have the same learning effect from 10 minute drill than from
+          1 hour of fun.
         </p>
         <br />
         <p>
@@ -44,21 +47,22 @@ export default function FlashCardApp() {
         </p>
         <h4>Flashcards</h4>
         <li>
-          The most time-efficient method, enabling a fast-paced practice. Both
-          vocabulary and grammar is taught in one continuous flow of flashcards.
-        </li>
-        <h4>No fix schedule</h4>
-        <li>
-          Although there is a recommended amount of daily practice, there is no
-          strict limit. You can practice for one minute or 10 hours per day.
-          This makes it easy to start practicing at any time of the day. Overall
-          daily practice time will quickly start to pile up.
+          Flascard is most time-efficient method, enabling a fast-paced
+          practice. Both vocabulary and grammar is taught in one continuous flow
+          of flashcards. No time is wasted on suboptimal methods like crosswords
+          or multiple choice questions. They may be fun, but with flashcards you
+          will get the same practice in smaller amount of time.
         </li>
         <h4>Listening and speaking</h4>
         <li>
           Exclusive emphasis on listening and speaking. Writing slows down
           practice, and it is relative very easy compared to speaking.
         </li>
+        <br />
+        <p>
+          It is actually not complicated. It&#39;s all about short fast paced
+          practice , with exclusive focus on listening and speaking.
+        </p>
       </Section>
 
       <Section title="Home Screen">
@@ -110,7 +114,8 @@ export default function FlashCardApp() {
           Tracks your progress over the last two CEFR levels and monitors
           repetition blocks for the past five days. Each bar represents 100
           practice blocks, with 10 items per block. The recommended goal is
-          1,000 repetitions per day.
+          1,000 repetitions per day. Split it throughout the day anyway you
+          like.
         </p>
       </Section>
       <Section title="Practice Card">
@@ -164,7 +169,9 @@ export default function FlashCardApp() {
         <h4>Automatic pronunciation feedback</h4>
         <p>
           I tested several tools (Vosk, Gentle, Google Speech-to-Text API). All
-          are too inaccurate to be really useful.
+          are too inaccurate to be really useful. It would be great if can I get
+          immediate feedback about my pronunciation, but at least listening and
+          immediately repeating works also quite well.
         </p>
       </Section>
       <Section title="Technical">
@@ -257,7 +264,7 @@ export default function FlashCardApp() {
         <section className="group">
           <ol>
             <li>
-              The technical solution is the easy part; the real challenge lies
+              The technical solution is the easy part. The real challenge lies
               in properly defining the desired features.
             </li>
             <br />
@@ -267,15 +274,10 @@ export default function FlashCardApp() {
             </li>
             <br />
             <li>
-              Feature creep is a real issue. Even now, I feel the urge to add
-              more features. It&#39;s better to sit down and plan carefully on
-              paper, as most ideas often turn out to be unnecessary in practice.
-            </li>
-            <br />
-            <li>
               Writing clean code saves a lot of time in the long run. It&#39;s
               worth taking the time to think things through and redo work
-              properly instead of rushing.
+              properly instead of rushing. Haste is probably my biggest
+              weakness.
             </li>
           </ol>
         </section>
@@ -298,7 +300,7 @@ export default function FlashCardApp() {
         <h4>Changes</h4>
         <ul>
           <li>UI changes - more information on Practice Card</li>
-          <li>Winstong logger changes</li>
+          <li>Winston logger changes</li>
         </ul>
         <h4>Missing data</h4>
         <p>
@@ -306,6 +308,28 @@ export default function FlashCardApp() {
           english and spanish words, but in the future I will look for
           cooperation with someone who specialize in specific languages.
         </p>
+      </Section>
+      <Section
+        title="version v0.3.0"
+        barColor="inactive-bar-color"
+        containerColor="inactive-text-container"
+      >
+        <h4>Changes</h4>
+        <ul>
+          <li>
+            TODO - Improve IPA transcription. Especially english is sometimes
+            off
+          </li>
+          <li>
+            TODO - Add more content. English grammar, basic german vocabulary.
+          </li>
+          <li>
+            TODO - Redo grammar blocks, lesson. I will remake entire structure
+            to something more universal. Probably reintroduce lessson. After all
+            they create certain structure, and finishing them provides
+            satisfying feedback to user.
+          </li>
+        </ul>
       </Section>
     </main>
   );

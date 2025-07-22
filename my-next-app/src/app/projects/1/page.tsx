@@ -8,20 +8,21 @@ export default function FlashCardApp() {
     <main className="project-page">
       <Section title="Leetcode 75">
         <p>
-          I already did basic data structures and algorithms course to know
-          basics of Computer Science. I decided to complete Leetcode 75, which
-          is a curated list of 75 essential problems divided into 22 groups.
+          I already did basic data structures and algorithms course. It
+          isn&#39;t hard at all, but having actual practice in applying is quite
+          different. So I decided to continue with Leetcode 75, which is a
+          curated list of 75 essential problems divided into 22 categories.
         </p>
         <br />
         <ol className="project-list">
           <li className="crossed">Array / String</li>
-          <li>Two pointers</li>
-          <li>Sliding Window</li>
-          <li>Prefix Sum</li>
-          <li>Hash Map / Set</li>
-          <li>Stack</li>
-          <li>Queue</li>
-          <li>Linked List</li>
+          <li className="crossed">Two pointers</li>
+          <li className="crossed">Sliding Window</li>
+          <li className="crossed">Prefix Sum</li>
+          <li className="crossed">Hash Map / Set</li>
+          <li className="crossed">Stack</li>
+          <li className="crossed">Queue</li>
+          <li className="crossed">Linked List</li>
           <li>Binary Tree – DFS</li>
           <li>Binary Tree – BFS</li>
           <li>Binary Search Tree</li>
