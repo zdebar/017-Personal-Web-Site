@@ -35,14 +35,13 @@ export default function FlashCardApp() {
         <p>
           Ultimately, learning languages is about the sheer amount of practice
           repetition. With fast pace it is easily achievable to practice 1,000
-          words or 500 sentences per hour. And with fast pace I can achieve the
-          same learning daily effect with fraction of time. I generally consider
-          better to have the same learning effect from 10 minute drill than from
-          1 hour of fun.
+          words or 500 sentences per hour. I generally consider better to have
+          the same learning effect from 10 minute drill than from 1 hour of
+          varied practice.
         </p>
         <br />
         <p>
-          Basis structure is similar to common language learning approaches, so
+          Basic structure is similar to common language learning approaches, so
           I will only emphasize key differences:
         </p>
         <h4>Flashcards</h4>
@@ -50,18 +49,21 @@ export default function FlashCardApp() {
           Flascard is most time-efficient method, enabling a fast-paced
           practice. Both vocabulary and grammar is taught in one continuous flow
           of flashcards. No time is wasted on suboptimal methods like crosswords
-          or multiple choice questions. They may be fun, but with flashcards you
-          will get the same practice in smaller amount of time.
+          or multiple choice questions. They may be more fun, but with
+          flashcards you will get the better practice and in shorter span of
+          time.
         </li>
         <h4>Listening and speaking</h4>
         <li>
           Exclusive emphasis on listening and speaking. Writing slows down
-          practice, and it is relative very easy compared to speaking.
+          practice, and it is relatively easy compared to speaking.
         </li>
         <br />
         <p>
-          It is actually not complicated. It&#39;s all about short fast paced
-          practice , with exclusive focus on listening and speaking.
+          The app is actually not complicated. It&#39;s all about short fast
+          paced flashcard practice , with exclusive focus on listening and
+          speaking. I my experience well designed simple product is always
+          superior to complexity.
         </p>
       </Section>
 
