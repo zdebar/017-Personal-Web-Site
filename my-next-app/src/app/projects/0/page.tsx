@@ -22,6 +22,11 @@ export default function FlashCardApp() {
             Try the Flash Card App live on Vercel
           </a>
         </div>
+        <br />
+        <p>
+          English contains most vocabulary and some grammar blocks. Spanish some
+          vocabulary. German right now nothing.
+        </p>
       </Section>
 
       <Section title="Introduction">
@@ -317,11 +322,8 @@ export default function FlashCardApp() {
         containerColor="inactive-text-container"
       >
         <p>
-          Right now probably nothing. But in the future I will probalby redo in
-          into more flexible learning app with not just only english, but also
-          basic math etc. In my opinion biggest failure of current education is
-          that most of it completely useless, and more valuable time for kids it
-          is employment programn for just another state employees.
+          Right now? Nothing. But in the future I will likely redo in into more
+          flexible learning app.
         </p>
       </Section>
     </main>
