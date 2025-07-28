@@ -4,6 +4,12 @@
   color: blue;
 }
 
+@media (prefers-color-scheme: dark) {
+  .links {
+    color: #1e90ff;
+  }
+}
+
 .screenshot {
   width: 280px;
   height: 498px;

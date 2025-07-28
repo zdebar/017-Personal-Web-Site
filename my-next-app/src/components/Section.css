@@ -17,7 +17,7 @@
 }
 
 .default-bar-color {
-  background: linear-gradient(90deg, #f66235, #f4382e);
+  background: linear-gradient(90deg, var(--card-color-1), var(--card-color-2));
   /* box-shadow: var(--card-shadow); */
 }
 

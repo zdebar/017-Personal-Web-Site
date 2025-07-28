@@ -6,22 +6,22 @@
 
 /* Light and Dark modes */
 @media (prefers-color-scheme: dark) {
-  body {
-    --background-color: #030712;
+  :root {
+    --background-color: #17191c;
     --color: #ffffff;
     --card-grid-border: var(--color) 2px solid;
     --card-shadow: none;
-    --card-color-1: #e5562f;
-    --card-color-2: #d32c28;
+    --card-color-1: #d32c28;
+    --card-color-2: #e5562f;
   }
 }
 
 @media (prefers-color-scheme: light) {
-  body {
+  :root {
     --background-color: white;
     --color: black;
     --card-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
-    --card-color-1: #f66235;
-    --card-color-2: #f4382e;
+    --card-color-1: #d32c28;
+    --card-color-2: #e5562f;
   }
 }

@@ -22,54 +22,41 @@ export default function FlashCardApp() {
             Try the Flash Card App live on Vercel
           </a>
         </div>
-        <br />
-        <p>
-          English contains most vocabulary and some grammar blocks. Spanish some
-          vocabulary. German right now nothing.
-        </p>
       </Section>
 
       <Section title="Introduction">
         <p>
-          I was dissatisfied with existing language learning apps and wanted to
-          create a simple app just for myself. Hopefully it will help me improve
-          my english pronunciation and potentially help others.
+          I just need simple language learning app to improve my vocabulary and
+          pronunciation. No app that I tested fits the bill. So I decided do one
+          myself.
         </p>
       </Section>
       <Section title="Main Idea">
         <p>
-          Ultimately, learning languages is about the sheer amount of practice
-          repetition. With fast pace it is easily achievable to practice 1,000
-          words or 500 sentences per hour. I generally consider better to have
-          the same learning effect from 10 minute drill than from 1 hour of
-          varied practice.
+          In my opinion, learning languages is about the sheer amount of
+          practice repetition. And I personally prefer to get these repetitions
+          in fast paced 10 min drill than in hour long learning game. With fast
+          pace it is easily achievable to practice 200 words or 10 sentences in
+          10 minutes.
         </p>
         <br />
         <p>
-          Basic structure is similar to common language learning approaches, so
-          I will only emphasize key differences:
+          Basic approach is similar to common language learning approaches, so I
+          will only emphasize key differences:
         </p>
         <h4>Flashcards</h4>
         <li>
           Flascard is most time-efficient method, enabling a fast-paced
           practice. Both vocabulary and grammar is taught in one continuous flow
-          of flashcards. No time is wasted on suboptimal methods like crosswords
-          or multiple choice questions. They may be more fun, but with
-          flashcards you will get the better practice and in shorter span of
-          time.
+          of flashcards. No time is wasted on methods like crosswords or games.
+          They may be more fun, but with flashcards you will get the better
+          practice and in shorter span of time.
         </li>
         <h4>Listening and speaking</h4>
         <li>
           Exclusive emphasis on listening and speaking. Writing slows down
           practice, and it is relatively easy compared to speaking.
         </li>
-        <br />
-        <p>
-          The app is actually not complicated. It&#39;s all about short fast
-          paced flashcard practice , with exclusive focus on listening and
-          speaking. I my experience well designed simple product is always
-          superior to complexity.
-        </p>
       </Section>
 
       <Section title="Home Screen">
@@ -316,15 +303,21 @@ export default function FlashCardApp() {
           cooperation with someone who specialize in specific languages.
         </p>
       </Section>
-      <Section
-        title="what's next"
-        barColor="inactive-bar-color"
-        containerColor="inactive-text-container"
-      >
-        <p>
-          Right now? Nothing. But in the future I will likely redo in into more
-          flexible learning app.
-        </p>
+      <Section title="version v0.3.0">
+        <h4>Changes</h4>
+        <ul>
+          <li>
+            Added options to reset progress of - language, grammar block,
+            individual vocabulary
+          </li>
+        </ul>
+      </Section>
+      <Section title="version v0.4.0">
+        <h4>Changes</h4>
+        <ul>
+          <li>Added userDashboard help</li>
+          <li>Complete refactor of backend and frontend</li>
+        </ul>
       </Section>
     </main>
   );

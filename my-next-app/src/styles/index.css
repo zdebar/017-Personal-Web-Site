@@ -17,7 +17,7 @@ body {
   max-width: 700px;
   min-width: 300px;
   margin: 0 auto;
-  padding: 5px;
+  padding: 0 20px;
   line-height: 1.6;
   background-color: var(--background-color);
   color: var(--color);
@@ -30,7 +30,7 @@ footer {
 
 main {
   min-height: 75vh;
-  margin: 30px 0px;
+  margin: 0px 0px;
 }
 
 /* Text Styles */
@@ -78,6 +78,7 @@ p {
 
 /* Links and anchor tags */
 a {
+  text-color: white;
   text-decoration: none;
   color: inherit;
   font-size: 1rem;
