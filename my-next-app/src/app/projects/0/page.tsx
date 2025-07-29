@@ -27,8 +27,8 @@ export default function FlashCardApp() {
       <Section title="Introduction">
         <p>
           I just need simple language learning app to improve my vocabulary and
-          pronunciation. No app that I tested fits the bill. So I decided do one
-          myself.
+          pronunciation. No app that I tested fits my demands. Therefore I&#39;m
+          making one myself.
         </p>
       </Section>
       <Section title="Main Idea">
@@ -318,6 +318,20 @@ export default function FlashCardApp() {
           <li>Added userDashboard help</li>
           <li>Complete refactor of backend and frontend</li>
         </ul>
+      </Section>
+      <Section title="version v0.5.0">
+        <h4>Changes</h4>
+        <ul>
+          <li>Added User Avator Picture from Google Accounts</li>
+          <li>Added word count information to WordList</li>
+          <li>UI - multiple small changes</li>
+        </ul>
+        <h4>What&#39;s next?</h4>
+        <p>
+          I am stopping with constant subtle improvement. Features creep is
+          real. Next goal is fill english data with about 10k words and 10k
+          sentences.
+        </p>
       </Section>
     </main>
   );

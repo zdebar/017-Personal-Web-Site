@@ -9,8 +9,8 @@ export default function FlashCardApp() {
       <Section title="Leetcode 75">
         <p>
           I already did basic data structures and algorithms course. It
-          isn&#39;t hard at all, but I need some actual practice. So I decided
-          to continue with Leetcode 75, which is a curated list of 75 essential
+          isn&#39;t hard at all, but I practice is needed. So I decided to
+          continue with Leetcode 75, which is a curated list of 75 essential
           problems divided into 22 categories.
         </p>
         <br />
