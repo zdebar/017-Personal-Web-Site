@@ -10,18 +10,18 @@ export type CardData = {
 export const cards: CardData[] = [
   {
     id: 0,
-    title: "Language App v0.5.0",
+    title: "Language App v0.6.0",
     description:
-      "Focus on fast practice drill. Up to 200 words or 100 sentences per 10 minutes of practice.",
-    date: "2025-07-29",
+      "Fast practice drill. Up to 400 words or 100 sentences in 20 minutes of practice.",
+    date: "2025-08-04",
     link: "/projects/0",
   },
   {
     id: 1,
-    title: "Leetcode 32 / 75",
+    title: "Leetcode 35 / 75",
     description:
       "Basic Data Structures and Algorithms practice with Leetcode 75.",
-    date: "2025-07-19",
+    date: "2025-04-08",
     link: "/projects/1",
   },
 ];

@@ -326,12 +326,20 @@ export default function FlashCardApp() {
           <li>Added word count information to WordList</li>
           <li>UI - multiple small changes</li>
         </ul>
-        <h4>What&#39;s next?</h4>
-        <p>
-          I am stopping with constant subtle improvement. Features creep is
-          real. Next goal is fill english data with about 10k words and 10k
-          sentences.
-        </p>
+      </Section>
+      <Section title="version v0.6.0">
+        <h4>Changes</h4>
+        <ul>
+          <li>Added WordCard - new component for individual WordList items</li>
+          <li>
+            Added HelpOverlay - moved help icon just outside of card outline
+          </li>
+          <li>
+            Disabled language options - for now focus only on English language
+          </li>
+          <li>UserRestart - moved to UserOverview from UserSettings</li>
+          <li>Changes to - UserAvatar, Light mode colors, UserDashboard </li>
+        </ul>
       </Section>
     </main>
   );
