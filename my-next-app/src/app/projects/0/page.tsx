@@ -52,6 +52,15 @@ export default function FlashCardApp() {
           games. These may be more fun, but with flashcards, you get better
           practice in a shorter amount of time.
         </li>
+        <h4>One continuous flow</h4>
+        <li>
+          Both vocabulary and grammar are taught in one continuous flow.
+          Vocabulary repetition is mixed with sentence repetition for two
+          reasons: 1. to prevent learning translations as isolated blocks
+          without thinking, and 2. to provide only one practice button, so there
+          is no need to think about what comes next.{" "}
+        </li>
+
         <h4>Listening and speaking</h4>
         <li>
           There is an exclusive emphasis on listening and speaking. Writing
@@ -90,22 +99,24 @@ export default function FlashCardApp() {
           The overview allows you to look up any already unlocked word or
           grammar point, and reset its progress if needed.
         </p>
-        <Image
-          src="/images/004.png"
-          alt="Word Overview"
-          width={560}
-          height={995}
-          className="screenshot"
-          style={{ borderRadius: "0px" }}
-        />
-        <Image
-          src="/images/005.png"
-          alt="Grammar Overview"
-          width={560}
-          height={995}
-          className="screenshot"
-          style={{ borderRadius: "0px" }}
-        />
+        <div className="flex-container">
+          <Image
+            src="/images/004.png"
+            alt="Word Overview"
+            width={560}
+            height={995}
+            className="screenshot"
+            style={{ borderRadius: "0px" }}
+          />
+          <Image
+            src="/images/005.png"
+            alt="Grammar Overview"
+            width={560}
+            height={995}
+            className="screenshot"
+            style={{ borderRadius: "0px" }}
+          />
+        </div>
       </Section>
       <Section title="Practice Card">
         <h4>Context guide</h4>
