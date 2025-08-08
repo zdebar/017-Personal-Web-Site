@@ -26,18 +26,18 @@ export default function FlashCardApp() {
 
       <Section title="Introduction">
         <p>
-          I just need simple language learning app to improve my vocabulary and
-          pronunciation. No app that I tested fits my demands. Therefore I&#39;m
-          making one myself.
+          I just need a simple language learning app to improve my vocabulary
+          and pronunciation. None of the apps I tested fit my needs, so I
+          decided to make one myself.
         </p>
       </Section>
       <Section title="Main Idea">
         <p>
-          In my opinion, learning languages is about the sheer amount of
-          practice repetition. And I personally prefer to get these repetitions
-          in fast paced 10 min drill than in hour long learning game. With fast
-          pace it is easily achievable to practice 200 words or 10 sentences in
-          10 minutes.
+          In my opinion, language learning is about the sheer amount of practice
+          and repetition. Personally, I prefer to get these repetitions in a
+          fast-paced 20-minute drill rather than a two-hour learning game. With
+          this fast pace, it’s possible to practice 400 words or 200 sentences
+          in 20 minutes.
         </p>
         <br />
         <p>
@@ -46,36 +46,17 @@ export default function FlashCardApp() {
         </p>
         <h4>Flashcards</h4>
         <li>
-          Flascard is most time-efficient method, enabling a fast-paced
-          practice. Both vocabulary and grammar is taught in one continuous flow
-          of flashcards. No time is wasted on methods like crosswords or games.
-          They may be more fun, but with flashcards you will get the better
-          practice and in shorter span of time.
+          Flashcards are the most time-efficient method, enabling fast-paced
+          practice. Both vocabulary and grammar are taught in one continuous
+          flow of flashcards. No time is wasted on methods like crosswords or
+          games. These may be more fun, but with flashcards, you get better
+          practice in a shorter amount of time.
         </li>
         <h4>Listening and speaking</h4>
         <li>
-          Exclusive emphasis on listening and speaking. Writing slows down
-          practice, and it is relatively easy compared to speaking.
+          There is an exclusive emphasis on listening and speaking. Writing
+          slows down practice and is relatively easy compared to speaking.
         </li>
-      </Section>
-
-      <Section title="Home Screen">
-        <Image
-          src="/images/001.png"
-          alt="Image 1"
-          width={560}
-          height={995}
-          className="screenshot"
-        />
-      </Section>
-      <Section title="Language Selection">
-        <Image
-          src="/images/010.png"
-          alt="Image 1"
-          width={560}
-          height={995}
-          className="screenshot"
-        />
       </Section>
       <Section title="User Dashboard">
         <h4>Procvičovat / Practice</h4>
@@ -83,34 +64,48 @@ export default function FlashCardApp() {
           The only practice button. Will provide a continuous practice flow,
           eliminating the need to switch focus between tasks.
         </p>
+        <h4>Přehled pokroku / Progress Overview</h4>
+        <p>
+          The User Dashboard also shows progress in two areas. The first is
+          progress in the last four levels based on learned words or sentences.
+          Currently, these are CEFR levels, but I plan to change this to about
+          100 generic progress levels. The second is progress in daily
+          repetition blocks. At the moment, it shows about 100 daily blocks per
+          10 items, which equals 1,000 repetitions per day and about an hour of
+          practice. Essentially, the first is linked to overall progress, and
+          the second to daily practice. In the grand scheme, neither really
+          matters; it’s just about providing motivating feedback to the user.
+        </p>
+
         <Image
-          src="/images/002.png"
-          alt="Image 2"
+          src="/images/001.png"
+          alt="User Dashboard"
           width={560}
           height={995}
           className="screenshot"
+          style={{ borderRadius: "0px" }}
         />
-
-        <h4>Přehled gramatiky / Grammar Overview</h4>
+        <h4>Přehled / Overview</h4>
         <p>
-          Contextual help is always available for any practiced sentence. You
-          can also review all already unlocked grammar principles.
+          The overview allows you to look up any already unlocked word or
+          grammar point, and reset its progress if needed.
         </p>
+        <Image
+          src="/images/004.png"
+          alt="Word Overview"
+          width={560}
+          height={995}
+          className="screenshot"
+          style={{ borderRadius: "0px" }}
+        />
         <Image
           src="/images/005.png"
-          alt="Image 5"
+          alt="Grammar Overview"
           width={560}
           height={995}
           className="screenshot"
+          style={{ borderRadius: "0px" }}
         />
-        <h4>Blocks Overview Dashboard</h4>
-        <p>
-          Tracks your progress over the last two CEFR levels and monitors
-          repetition blocks for the past five days. Each bar represents 100
-          practice blocks, with 10 items per block. The recommended goal is
-          1,000 repetitions per day. Split it throughout the day anyway you
-          like.
-        </p>
       </Section>
       <Section title="Practice Card">
         <h4>Context guide</h4>
@@ -134,38 +129,30 @@ export default function FlashCardApp() {
 
         <div className="flex-container">
           <Image
-            src="/images/003.png"
-            alt="Image 3"
+            src="/images/002.png"
+            alt="Practice Card 1"
             width={560}
             height={995}
             className="screenshot"
+            style={{ borderRadius: "0px" }}
           />
           <Image
-            src="/images/004.png"
-            alt="Image 4"
+            src="/images/003.png"
+            alt="Practice Card 2"
             width={560}
             height={995}
             className="screenshot"
+            style={{ borderRadius: "0px" }}
           />
         </div>
-      </Section>
-      <Section title="User Settings">
-        <p>Contains basic user management.</p>
-        <Image
-          src="/images/006.png"
-          alt="Image 5"
-          width={560}
-          height={995}
-          className="screenshot"
-        />
       </Section>
       <Section title="Features tested, but discarded">
         <h4>Automatic pronunciation feedback</h4>
         <p>
           I tested several tools (Vosk, Gentle, Google Speech-to-Text API). All
-          are too inaccurate to be really useful. It would be great if can I get
-          immediate feedback about my pronunciation, but at least listening and
-          immediately repeating works also quite well.
+          are too inaccurate to be truly useful. It would be great to get
+          immediate feedback on my pronunciation, but for now, listening and
+          immediately repeating works quite well.
         </p>
       </Section>
       <Section title="Technical">
@@ -175,7 +162,7 @@ export default function FlashCardApp() {
           <p>Python, Google API</p>
           <p>
             Translation, pronunciation, and audio files are all generated using
-            Google Translate API and other.
+            the Google Translate API and other tools.
           </p>
         </article>
         {/* Authentication */}
@@ -195,7 +182,7 @@ export default function FlashCardApp() {
           </p>
           <Image
             src="/images/007.png"
-            alt="Zoomed"
+            alt="Database Scheme"
             width={560}
             height={995}
             layout="responsive"
@@ -213,7 +200,7 @@ export default function FlashCardApp() {
           <div style={{ width: "100%", overflow: "hidden" }}>
             <Image
               src="/images/008.png"
-              alt="Zoomed"
+              alt="Backend Logic"
               width={560}
               height={995}
               layout="responsive"
@@ -233,7 +220,7 @@ export default function FlashCardApp() {
           <div style={{ width: "100%", overflow: "hidden" }}>
             <Image
               src="/images/009.png"
-              alt="Zoomed"
+              alt="Practice Card Logic"
               width={560}
               height={995}
               layout="responsive"
@@ -258,7 +245,7 @@ export default function FlashCardApp() {
         <section className="group">
           <ol>
             <li>
-              The technical solution is the easy part. The real challenge lies
+              The technical solution is the easy part; the real challenge lies
               in properly defining the desired features.
             </li>
             <br />
