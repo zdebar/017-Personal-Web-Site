@@ -66,7 +66,7 @@ export default function FlashCardApp() {
           <li>
             Hash Map / Set
             <ol start={20}>
-              <li>Find the Difference of Two Arrays</li>
+              <li className="crossed">Find the Difference of Two Arrays</li>
               <li>Unique Number of Occurences</li>
               <li>Determine If Two Strins Are Close</li>
               <li>Equal Row and Column Pairs</li>
