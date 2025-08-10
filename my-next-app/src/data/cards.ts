@@ -18,7 +18,7 @@ export const cards: CardData[] = [
   },
   {
     id: 1,
-    title: "Leetcode 20 / 75",
+    title: "Leetcode 21 / 75",
     description:
       "Basic Data Structures and Algorithms practice with Leetcode 75.",
     date: "2025-08-08",
