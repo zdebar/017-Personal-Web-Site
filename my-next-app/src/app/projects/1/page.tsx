@@ -68,7 +68,7 @@ export default function FlashCardApp() {
             <ol start={20}>
               <li className="crossed">Find the Difference of Two Arrays</li>
               <li className="crossed">Unique Number of Occurences</li>
-              <li>Determine If Two Strins Are Close</li>
+              <li className="crossed">Determine If Two Strins Are Close</li>
               <li>Equal Row and Column Pairs</li>
             </ol>
           </li>
