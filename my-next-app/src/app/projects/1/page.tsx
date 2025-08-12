@@ -63,40 +63,42 @@ export default function FlashCardApp() {
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Hash Map / Set
             <ol start={20}>
               <li className="crossed">Find the Difference of Two Arrays</li>
               <li className="crossed">Unique Number of Occurences</li>
               <li className="crossed">Determine If Two Strins Are Close</li>
-              <li>Equal Row and Column Pairs</li>
+              <li className="crossed">Equal Row and Column Pairs</li>
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Stack
             <ol start={24}>
-              <li>Removing Stars From a String</li>
-              <li>Asteroid Collision</li>
-              <li>Decode String</li>
+              <li className="crossed">Removing Stars From a String</li>
+              <li className="crossed">Asteroid Collision</li>
+              <li className="crossed">Decode String</li>
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Queue
             <ol start={27}>
-              <li>Number of Recent Calls</li>
-              <li>Dota2 Senate</li>
+              <li className="crossed">Number of Recent Calls</li>
+              <li className="crossed">Dota2 Senate</li>
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Linked List
             <ol start={29}>
-              <li>Delete the Middle Node of a Linked List</li>
-              <li>Odd Even Linked List</li>
-              <li>Reverse Linked List</li>
-              <li>Maximum Twin Sum of a Linked List</li>
+              <li className="crossed">
+                Delete the Middle Node of a Linked List
+              </li>
+              <li className="crossed">Odd Even Linked List</li>
+              <li className="crossed">Reverse Linked List</li>
+              <li className="crossed">Maximum Twin Sum of a Linked List</li>
             </ol>
           </li>
           <br />
@@ -193,12 +195,14 @@ export default function FlashCardApp() {
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Bit Manipulation
             <ol start={66}>
-              <li>Counting Bits</li>
-              <li>Single Number</li>
-              <li>Minimum Flips to Make a OR b Equal to c</li>
+              <li className="crossed">Counting Bits</li>
+              <li className="crossed">Single Number</li>
+              <li className="crossed">
+                Minimum Flips to Make a OR b Equal to c
+              </li>
             </ol>
           </li>
           <br />
