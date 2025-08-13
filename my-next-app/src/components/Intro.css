@@ -16,14 +16,14 @@ strong {
 
 .link {
   color: blue;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* Light and Dark modes */
 @media (prefers-color-scheme: dark) {
   .link {
     color: #138ef2;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
