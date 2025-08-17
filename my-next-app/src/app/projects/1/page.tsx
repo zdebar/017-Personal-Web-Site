@@ -8,9 +8,10 @@ export default function FlashCardApp() {
     <main className="project-page">
       <Section title="Leetcode 75">
         <p>
-          I already did basic data structures and algorithms course. I decided
-          to continue with Leetcode 75, which is a curated list of 75 essential
-          problems divided into 22 categories.
+          I have already completed a basic data structures and algorithms
+          course. I decided to continue with Leetcode 75, which is a curated
+          list of 75 essential problems divided into 22 categories, so I can
+          properly memorize them through practice.
         </p>
         <br />
         <ul className="project-list">

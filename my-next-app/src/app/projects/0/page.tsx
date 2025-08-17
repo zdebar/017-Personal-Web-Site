@@ -26,16 +26,16 @@ export default function FlashCardApp() {
 
       <Section title="Introduction">
         <p>
-          I just need a simple language learning app to improve my vocabulary
-          and pronunciation. None of the apps I tested fit my needs, so I
-          decided to make one myself.
+          I needed a simple language learning app to improve my vocabulary and
+          pronunciation. None of the apps I tested fit my needs, so I decided to
+          make one myself.
         </p>
       </Section>
       <Section title="Main Idea">
         <p>
           In my opinion, language learning is about the sheer amount of practice
           and repetition. Personally, I prefer to get these repetitions in a
-          fast-paced 20-minute drill rather than an hour long learning game. It
+          fast-paced 20-minute drill rather than an hour-long learning game. It
           is entirely possible to practice 400 words or 200 sentences in 20
           minutes.
         </p>
@@ -49,13 +49,6 @@ export default function FlashCardApp() {
           games. These may be more fun, but with flashcards, you get more
           practice in the same amount of time.
         </li>
-        <h4>One continuous flow</h4>
-        <li>
-          Both vocabulary and grammar are taught in one continuous flow. It just
-          simplifies usage of the app. There is no need to switch focus between
-          different tasks.
-        </li>
-
         <h4>Listening and speaking</h4>
         <li>
           There is an exclusive emphasis on listening and speaking. Writing
@@ -71,12 +64,12 @@ export default function FlashCardApp() {
         <h4>Přehled pokroku / Progress Overview</h4>
         <p>
           The User Dashboard also shows progress in two areas. The first is
-          progress in up to last four levels based on learned words or
-          sentences. Currently, these are CEFR levels, but I plan to change this
-          to about 100 generic progress levels. The second is progress in daily
+          progress in the last four levels based on learned words or sentences.
+          Currently, these are CEFR levels, but I plan to change this to about
+          100 generic progress levels. The second is progress in daily
           repetition blocks. At the moment, it shows about 40 daily blocks per
-          10 items, which equals 400 repetitions per day and about an 20 minutes
-          of practice. Essentially, the first is linked to overall progress, and
+          10 items, which equals 400 repetitions per day and about 20 minutes of
+          practice. Essentially, the first is linked to overall progress, and
           the second to daily practice. In the grand scheme, it’s just about
           providing motivating feedback to the user.
         </p>
@@ -92,7 +85,7 @@ export default function FlashCardApp() {
         <h4>Přehled / Overview</h4>
         <p>
           The overview allows you to look up any already unlocked word or
-          grammar block, and reset it&#39;s progress if needed.
+          grammar block and reset its progress if needed.
         </p>
         <div className="flex-container">
           <Image
@@ -124,7 +117,7 @@ export default function FlashCardApp() {
         <p>
           You are presented with a word or sentence, alternating between written
           Czech and listening to English for each word. When you reveal the
-          translation (odhalit překlad), the full translation is displayed.
+          translation, the full translation is displayed.
         </p>
         <br />
         <p>
@@ -181,10 +174,10 @@ export default function FlashCardApp() {
           <h4>Database</h4>
           <p>PostgreSQL, Supabase for hosting</p>
           <p>
-            Basic SQL database schema. It is quite simple, with just a few
-            tables, but it provides significant flexibility in organizing the
-            practice flow. Generally, some items are grouped together in various
-            grammar blocks and inserted into the basic practice sequence.
+            The SQL database schema is quite simple, with just a few tables, but
+            it provides significant flexibility in organizing the practice flow.
+            Generally, some items are grouped together in various grammar blocks
+            and inserted into the basic practice sequence.
           </p>
           <Image
             src="/images/007.png"
@@ -200,8 +193,8 @@ export default function FlashCardApp() {
           <h4>Backend</h4>
           <p>Node.js, Express.js, Winston Logger, Railway for hosting</p>
           <p>
-            The function getItemsRepository is crucial for incorporating
-            individual words and sentences together.
+            The function getItemsRepository is crucial for combining individual
+            words and sentences.
           </p>
           <div style={{ width: "100%", overflow: "hidden" }}>
             <Image
@@ -241,9 +234,9 @@ export default function FlashCardApp() {
           <p>Vitest, Jest, React Testing</p>
           <p>
             I initially created numerous tests but realized that constant
-            feature changes required rewriting them, consuming about 50% of my
-            time. Once the app stabilizes, I plan to add comprehensive tests to
-            cover all necessary cases.
+            feature changes required rewriting them, which consumed about 50% of
+            my time. Once the app stabilizes, I plan to add comprehensive tests
+            to cover all necessary cases.
           </p>
         </article>
       </Section>
@@ -251,14 +244,14 @@ export default function FlashCardApp() {
         <section className="group">
           <ol>
             <li>
-              The technical solution is the easy part, the real challenge lies
+              The technical solution is the easy part; the real challenge lies
               in properly defining the desired features. Start with a
               &quot;minimum viable product.&quot; Even if you have a plan, it
               will likely change as soon as you begin testing.
             </li>
             <br />
             <li>
-              Writing clean code saves a lot of time in the long run. It&#39;s
+              Writing clean code saves a lot of time in the long run. It&apos;s
               worth taking the time to think things through and redo work
               properly instead of rushing.
             </li>
@@ -287,9 +280,9 @@ export default function FlashCardApp() {
         </ul>
         <h4>Missing data</h4>
         <p>
-          The app just needs to be filled with more data. I already did some
-          english and spanish words, but in the future I will look for
-          cooperation with someone who specialize in specific languages.
+          he app just needs to be filled with more data. I have already added
+          some English and Spanish words, but in the future, I will look for
+          cooperation with someone who specializes in specific languages.
         </p>
       </Section>
       <Section title="version v0.3.0">
