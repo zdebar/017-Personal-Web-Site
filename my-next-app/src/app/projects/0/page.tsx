@@ -35,30 +35,25 @@ export default function FlashCardApp() {
         <p>
           In my opinion, language learning is about the sheer amount of practice
           and repetition. Personally, I prefer to get these repetitions in a
-          fast-paced 20-minute drill rather than a two-hour learning game. With
-          this fast pace, it’s possible to practice 400 words or 200 sentences
-          in 20 minutes.
+          fast-paced 20-minute drill rather than an hour long learning game. It
+          is entirely possible to practice 400 words or 200 sentences in 20
+          minutes.
         </p>
         <br />
-        <p>
-          Basic approach is similar to common language learning approaches, so I
-          will only emphasize key differences:
-        </p>
+        <p>Basic principles:</p>
         <h4>Flashcards</h4>
         <li>
           Flashcards are the most time-efficient method, enabling fast-paced
           practice. Both vocabulary and grammar are taught in one continuous
           flow of flashcards. No time is wasted on methods like crosswords or
-          games. These may be more fun, but with flashcards, you get better
-          practice in a shorter amount of time.
+          games. These may be more fun, but with flashcards, you get more
+          practice in the same amount of time.
         </li>
         <h4>One continuous flow</h4>
         <li>
-          Both vocabulary and grammar are taught in one continuous flow.
-          Vocabulary repetition is mixed with sentence repetition for two
-          reasons: 1. to prevent learning translations as isolated blocks
-          without thinking, and 2. to provide only one practice button, so there
-          is no need to think about what comes next.{" "}
+          Both vocabulary and grammar are taught in one continuous flow. It just
+          simplifies usage of the app. There is no need to switch focus between
+          different tasks.
         </li>
 
         <h4>Listening and speaking</h4>
@@ -76,14 +71,14 @@ export default function FlashCardApp() {
         <h4>Přehled pokroku / Progress Overview</h4>
         <p>
           The User Dashboard also shows progress in two areas. The first is
-          progress in the last four levels based on learned words or sentences.
-          Currently, these are CEFR levels, but I plan to change this to about
-          100 generic progress levels. The second is progress in daily
-          repetition blocks. At the moment, it shows about 100 daily blocks per
-          10 items, which equals 1,000 repetitions per day and about an hour of
-          practice. Essentially, the first is linked to overall progress, and
-          the second to daily practice. In the grand scheme, neither really
-          matters; it’s just about providing motivating feedback to the user.
+          progress in up to last four levels based on learned words or
+          sentences. Currently, these are CEFR levels, but I plan to change this
+          to about 100 generic progress levels. The second is progress in daily
+          repetition blocks. At the moment, it shows about 40 daily blocks per
+          10 items, which equals 400 repetitions per day and about an 20 minutes
+          of practice. Essentially, the first is linked to overall progress, and
+          the second to daily practice. In the grand scheme, it’s just about
+          providing motivating feedback to the user.
         </p>
 
         <Image
@@ -97,7 +92,7 @@ export default function FlashCardApp() {
         <h4>Přehled / Overview</h4>
         <p>
           The overview allows you to look up any already unlocked word or
-          grammar point, and reset its progress if needed.
+          grammar block, and reset it&#39;s progress if needed.
         </p>
         <div className="flex-container">
           <Image
@@ -256,20 +251,16 @@ export default function FlashCardApp() {
         <section className="group">
           <ol>
             <li>
-              The technical solution is the easy part; the real challenge lies
-              in properly defining the desired features.
-            </li>
-            <br />
-            <li>
-              Start with a &quot;minimum viable product.&quot; Even if you have
-              a plan, it will likely change as soon as you begin testing.
+              The technical solution is the easy part, the real challenge lies
+              in properly defining the desired features. Start with a
+              &quot;minimum viable product.&quot; Even if you have a plan, it
+              will likely change as soon as you begin testing.
             </li>
             <br />
             <li>
               Writing clean code saves a lot of time in the long run. It&#39;s
               worth taking the time to think things through and redo work
-              properly instead of rushing. Haste is probably my biggest
-              weakness.
+              properly instead of rushing.
             </li>
           </ol>
         </section>
