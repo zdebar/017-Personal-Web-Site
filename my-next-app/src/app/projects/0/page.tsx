@@ -323,6 +323,51 @@ export default function FlashCardApp() {
           <li>Changes to - UserAvatar, Light mode colors, UserDashboard </li>
         </ul>
       </Section>
+      <Section
+        barColor="inactive-bar-color"
+        containerColor="inactive-text-container"
+        title="version v0.7.0"
+      >
+        <p>Big changes. Still not quite finished</p>
+        <h4>To Do</h4>
+        <ul>
+          <li>Completely replace data</li>
+          <li>Find better IPA pronunciatio function</li>
+          <li>
+            Find better audio creation service - so far using Google
+            text-to-speech and sometimes it is hard to understand, it is weird
+            because when checking Google Translate for individual words, it is
+            much better. Would have assumed it is the same.
+          </li>
+          <li></li>
+          <li>Audio version - probably distinquish with added date</li>
+        </ul>
+        <h4>Changes</h4>
+        <ul>
+          <li>
+            Improved database structure
+            <Image
+              src="/images/010.png"
+              alt="v0.7.0 Database Scheme"
+              width={560}
+              height={995}
+              layout="responsive"
+              className="image-container"
+            />
+          </li>
+          <li>Organized vocabulary into blocks</li>
+          <li>Organized blocks into levels</li>
+          <li>Changed levels from CEFR to smaller numbered levels</li>
+          <li>
+            Added new table user_blocks, all grammar blocks will be at first
+            presented at once
+          </li>
+          <li>
+            Separated block explanation to new table notes. Enables to utilizes{" "}
+          </li>
+          <li>Changed daily blocks organization from array to object</li>
+        </ul>
+      </Section>
     </main>
   );
 }
