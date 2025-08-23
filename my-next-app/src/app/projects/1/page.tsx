@@ -106,7 +106,7 @@ export default function FlashCardApp() {
           <li>
             Binary Tree – DFS
             <ol start={33}>
-              <li>Maximum Depth of Binary Tree</li>
+              <li className="crossed">Maximum Depth of Binary Tree</li>
               <li>Leaf-Similar Trees</li>
               <li>Count Good Nodes in Binary Tree</li>
               <li>Path Sum III</li>
