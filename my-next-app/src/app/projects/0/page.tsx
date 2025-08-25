@@ -331,7 +331,10 @@ export default function FlashCardApp() {
         <p>Big changes. Still not quite finished</p>
         <h4>To Do</h4>
         <ul>
-          <li>Completely replace data</li>
+          <li>
+            Completely replace data. Previous solution was more about finding
+            10k most common words. Use common lecture approach instead.{" "}
+          </li>
           <li>Find better IPA pronunciatio function</li>
           <li>
             Find better audio creation service - so far using Google
@@ -339,8 +342,7 @@ export default function FlashCardApp() {
             because when checking Google Translate for individual words, it is
             much better. Would have assumed it is the same.
           </li>
-          <li></li>
-          <li>Audio version - probably distinquish with added date</li>
+          <li>Distinguish versions with added date.</li>
         </ul>
         <h4>Changes</h4>
         <ul>
@@ -357,15 +359,30 @@ export default function FlashCardApp() {
           </li>
           <li>Organized vocabulary into blocks</li>
           <li>Organized blocks into levels</li>
-          <li>Changed levels from CEFR to smaller numbered levels</li>
+          <li>
+            Changed levels from CEFR to smaller numbered levels
+            <Image
+              src="/images/011.png"
+              alt="v0.7.0 User Dashboard"
+              width={560}
+              height={995}
+              className="screenshot"
+              style={{ borderRadius: "0px" }}
+            />
+          </li>
           <li>
             Added new table user_blocks, all grammar blocks will be at first
             presented at once
           </li>
           <li>
-            Separated block explanation to new table notes. Enables to utilizes{" "}
+            Separated block explanation to new table notes. Enables to utilizes
+            explanation notes accross multiple blocks and therefore separate
+            grammar practice into multiple smaller practice blocks.
           </li>
-          <li>Changed daily blocks organization from array to object</li>
+          <li>
+            Changed daily blocks organization from array to object. To have more
+            consistent style.
+          </li>
         </ul>
       </Section>
     </main>

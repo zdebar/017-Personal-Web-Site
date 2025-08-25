@@ -103,30 +103,30 @@ export default function FlashCardApp() {
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Binary Tree – DFS
             <ol start={33}>
               <li className="crossed">Maximum Depth of Binary Tree</li>
-              <li>Leaf-Similar Trees</li>
-              <li>Count Good Nodes in Binary Tree</li>
-              <li>Path Sum III</li>
-              <li>Longest ZigZag Path in a Binary Tree</li>
+              <li className="crossed">Leaf-Similar Trees</li>
+              <li className="crossed">Count Good Nodes in Binary Tree</li>
+              <li className="crossed">Path Sum III</li>
+              <li className="crossed">Longest ZigZag Path in a Binary Tree</li>
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Binary Tree – BFS
             <ol start={38}>
-              <li>Binary Tree Right Side View</li>
-              <li>Maximum Level Sum of a Binary Tree</li>
+              <li className="crossed">Binary Tree Right Side View</li>
+              <li className="crossed">Maximum Level Sum of a Binary Tree</li>
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Binary Search Tree
             <ol start={40}>
-              <li>Search in a Binary Search Tree</li>
-              <li>Delete Node in a BST</li>
+              <li className="crossed">Search in a Binary Search Tree</li>
+              <li className="crossed">Delete Node in a BST</li>
             </ol>
           </li>
           <br />
@@ -158,38 +158,40 @@ export default function FlashCardApp() {
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Binary Search
             <ol start={52}>
-              <li>Guess Number Higher or Lower</li>
-              <li>Successful Pairs of Spells and Potions</li>
-              <li>Find Peak Element</li>
-              <li>Koko Eating Bananas</li>
+              <li className="crossed">Guess Number Higher or Lower</li>
+              <li className="crossed">
+                Successful Pairs of Spells and Potions
+              </li>
+              <li className="crossed">Find Peak Element</li>
+              <li className="crossed">Koko Eating Bananas</li>
             </ol>
           </li>
           <br />
           <li>
-            Bakctracking
+            Backtracking
             <ol start={56}>
               <li>Letter Combinations of a Phone Number</li>
               <li>Combination Sum III</li>
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             DP – 1D
             <ol start={58}>
-              <li>N-th Tribonacci Number</li>
-              <li>Min Cost Climbing Stairs</li>
-              <li>House Robber</li>
-              <li>Domino and Tromino Tiling</li>
+              <li className="crossed">N-th Tribonacci Number</li>
+              <li className="crossed">Min Cost Climbing Stairs</li>
+              <li className="crossed">House Robber</li>
+              <li className="crossed">Domino and Tromino Tiling</li>
             </ol>
           </li>
           <br />
           <li>
             DP – Multimensional
             <ol start={62}>
-              <li>Unique Paths</li>
+              <li className="crossed">Unique Paths</li>
               <li>Longest Common Subsequence</li>
               <li>Best Time to Buy and Sell Stock with Transaction Fee</li>
               <li>Edit Distance</li>
@@ -215,19 +217,21 @@ export default function FlashCardApp() {
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Intervals
             <ol start={71}>
-              <li>Non-overlapping Intervals</li>
-              <li>Minimum Number of Arrows to Burst Balloons</li>
+              <li className="crossed">Non-overlapping Intervals</li>
+              <li className="crossed">
+                Minimum Number of Arrows to Burst Balloons
+              </li>
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Monotonic Stack
             <ol start={73}>
-              <li>Daily Temperatures</li>
-              <li>Online Stock Span</li>
+              <li className="crossed">Daily Temperatures</li>
+              <li className="crossed">Online Stock Span</li>
             </ol>
           </li>
         </ul>
