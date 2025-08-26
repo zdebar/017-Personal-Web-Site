@@ -10,10 +10,10 @@ export type CardData = {
 export const cards: CardData[] = [
   {
     id: 0,
-    title: "Language App v0.6.0",
+    title: "Language App v0.7.0",
     description:
       "Fast practice drill. Up to 400 words or sentences in 20 minutes of practice.",
-    date: "2025-08-04",
+    date: "2025-08-26",
     link: "/projects/0",
   },
   {

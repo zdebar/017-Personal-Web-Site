@@ -323,31 +323,27 @@ export default function FlashCardApp() {
           <li>Changes to - UserAvatar, Light mode colors, UserDashboard </li>
         </ul>
       </Section>
-      <Section
-        barColor="inactive-bar-color"
-        containerColor="inactive-text-container"
-        title="version v0.7.0"
-      >
-        <p>Big changes. Still not quite finished</p>
-        <h4>To Do</h4>
-        <ul>
-          <li>
-            Completely replace data. Previous solution was more about finding
-            10k most common words. Use common lecture approach instead.{" "}
-          </li>
-          <li>Find better IPA pronunciatio function</li>
-          <li>
-            Find better audio creation service - so far using Google
-            text-to-speech and sometimes it is hard to understand, it is weird
-            because when checking Google Translate for individual words, it is
-            much better. Would have assumed it is the same.
-          </li>
-          <li>Distinguish versions with added date.</li>
-        </ul>
+      <Section title="version v0.7.0">
         <h4>Changes</h4>
         <ul>
           <li>
-            Improved database structure
+            Improved database structure with
+            <ul>
+              <li>user_blocks – marks started grammar blocks</li>
+              <li>
+                notes – separates grammar explanations from grammar blocks,
+                enabling more focused grammar practice with the same explanation
+              </li>
+              <li>
+                items.block_id – vocabulary items are now also organized into
+                blocks, enabling cleaner organization
+              </li>
+              <li>
+                blocks.language_id – language is now strictly determined by
+                blocks; currently, there is only a single language (English).
+                Language selection is present in the code but disabled.
+              </li>
+            </ul>
             <Image
               src="/images/010.png"
               alt="v0.7.0 Database Scheme"
@@ -357,8 +353,6 @@ export default function FlashCardApp() {
               className="image-container"
             />
           </li>
-          <li>Organized vocabulary into blocks</li>
-          <li>Organized blocks into levels</li>
           <li>
             Changed levels from CEFR to smaller numbered levels
             <Image
@@ -371,17 +365,8 @@ export default function FlashCardApp() {
             />
           </li>
           <li>
-            Added new table user_blocks, all grammar blocks will be at first
-            presented at once
-          </li>
-          <li>
-            Separated block explanation to new table notes. Enables to utilizes
-            explanation notes accross multiple blocks and therefore separate
-            grammar practice into multiple smaller practice blocks.
-          </li>
-          <li>
-            Changed daily blocks organization from array to object. To have more
-            consistent style.
+            Changed daily blocks organization from an array to an object for a
+            more consistent style.
           </li>
         </ul>
       </Section>
