@@ -37,14 +37,20 @@ main {
 html {
   font-size: 15px;
   font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  font-weight: var(--normal-font-weight);
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 h1,
 h2,
 h3 {
   font-family: "Abril Fatface", serif;
-  font-weight: 600;
+  font-weight: var(--bold-font-weight);
   font-style: normal;
   line-height: 1.2;
 }

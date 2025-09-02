@@ -2,6 +2,10 @@
 :root {
   --card-grid-border: black 2px solid;
   --border-radius: 2px;
+  --gap-size: 10px;
+  --normal-font-weight: 300;
+  --bold-font-weight: 600;
+  --pading-size: 5px;
 }
 
 /* Light and Dark modes */

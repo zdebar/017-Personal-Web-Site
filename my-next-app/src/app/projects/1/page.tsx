@@ -148,13 +148,13 @@ export default function FlashCardApp() {
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Heap / Priority Queue
             <ol start={48}>
-              <li>Kth Largest Element in an Array</li>
-              <li>Smallest Number in Infinite Set</li>
-              <li>Maximum Subsequence Score</li>
-              <li>Total Cost to Hire K Workers</li>
+              <li className="crossed">Kth Largest Element in an Array</li>
+              <li className="crossed">Smallest Number in Infinite Set</li>
+              <li className="crossed">Maximum Subsequence Score</li>
+              <li className="crossed">Total Cost to Hire K Workers</li>
             </ol>
           </li>
           <br />
@@ -188,13 +188,15 @@ export default function FlashCardApp() {
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             DP – Multimensional
             <ol start={62}>
               <li className="crossed">Unique Paths</li>
-              <li>Longest Common Subsequence</li>
-              <li>Best Time to Buy and Sell Stock with Transaction Fee</li>
-              <li>Edit Distance</li>
+              <li className="crossed">Longest Common Subsequence</li>
+              <li className="crossed">
+                Best Time to Buy and Sell Stock with Transaction Fee
+              </li>
+              <li className="crossed">Edit Distance</li>
             </ol>
           </li>
           <br />
@@ -209,11 +211,11 @@ export default function FlashCardApp() {
             </ol>
           </li>
           <br />
-          <li>
+          <li className="crossed">
             Trie
             <ol start={69}>
-              <li>Implement Trie (Prefix Tree)</li>
-              <li>Search Suggestion System</li>
+              <li className="crossed">Implement Trie (Prefix Tree)</li>
+              <li className="crossed">Search Suggestion System</li>
             </ol>
           </li>
           <br />

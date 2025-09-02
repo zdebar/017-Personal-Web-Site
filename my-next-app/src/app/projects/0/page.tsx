@@ -167,7 +167,7 @@ export default function FlashCardApp() {
         {/* Authentication */}
         <article>
           <h4>Authentication</h4>
-          <p>Firebase (Google Auth, Demo Account)</p>
+          <p>Firebase (Google Auth)</p>
         </article>
         {/* Database */}
         <article>
@@ -341,7 +341,7 @@ export default function FlashCardApp() {
               <li>
                 blocks.language_id – language is now strictly determined by
                 blocks; currently, there is only a single language (English).
-                Language selection is present in the code but disabled.
+                Language selection is present in the code but disabled for now.
               </li>
             </ul>
             <Image

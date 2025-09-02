@@ -14,9 +14,9 @@ export default function Intro() {
 
       <article className="block">
         <p>
-          I am a Full Stack Web Developer with experience in both frontend and
+          I am a Full Stack Web Developer with knowledge in both frontend and
           backend development. I am currently looking for more work, so feel
-          free to contact me.
+          free to contact me via email atop.
         </p>
         <br />
         <p>
@@ -31,32 +31,39 @@ export default function Intro() {
           </a>
         </p>
       </article>
-      <article className="block">
+      <article className="technologies">
         <p>
-          <strong>Frontend:</strong> HTML, CSS, Tailwind CSS, JavaScript,
-          TypeScript, React, Vite, Vitest, Wordpress
+          <strong>Programming languages</strong>
         </p>
+        <p>Javascript, Typescript, Python</p>
         <p>
-          <strong>Backend:</strong> Next.js, Node.js, Express.js, SQL,
-          PostgreSQL, SQLite, Python, RestAPI
+          <strong>Frontend tools</strong>
         </p>
+        <p>HTML, CSS, Tailwind CSS, React, Vite, Vitest, Wordpress</p>
         <p>
-          <strong>General:</strong> Git, Github, Bash, VS Code, Docker, DBeaver,
-          Postman
+          <strong>Backend tools</strong>
         </p>
+        <p>Next.js, Node.js, Express.js, SQL, PostgreSQL, SQLite, RestAPI</p>
         <p>
-          <strong>Cloud:</strong> Google Cloud, Supabase, Firebase, Vercel,
-          Railway
+          <strong>General tools</strong>
         </p>
+        <p>Git, Github, Bash, VS Code, Docker, DBeaver, Postman</p>
         <p>
-          <strong>Graphical:</strong> Figma, Photoshop, Autocad, Revit, 3ds Max
+          <strong>Cloud and hosting</strong>
         </p>
+        <p>Google Cloud, Supabase, Firebase, Vercel, Railway</p>
         <p>
-          <strong>Languages:</strong> Czech - native speaker, English - C1
+          <strong>Graphical tools</strong>
         </p>
+        <p>Figma, Photoshop, Autocad, Revit, 3ds Max</p>
         <p>
-          <strong>Other:</strong> Touch typing, Driving license B
+          <strong>Languages</strong>
         </p>
+        <p>Czech - native speaker, English - C1</p>
+        <p>
+          <strong>Other</strong>
+        </p>
+        <p>Touch typing, Driving license B</p>
       </article>
     </section>
   );

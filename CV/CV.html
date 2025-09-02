@@ -35,13 +35,14 @@
       font-weight: 400;
       margin: 0px;
       padding: 0px;
-      letter-spacing: 2px;
+      line-height: normal;
+      letter-spacing: 10px;
     }
 
     h2 {
       font-size: 1rem;
       font-family: "Montserrat", sans-serif;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 2px;
       margin: 0;
     }
@@ -63,7 +64,31 @@
       border: none;
       height: 2px;
       background-color: var(--primary-color);
-      margin: 30px 0;
+      margin-top: 0px;
+    }
+
+    li {
+      font-size: 1rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    a,
+    a:visited {
+      color: blue;
+    }
+
+
+    .shorthr {
+      display: block;
+      width: 50px;
+      margin-left: 0;
+    }
+
+    .thinhr {
+      height: 0.5px;
     }
 
     .container {
@@ -76,6 +101,26 @@
 
     .header {
       margin-bottom: 50px;
+      margin-top: 0px;
+      padding-top: -10px;
+    }
+
+    .contacts {
+      text-align: right;
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+
+    .contacts a {
+      display: block;
+    }
+
+    .image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 0px -5px;
     }
 
     .group {
@@ -83,10 +128,41 @@
       margin: 20px 0px;
     }
 
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .pl-50 {
+      padding-left: 75px;
+    }
+
+    .mb-5 {
+      margin-bottom: 5px;
+    }
+
+    .mb-25 {
+      margin-bottom: 35px;
+    }
+
+    .bold {
+      font-weight: 600;
+    }
+
+    .normal {
+      font-weight: 500;
+    }
+
     .grid {
       display: grid;
-      grid-template-columns: 150px 1fr;
-      gap: 10px;
+      grid-template-columns: 240px 1fr;
+      gap: 2px;
+    }
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 2px;
     }
 
     .item-span {
@@ -96,12 +172,16 @@
     .flex {
       display: flex;
       flex-direction: row;
+      gap: 40px;
     }
 
     .flex-col {
       display: flex;
       flex-direction: column;
+      gap: 2px;
     }
+
+
 
     .montserrat-light {
       font-family: "Montserrat", sans-serif;
@@ -121,68 +201,102 @@
 
 <body>
   <div class="container">
-    <div class="header">
-      <h1><strong>ZDENĚK BARTH</strong></h1>
-      <h2>FULL STACK WEB DEVELOPER</h3>
+    <div class="topbar">
+      <div class="flex">
+        <img src="Zdenek_Barth_5.jpg" alt="" class="image">
+        <div class="header">
+          <h1><strong>ZDENĚK</strong></h1>
+          <h1><strong>BARTH</strong></h1>
+          <h3>FULL STACK WEB DEVELOPER</h3>
+        </div>
+      </div>
+      <div class="contacts">
+        <p>Kralupy nad Vltavou</p>
+        <p>tel: +420 723 803 518</p>
+        <a href="mailto:zdebarth@gmail.com">mail: zdebarth@gmail.com</a>
+        <a href="https://zdenekbarth.cz" target="_blank">web: zdenekbarth.cz</a>
+        <a href="https://github.com/zdebar" target="_blank">github: /zdebar </a>
+      </div>
     </div>
     <div>
-      <div class="grid">
-        <h2>KONTAKTY</h2>
-        <div>
-          <p>zdebarth@gmail.com</p>
-          <p>+420 723 803 518</p>
-          <p>Kralupy nad Vltavou</p>
-          <p>zdebarth.cz</p>
-        </div>
+      <hr class="mb-25">
+      <div>
+        <h2>PROFIL</h2>
+        <hr class="shorthr mb-25">
+        <p>Jsem full stack vývojář s převážně samostatně nabytými zkušenostmi, v tuto chvíli hledám jakoukoliv formu
+          spolupráce, která mi umožní být užitečný a získat co nejvíce zkušeností.</p>
       </div>
-      <hr>
-      <p>Jsem full stack web developer s převážně samostatně nabytými zkušenostmi. Hledám spolupráci v oboru</p>
-      <hr>
-      <div class="grid">
-        <h2>DOVEDNOSTI</h2>
-        <div>
-          <h2>FRONTEND</h2>
+      <hr class="mb-25 thinhr" style="margin-top: 25px;">
+      <div>
+        <h2>VZOROVÝ PROJEKT</h2>
+        <hr class="shorthr mb-25">
+        <ul>
+          <div class="grid">
+            <li>Angličtina app</li>
+            <p>React, Tailwind CSS, Typescript, Nodejs, Express, PostgreSQL, Python</p>
+          </div>
+          <p class="pl-50">Jednoduchá applikace na učení angličtiny výhradně s mluvením a poslechem. Cílem je odstranit
+            nejistotu při mluvení. Více na <a href="https://zdenekbarth.cz" target="_blank">mé webové stránce</a> nebo
+            přímo otestujte <a href="https://020-flash-card-app-typescript.vercel.app/" target="_blank">zde</a>.
           </p>
-          <p>HTML, CSS, Tailwind CSS, JavaScript, TypeScript, React, Vite, Next.js, Wordpress</p>
-          <h2>BACKEND</h2>
-          <p>Node.js, Express.js, SQL, PostgreSQL, SQLite, Python, RestAPI</p>
-          <h2>GENERAL</h2>
+        </ul>
+
+      </div>
+      <hr class="mb-25 thinhr" style="margin-top: 25px;">
+      <div>
+        <h2>DOVEDNOSTI</h2>
+        <hr class="shorthr mb-25">
+        <ul class="grid mb-25">
+          <li>programovací jazyky</li>
+          <p>JavaScript, Typescript, Python</p>
+          <li>frontend nástroje</li>
+          <p>React, Next.js, Vite, Tailwind CSS, HTML, CSS, Wordpress</p>
+          <li>backend nástroje</li>
+          <p>Node.js, Express.js, REST API, SQL (PostgreSQL, SQLite)</p>
+          <li>obecné nástroje</li>
           <p>Git, Github, Bash, VS Code, Docker, DBeaver, Postman</p>
-          <h2>CLOUD</h2>
+          <li>cloud and hosting</li>
           <p>Google Cloud, Supabase, Firebase, Vercel, Railway</p>
-          <h2>GRAPHICAL</h2>
+          <li>grafické nástroje</li>
           <p>Figma, Photoshop, Autocad, Revit, 3ds Max</p>
-          <h2>JAZYKY</h2>
+          <li>jazykové znalosti</li>
           <p>Čeština - mateřský jazyk, Angličtina - C1</p>
-          <h2>OTHER</h2>
+          <li>ostatní</li>
           <p>Desetiprsté psaní, Řidičský průkaz skupiny B</p>
-        </div>
+        </ul>
       </div>
-      <hr>
-      <div class="grid">
+      <hr class="mb-25 thinhr">
+      <div class="mb-25">
         <h2>PRACOVNÍ ZKUŠENOSTI</h2>
-        <div>
-          <h2>FULL STACK WEB DEVELOPER</h2>
-          <p>OSVČ 5/2025 - dosud</p>
-          <h2>PROJEKTANT VE STAVEBNICTVÍ</h2>
-          <p>OSVČ 09/2002 - 05/2025</p>
-          <p>stavební projekce, management projektů, projednání s klienta a státními úřady,
-            práce v týmu i samostatná spolupráce jako subdodavatel</p>
-        </div>
+        <hr class="shorthr mb-25">
+        <ul class="flex-col">
+          <li><span style="width: 300px;display: inline-block;">full stack web developer</span> <span
+              class="normal">OSVČ 05/2025 -
+              dosud</span>
+          </li>
+          <p class="pl-50 ">subdodavatelské práce</p>
+          <li><span style="width: 300px;display: inline-block;">stavební projektant</span> <span class="normal">OSVČ
+              09/2002 - 09/2025</span></li>
+          <p class="pl-50 ">stavební projekce, řízení projektů, komunikace s klienty a úřady, týmová i samostatná práce
+          </p>
+          </p>
       </div>
-      <hr>
-      <div class="grid">
-        <h2>VZDĚLÁNÍ</h2>
-        <div>
-          <h3>ČESKÉ VYSOKÉ UČENÍ TECHNICKÉ V PRAZE (ČVUT)</h3>
-          <p>Architektura a územní plánování</p>
-          <p>09/2000 - 05/2025</p>
-          <h3>DVOŘÁKOVO GYMNÁZIUM KRALUPY NAD VLTAVOU</h3>
-          <p>Víceleté gymnázium</p>
-          <p>09/1993 - 05/2000</p>
-        </div>
-      </div>
+      </ul>
     </div>
+    <hr class="mb-25 thinhr">
+    <div>
+      <h2>VZDĚLÁNÍ</h2>
+      <hr class="shorthr mb-25">
+      <ul class="flex-col">
+        <li>České vysoké učení technické v Praze (ČVUT) <span class="normal">09/2000 - 05/2025</span></li>
+        <p class="pl-50 ">obor: Architektura a územní plánování</p>
+      </ul>
+    </div>
+    <div style="text-align:right; font-size:1rem; margin-top:30px;">
+      Aktualizováno: září 2025
+    </div>
+  </div>
+
   </div>
 </body>
 
