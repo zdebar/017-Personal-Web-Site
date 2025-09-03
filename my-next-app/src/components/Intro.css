@@ -35,7 +35,11 @@ strong {
   }
 
   .technologies {
-    grid-template-columns: 1fr;
-    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .technologies > *:nth-child(even) {
+    margin-bottom: 10px; /* extra gap for every even child */
   }
 }

@@ -56,7 +56,6 @@ export default function Header() {
           onSubmit={handleFormSubmit}
           style={{ display: formVisible ? "flex" : "none" }}
         >
-          <input type="text" name="_gotcha" style={{ display: "none" }} />
           <label htmlFor="email">
             your email:
             <input

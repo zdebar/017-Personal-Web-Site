@@ -7,7 +7,7 @@ form {
 form > label {
   display: flex;
   flex-direction: column;
-  font-weight: var(--bold-font-weight);
+  font-weight: var(--normal-font-weight);
 }
 
 input,
