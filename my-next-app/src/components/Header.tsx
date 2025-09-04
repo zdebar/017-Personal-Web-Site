@@ -3,7 +3,8 @@
 import { useState } from "react";
 import "./Header.css";
 import Link from "next/link";
-import MailingForm from "./ContactForm";
+import ContactForm from "./ContactForm";
+import GitHubIcon from "./Icons/GitHubIcon";
 
 export default function Header() {
   const [formVisible, setFormVisible] = useState(false);
@@ -15,14 +16,17 @@ export default function Header() {
   return (
     <>
       <header>
-        <Link href="/">home</Link>
-        <div>
-          <a href="#" onClick={toggleForm} id="emailAddress">
-            zdebarth@gmail.com
-          </a>
+        <div className="flex-row justify-between">
+          <Link href="/">home</Link>
+          <div className="justify-between flex-row">
+            <GitHubIcon size={30} color="black" />
+            <a href="#" onClick={toggleForm} id="emailAddress">
+              zdebarth@gmail.com
+            </a>
+          </div>
         </div>
+        {formVisible && <ContactForm />}
       </header>
-      {formVisible && <MailingForm />}
     </>
   );
 }

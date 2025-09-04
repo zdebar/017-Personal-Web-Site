@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import "./Form.css";
+import "./ContactForm.css";
 
 export default function ContactForm() {
   const [responseMessage, setResponseMessage] = useState<string | null>(null);
@@ -36,9 +36,10 @@ export default function ContactForm() {
         action="https://formspree.io/f/xdkazldg"
         method="POST"
         onSubmit={handleFormSubmit}
+        className="flex-col"
       >
         <label htmlFor="email">
-          your email:
+          your email
           <input
             type="email"
             id="email"
@@ -47,11 +48,11 @@ export default function ContactForm() {
           />
         </label>
         <label htmlFor="subject">
-          subject:
+          subject
           <input type="text" id="subject" name="subject" required />
         </label>
         <label htmlFor="message">
-          message:
+          message
           <textarea name="message" id="message" required></textarea>
         </label>
         <button type="submit">Send</button>

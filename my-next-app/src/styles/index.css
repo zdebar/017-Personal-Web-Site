@@ -10,7 +10,6 @@ body {
   max-width: 900px;
   min-width: 300px;
   margin: 0 auto;
-  padding: 0 10px;
   line-height: 1.2;
   background-color: var(--background-color);
   color: var(--color);

@@ -1,6 +1,5 @@
 header {
-  display: flex;
-  justify-content: space-between;
   font-weight: 500;
-  margin: 30px 0px 10px 0px;
+  padding: 30px var(--side-padding-size);
+  background-color: var(--background-color-1);
 }

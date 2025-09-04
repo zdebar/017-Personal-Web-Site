@@ -6,8 +6,12 @@
   gap: var(--gap-size);
 }
 
-.flex-column {
+.flex-col {
   display: flex;
   flex-direction: column;
   gap: var(--gap-size);
+}
+
+.justify-between {
+  justify-content: space-between;
 }

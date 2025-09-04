@@ -1,18 +1,11 @@
-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-size);
-}
-
-form > label {
+label {
   display: flex;
   flex-direction: column;
   font-weight: var(--normal-font-weight);
 }
 
 input,
-textarea,
-button {
+textarea {
   width: 100%;
   font-weight: var(--normal-font-weight);
   border-radius: var(--border-radius);
@@ -31,7 +24,8 @@ textarea {
   padding: var(--form-padding-size);
 }
 
-form button {
+button {
+  width: 100px;
   color: white;
   font-weight: var(--bold-font-weight);
   padding: 10px 20px;
@@ -44,16 +38,4 @@ form button {
 
 form p {
   align-self: flex-end;
-}
-
-@media (max-width: 600px) {
-  label {
-    flex-direction: column;
-  }
-
-  input,
-  textarea,
-  button {
-    width: 100%;
-  }
 }

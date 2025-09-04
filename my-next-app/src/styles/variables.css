@@ -5,29 +5,34 @@
   /** Spacing */
   --gap-size: 10px; /** Flex and grid gap size */
   --form-padding-size: 5px; /** Padding for form inputs and text areas*/
+  --side-padding-size: 5px; /** Side padding for main content */
+
+  /** Sizes */
+  --button-width: 100px; /** Width for buttons */
+  --button-height: 35px; /** Height for buttons */
 
   /** Font Weights */
   --normal-font-weight: 300;
   --bold-font-weight: 600;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background-color-1: white; /** Color 1 for background tabs */
-    --background-color-2: light gray; /** Color 2 for background tabs */
-    --color: #ffffff;
-    --card-shadow: none;
+    --background-color-1: dark gray; /** Color 1 for background tabs */
+    --background-color-2: light gray; /** Color 1 for background tabs */
+    --color: black;
+    --card-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
     --card-color-1: #d32c28;
     --card-color-2: #e5562f;
   }
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --background-color-1: white;
-    --background-color-2: #f0f0f0; /** Color 1 for background tabs */
-    --color: black;
-    --card-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
+    --background-color-1: dark gray; /** Color 1 for background tabs */
+    --background-color-2: light gray; /** Color 2 for background tabs */
+    --color: #ffffff;
+    --card-shadow: none;
     --card-color-1: #d32c28;
     --card-color-2: #e5562f;
   }
