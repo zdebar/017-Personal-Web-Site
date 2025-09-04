@@ -1,0 +1,51 @@
+/* Text Styles */
+html {
+  font-size: 15px;
+  font-family: var(--font-normal);
+  font-weight: var(--normal-font-weight);
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-headings);
+  font-weight: var(--bold-font-weight);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}

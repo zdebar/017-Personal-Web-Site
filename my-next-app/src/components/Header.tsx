@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import "./Header.css";
-import Link from "next/link";
 import ContactForm from "./ContactForm";
 import GitHubIcon from "./Icons/GitHubIcon";
+import HomeIcon from "./Icons/HomeIcon";
 
 export default function Header() {
   const [formVisible, setFormVisible] = useState(false);
@@ -16,13 +16,17 @@ export default function Header() {
   return (
     <>
       <header>
-        <div className="flex-row justify-between">
-          <Link href="/">home</Link>
-          <div className="justify-between flex-row">
-            <GitHubIcon size={30} color="black" />
-            <a href="#" onClick={toggleForm} id="emailAddress">
+        <div className="flex-row justify-between align-center">
+          <HomeIcon size={28} color="black" strokeWidth={1.8} />
+          <div
+            className="justify-between flex-row align-center"
+            id="contactArea"
+          >
+            <GitHubIcon size={28} color="black" />
+
+            <button onClick={toggleForm} id="emailAddress" className="button">
               zdebarth@gmail.com
-            </a>
+            </button>
           </div>
         </div>
         {formVisible && <ContactForm />}

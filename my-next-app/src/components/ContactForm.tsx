@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import "./ContactForm.css";
 
 export default function ContactForm() {
   const [responseMessage, setResponseMessage] = useState<string | null>(null);
@@ -39,23 +38,34 @@ export default function ContactForm() {
         className="flex-col"
       >
         <label htmlFor="email">
-          your email
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="example@example.com"
+            required
+            placeholder="your email"
           />
         </label>
         <label htmlFor="subject">
-          subject
-          <input type="text" id="subject" name="subject" required />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            placeholder="your subject"
+          />
         </label>
         <label htmlFor="message">
-          message
-          <textarea name="message" id="message" required></textarea>
+          <textarea
+            name="message"
+            id="message"
+            required
+            placeholder="your message"
+          ></textarea>
         </label>
-        <button type="submit">Send</button>
+        <button type="submit" className="button">
+          Send
+        </button>
       </form>
       {responseMessage && (
         <p

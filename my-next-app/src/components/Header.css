@@ -1,5 +1,5 @@
 header {
   font-weight: 500;
-  padding: 30px var(--side-padding-size);
+  padding: 30px 0px;
   background-color: var(--background-color-1);
 }

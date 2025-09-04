@@ -1,85 +1,86 @@
 /** Global Stylesheet */
 
 /* Import */
-@import url("variables.css");
-@import url("utility.css");
-@import url("reset.css");
+@import url("./reset.css");
+@import url("./variables.css");
+@import url("./utility.css");
+@import url("./text.css");
 
 /* Main Layout */
 body {
-  max-width: 900px;
+  max-width: 1200px;
   min-width: 300px;
   margin: 0 auto;
   line-height: 1.2;
-  background-color: var(--background-color);
-  color: var(--color);
   overflow-y: scroll;
+  box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.05);
+}
+
+main,
+header,
+footer {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 main {
   min-height: 75vh;
-  margin: 0px 0px;
 }
 
-/* Text Styles */
-html {
-  font-size: 15px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: var(--normal-font-weight);
+header {
+  background-color: var(--background-color-1);
 }
 
-@media (max-width: 600px) {
-  html {
-    font-size: 14px;
-  }
-}
+/* General Component Styles */
+.button {
+  width: 200px;
+  height: 40px;
+  padding: 10px 20px;
+  align-self: flex-end;
+  cursor: pointer;
 
-h1,
-h2,
-h3 {
-  font-family: "Abril Fatface", serif;
+  color: white;
+  background: linear-gradient(
+    to right,
+    var(--button-color-1),
+    var(--button-color-2)
+  );
+
   font-weight: var(--bold-font-weight);
-  font-style: normal;
-  line-height: 1.2;
+
+  border-radius: 25px;
+  border: none;
 }
 
-h1 {
-  font-size: 3rem;
-}
+input,
+textarea {
+  width: 100%;
+  padding: var(--side-padding-size);
+  background-color: var(--background-color-1);
 
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-  margin: 10px 0px;
-}
-
-h4 {
   font-size: 1rem;
-  margin: 10px 0px;
+  font-weight: var(--normal-font-weight);
+
+  border: 1px black solid;
+  border-radius: var(--border-radius);
+  margin: 0px;
 }
 
-h5 {
-  font-size: 1.125rem;
-  margin: 10px 0px;
+input {
+  height: 25px;
 }
 
-p {
-  font-size: 1rem;
+textarea {
+  height: 100px;
+  resize: vertical;
+  margin-bottom: -3px;
 }
 
-/* Links and anchor tags */
-a {
-  text-color: white;
-  text-decoration: none;
-  color: inherit;
-  font-size: 1rem;
+form {
+  margin-top: var(--gap-size);
 }
 
-a:hover {
-  font-weight: bold;
-  text-decoration: underline;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+a,
+a svg {
+  cursor: pointer;
 }

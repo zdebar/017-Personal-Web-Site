@@ -1,4 +1,3 @@
-import Head from "next/head";
 import "../styles/index.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -20,9 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Head>
-          <meta charSet="UTF-8" />
-        </Head>
         <Header />
         {children}
         <Footer />
