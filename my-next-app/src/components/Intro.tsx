@@ -8,46 +8,40 @@ export default function Intro() {
 
   return (
     <div className="intro">
-      <section className="w-intro">
-        <div className="intro-title">
-          <h1 className="nowrap">
+      <section>
+        <div id="introTitle" className="intro-title">
+          <h1>
             <span>Hi, I&apos;m</span> <span>Zdeněk Barth</span>
           </h1>
-          <h1 className="nowrap">
+          <h1>
             <span>Full Stack</span> <span>Web Developer</span>
           </h1>
         </div>
-        <article className="intro-text flex-col">
-          <p>
+        <article id="introText" className="flex-col">
+          <p style={{ maxWidth: "350px" }}>
             I am a Full Stack Web Developer with knowledge in both frontend and
-            backend development. Selected projects are listed below. Rest is on
-            my{" "}
-            <a
-              href="https://github.com/zdebar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              GitHub.
-            </a>
+            backend development.
           </p>
+          <br />
+
           <p>
             <strong>React</strong>, Tailwind, Node.js, Next.js, PostgreSQL,
             Typescript, Python
+            <button
+              type="button"
+              className="link"
+              style={{
+                background: "none",
+                border: "none",
+                padding: 0,
+                cursor: "pointer",
+                marginLeft: "5px",
+              }}
+              onClick={() => setShowSkills((prev) => !prev)}
+            >
+              {showSkills ? "..less" : "..more"}
+            </button>
           </p>
-          <button
-            type="button"
-            className="link"
-            style={{
-              background: "none",
-              border: "none",
-              padding: 0,
-              cursor: "pointer",
-            }}
-            onClick={() => setShowSkills((prev) => !prev)}
-          >
-            {showSkills ? "..less" : "..more"}
-          </button>
         </article>
         {showSkills && (
           <article className="skills">

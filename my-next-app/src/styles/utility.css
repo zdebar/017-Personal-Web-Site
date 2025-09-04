@@ -10,6 +10,17 @@
   flex-direction: column;
 }
 
+.flex-row-col {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .flex-row-col {
+    flex-direction: column;
+  }
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -22,17 +33,8 @@
   align-self: flex-end;
 }
 
-.nowrap {
-  white-space: nowrap;
-}
-
 strong {
   font-weight: bold;
-}
-
-.w-main {
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 .gap-tiny {

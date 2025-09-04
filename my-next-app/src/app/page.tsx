@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <main>
       <Intro />
-      {/* <ProjectList /> */}
+      <ProjectList />
     </main>
   );
 }

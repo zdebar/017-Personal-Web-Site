@@ -1,24 +1,19 @@
 .intro {
   text-align: left;
   background-color: var(--background-color-1);
+  padding: var(--gap-large) 0px;
 }
 
 .intro-title {
-  padding: 120px 0px 80px 0px;
-}
-
-.intro-text {
-  margin: 0px auto;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  bottom-margin: 30px;
+  padding-bottom: var(--gap-large);
 }
 
 .skills {
-  margin: 50px 0px;
   display: grid;
   grid-template-columns: 150px 1fr;
+  font-size: 0.8rem;
   text-align: left;
+  margin-top: var(--gap-small);
 }
 
 .link {
@@ -26,28 +21,18 @@
   text-decoration: underline;
 }
 
-/* Light and Dark modes */
-@media (prefers-color-scheme: dark) {
-  .link {
-    color: #138ef2;
-    text-decoration: underline;
-  }
+span {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 @media (max-width: 560px) {
-  .title {
-    margin: 10pz 0px;
-  }
-  .title span {
-    display: block;
-  }
-
-  .technologies {
+  .skills {
     display: flex;
     flex-direction: column;
   }
 
-  .technologies > *:nth-child(even) {
+  .skills > *:nth-child(even) {
     margin-bottom: 10px; /* extra gap for every even child */
   }
 }

@@ -5,7 +5,9 @@ export default function Footer() {
 
   return (
     <footer>
-      <p>&copy; {currentYear} Zdeněk Barth</p>
+      <section>
+        <p>&copy; {currentYear} Zdeněk Barth</p>
+      </section>
     </footer>
   );
 }

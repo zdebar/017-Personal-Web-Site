@@ -3,6 +3,7 @@
   --border-radius: 2px; /** Border radius for inputs, cards, buttons */
 
   /** Spacing */
+  --gap-large: 60px; /** Intro title y padding */
   --gap-big: 30px; /** Header top bottom */
   --gap-medium: 20px;
   --gap-small: 10px;
@@ -31,7 +32,11 @@
 @media (max-width: 700px) {
   /** Same as --main-width */
   :root {
-    --gap-big: 5px;
+    --gap-large: 10px; /** Intro title y padding */
+    --gap-big: 5px; /** Header top bottom */
+    --gap-medium: 5px;
+    --gap-small: 5px;
+    --gap-tiny: 5px; /** Section x padding,  */
   }
 }
 

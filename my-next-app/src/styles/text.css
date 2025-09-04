@@ -1,6 +1,6 @@
 /* Text Styles */
 html {
-  font-size: 15px;
+  font-size: 14px;
   font-family: var(--font-normal);
   font-weight: var(--normal-font-weight);
 }
@@ -10,12 +10,6 @@ textarea,
 select {
   font-family: inherit;
   font-size: inherit;
-}
-
-@media (max-width: 600px) {
-  html {
-    font-size: 14px;
-  }
 }
 
 h1,

@@ -1,3 +1,15 @@
 .card {
   min-height: 400px;
+  padding: var(--gap-large) 0px;
+}
+
+@media (max-width: 560px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills > *:nth-child(even) {
+    margin-bottom: 10px; /* extra gap for every even child */
+  }
 }

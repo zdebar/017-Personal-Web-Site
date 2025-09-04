@@ -18,6 +18,7 @@ body {
 section {
   max-width: var(--main-width);
   margin: 0 auto;
+  padding: 0px var(--gap-tiny);
 }
 
 main {

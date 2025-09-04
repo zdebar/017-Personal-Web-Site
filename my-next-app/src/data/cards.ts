@@ -2,7 +2,8 @@ export type CardData = {
   id: number;
   title: string;
   version?: string;
-  description: string;
+  texts: string[];
+  technologies?: string;
   images?: string[];
   date?: string;
   link?: string;
@@ -16,8 +17,9 @@ export const cards: CardData[] = [
     id: 0,
     title: "English App",
     version: "0.7.0",
-    description:
+    texts: [
       "Fast practice drill. Up to 400 words or sentences in 20 minutes of practice.",
+    ],
     date: "2025-08-26",
     link: "/projects/0",
     github: "https://github.com/zdebar/020-flash-card-app-typescript",
@@ -27,8 +29,15 @@ export const cards: CardData[] = [
   {
     id: 1,
     title: "Leetcode 67 / 75",
-    description:
-      "Basic Data Structures and Algorithms practice with Leetcode 75.",
+    texts: ["Basic Data Structures and Algorithms practice with Leetcode 75."],
     date: "2025-08-08",
+  },
+  {
+    id: 2,
+    title: "Personal Website",
+    version: "2.0.0",
+    texts: ["This site."],
+    technologies: "React, Node.js, Next.js, TypeScript, CSS",
+    github: "https://github.com/zdebar/017-Personal-Web-Site",
   },
 ];

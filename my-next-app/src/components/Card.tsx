@@ -10,7 +10,8 @@ import GitHubIcon from "./Icons/GitHubIcon";
 export default function Card({
   title,
   version,
-  description,
+  texts,
+  technologies,
   images,
   link,
   github,
@@ -32,17 +33,27 @@ export default function Card({
   };
 
   return (
-    <section style={{ backgroundColor: color }} className="card">
-      <div className="flex-row justify-center">
-        <div>
+    <div style={{ backgroundColor: color }}>
+      <section className="card flex-row-col justify-between">
+        <div className="flex-col" style={{ maxWidth: "300px" }}>
           <h2>{title}</h2>
           {version && <p>version: {version}</p>}
-          <p>{description}</p>
-
-          {link && <Link className="card" href={link} />}
-          <div className="flex-row align-center">
-            {github && <GitHubIcon gitHubHref={github} color="black" />}
+          <br />
+          {texts.map((text, index) => (
+            <p key={index}>{text}</p>
+          ))}
+          {technologies && (
+            <div>
+              <p>
+                <strong>Technologies:</strong>
+              </p>
+              <p>{technologies}</p>
+            </div>
+          )}
+          {link && <Link href={link} />}
+          <div className="flex-row align-center gap-small">
             {hosting && <button className="button">Test here</button>}
+            {github && <GitHubIcon gitHubHref={github} />}
           </div>
         </div>
         {images && (
@@ -100,7 +111,7 @@ export default function Card({
             )}
           </div>
         )}
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
