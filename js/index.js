@@ -23,16 +23,3 @@ document
       }
     });
   });
-
-document
-  .getElementById("emailAddress")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    let form = document.getElementById("contactForm");
-    let tooltip = document.getElementById("tooltip-text");
-    form.style.display = form.style.display === "none" ? "flex" : "none";
-    tooltip.textContent =
-      form.style.display === "none"
-        ? "Click to reveal contact form"
-        : "Click to hide contact form";
-  });

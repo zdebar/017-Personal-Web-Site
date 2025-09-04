@@ -1,31 +1,20 @@
+/** Global Stylesheet */
+
 /* Import */
 @import url("variables.css");
-@import url("tooltip.css");
-@import url("form.css");
-
-/* Reset some default browser styles */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url("utility.css");
+@import url("reset.css");
 
 /* Main Layout */
 body {
-  max-width: 700px;
+  max-width: 900px;
   min-width: 300px;
   margin: 0 auto;
-  padding: 0 20px;
-  line-height: 1.6;
+  padding: 0 10px;
+  line-height: 1.2;
   background-color: var(--background-color);
   color: var(--color);
   overflow-y: scroll;
-}
-
-footer {
-  margin: 15px 0px;
 }
 
 main {

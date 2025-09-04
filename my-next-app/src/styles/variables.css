@@ -1,19 +1,21 @@
-/* CSS variables */
 :root {
-  --card-grid-border: black 2px solid;
-  --border-radius: 2px;
-  --gap-size: 10px;
+  /** Borders */
+  --border-radius: 2px; /** Border radius for inputs, cards, buttons */
+
+  /** Spacing */
+  --gap-size: 10px; /** Flex and grid gap size */
+  --form-padding-size: 5px; /** Padding for form inputs and text areas*/
+
+  /** Font Weights */
   --normal-font-weight: 300;
   --bold-font-weight: 600;
-  --pading-size: 5px;
 }
 
-/* Light and Dark modes */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #17191c;
+    --background-color-1: white; /** Color 1 for background tabs */
+    --background-color-2: light gray; /** Color 2 for background tabs */
     --color: #ffffff;
-    --card-grid-border: var(--color) 2px solid;
     --card-shadow: none;
     --card-color-1: #d32c28;
     --card-color-2: #e5562f;
@@ -22,7 +24,8 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color: white;
+    --background-color-1: white;
+    --background-color-2: #f0f0f0; /** Color 1 for background tabs */
     --color: black;
     --card-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
     --card-color-1: #d32c28;

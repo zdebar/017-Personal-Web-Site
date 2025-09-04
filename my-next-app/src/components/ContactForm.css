@@ -22,13 +22,13 @@ button {
 
 form input {
   height: 25px;
-  padding: var(--pading-size);
+  padding: var(--form-padding-size);
 }
 
 textarea {
   height: 100px;
   resize: vertical;
-  padding: var(--pading-size);
+  padding: var(--form-padding-size);
 }
 
 form button {
