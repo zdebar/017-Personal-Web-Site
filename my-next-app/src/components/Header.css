@@ -1,5 +1,4 @@
 header {
-  font-weight: 500;
-  padding: 30px 0px;
+  padding: var(--gap-big) var(--gap-tiny);
   background-color: var(--background-color-1);
 }

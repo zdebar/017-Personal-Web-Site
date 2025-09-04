@@ -3,13 +3,17 @@
   --border-radius: 2px; /** Border radius for inputs, cards, buttons */
 
   /** Spacing */
-  --gap-size: 10px; /** Flex and grid gap size */
-  --gap-small-size: 5px; /** Small gap size for flex and grid */
-  --side-padding-size: 15px; /** Side padding for main content */
+  --gap-big: 30px; /** Header top bottom */
+  --gap-medium: 20px;
+  --gap-small: 10px;
+  --gap-tiny: 5px; /** Section x padding,  */
 
   /** Sizes */
+  --background-width: 1000px; /** Width for background elements */
+  --main-width: 700px; /** Max width for header, main, footer content */
   --button-width: 100px; /** Width for buttons */
   --button-height: 35px; /** Height for buttons */
+  --icon-size: 24px; /** Size for icons */
 
   /** Font Weights */
   --normal-font-weight: 300;
@@ -24,16 +28,17 @@
   --font-headings: "Abril Fatface", serif; /** Headings */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  /** Same as --main-width */
   :root {
-    --side-padding-size: 5px; /** Side padding for main content */
+    --gap-big: 5px;
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --background-color-1: #ffffffff; /** Color 1 for background tabs */
-    --background-color-2: #979797ff; /** Color 1 for background tabs */
+    --background-color-2: #efefefff; /** Color 1 for background tabs */
     --color: black;
     --card-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
     --card-color-1: #d32c28;

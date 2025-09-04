@@ -29,13 +29,13 @@ export default function ContactForm() {
   };
 
   return (
-    <section>
+    <div>
       <form
         id="contactForm"
         action="https://formspree.io/f/xdkazldg"
         method="POST"
         onSubmit={handleFormSubmit}
-        className="flex-col"
+        className="flex-col gap-tiny"
       >
         <label htmlFor="email">
           <input
@@ -63,7 +63,7 @@ export default function ContactForm() {
             placeholder="your message"
           ></textarea>
         </label>
-        <button type="submit" className="button">
+        <button type="submit" className="button align-end">
           Send
         </button>
       </form>
@@ -81,6 +81,6 @@ export default function ContactForm() {
           {responseMessage}
         </p>
       )}
-    </section>
+    </div>
   );
 }

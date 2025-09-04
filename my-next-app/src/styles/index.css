@@ -8,18 +8,15 @@
 
 /* Main Layout */
 body {
-  max-width: 1200px;
+  max-width: var(--background-width);
   min-width: 300px;
   margin: 0 auto;
-  line-height: 1.2;
   overflow-y: scroll;
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.05);
 }
 
-main,
-header,
-footer {
-  max-width: 800px;
+section {
+  max-width: var(--main-width);
   margin: 0 auto;
 }
 
@@ -27,7 +24,8 @@ main {
   min-height: 75vh;
 }
 
-header {
+header,
+footer {
   background-color: var(--background-color-1);
 }
 
@@ -35,8 +33,6 @@ header {
 .button {
   width: 200px;
   height: 40px;
-  padding: 10px 20px;
-  align-self: flex-end;
   cursor: pointer;
 
   color: white;
@@ -55,7 +51,7 @@ header {
 input,
 textarea {
   width: 100%;
-  padding: var(--side-padding-size);
+  padding: var(--gap-tiny);
   background-color: var(--background-color-1);
 
   font-size: 1rem;
@@ -77,7 +73,7 @@ textarea {
 }
 
 form {
-  margin-top: var(--gap-size);
+  margin-top: var(--gap-small);
 }
 
 a,

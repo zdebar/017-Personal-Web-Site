@@ -3,13 +3,11 @@
 .flex-row {
   display: flex;
   flex-direction: row;
-  gap: var(--gap-size);
 }
 
 .flex-col {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-size);
 }
 
 .justify-between {
@@ -18,4 +16,29 @@
 
 .align-center {
   align-items: center;
+}
+
+.align-end {
+  align-self: flex-end;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.w-main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.gap-tiny {
+  gap: var(--gap-tiny);
+}
+
+.gap-small {
+  gap: var(--gap-small);
 }

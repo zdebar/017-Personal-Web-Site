@@ -16,20 +16,21 @@ export default function Header() {
   return (
     <>
       <header>
-        <div className="flex-row justify-between align-center">
-          <HomeIcon size={28} color="black" strokeWidth={1.8} />
-          <div
-            className="justify-between flex-row align-center"
-            id="contactArea"
-          >
-            <GitHubIcon size={28} color="black" />
-
-            <button onClick={toggleForm} id="emailAddress" className="button">
-              zdebarth@gmail.com
-            </button>
+        <section>
+          <div className="flex-row justify-between align-center">
+            <HomeIcon color="black" strokeWidth={1.8} />
+            <div
+              className="justify-between flex-row align-center gap-small"
+              id="contactArea"
+            >
+              <GitHubIcon />
+              <button onClick={toggleForm} id="emailAddress" className="button">
+                zdebarth@gmail.com
+              </button>
+            </div>
           </div>
-        </div>
-        {formVisible && <ContactForm />}
+          {formVisible && <ContactForm />}
+        </section>
       </header>
     </>
   );
