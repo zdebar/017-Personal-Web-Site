@@ -1,6 +1,7 @@
 .card {
   min-height: 400px;
-  padding: var(--gap-large) 0px;
+  padding-top: var(--gap-large);
+  padding-bottom: var(--gap-large);
 }
 
 @media (max-width: 560px) {

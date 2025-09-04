@@ -17,13 +17,11 @@ export default function Intro() {
             <span>Full Stack</span> <span>Web Developer</span>
           </h1>
         </div>
-        <article id="introText" className="flex-col">
+        <article id="introText" className="flex-col gap-big">
           <p style={{ maxWidth: "350px" }}>
             I am a Full Stack Web Developer with knowledge in both frontend and
             backend development.
           </p>
-          <br />
-
           <p>
             <strong>React</strong>, Tailwind, Node.js, Next.js, PostgreSQL,
             Typescript, Python

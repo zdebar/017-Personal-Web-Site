@@ -34,14 +34,15 @@ export default function Card({
 
   return (
     <div style={{ backgroundColor: color }}>
-      <section className="card flex-row-col justify-between">
-        <div className="flex-col" style={{ maxWidth: "300px" }}>
+      <section className="card flex-row-col gap-medium justify-between">
+        <div className="flex-col gap-small" style={{ maxWidth: "300px" }}>
           <h2>{title}</h2>
           {version && <p>version: {version}</p>}
-          <br />
-          {texts.map((text, index) => (
-            <p key={index}>{text}</p>
-          ))}
+          <div className="flex-col gap-tiny">
+            {texts.map((text, index) => (
+              <p key={index}>{text}</p>
+            ))}
+          </div>
           {technologies && (
             <div>
               <p>
@@ -50,19 +51,28 @@ export default function Card({
               <p>{technologies}</p>
             </div>
           )}
-          {link && <Link href={link} />}
+          {link && (
+            <Link href={link} target="_blank" rel="noopener noreferrer">
+              <button className="button">..more</button>
+            </Link>
+          )}
           <div className="flex-row align-center gap-small">
-            {hosting && <button className="button">Test here</button>}
+            {hosting && (
+              <Link href={hosting} target="_blank" rel="noopener noreferrer">
+                <button className="button">Test here</button>
+              </Link>
+            )}
             {github && <GitHubIcon gitHubHref={github} />}
           </div>
         </div>
         {images && (
           <div
-            className="flex-row align-center"
+            className="flex-row align-center self-center"
             style={{
               position: "relative",
               width: "300px",
-              aspectRatio: "16/9",
+              maxWidth: "400px",
+              height: "400px",
             }}
           >
             {hasMultipleImages && (

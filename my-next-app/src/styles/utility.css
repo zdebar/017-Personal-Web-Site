@@ -29,6 +29,10 @@
   align-items: center;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .align-end {
   align-self: flex-end;
 }
@@ -43,4 +47,16 @@ strong {
 
 .gap-small {
   gap: var(--gap-small);
+}
+
+.gap-medium {
+  gap: var(--gap-medium);
+}
+
+.gap-big {
+  gap: var(--gap-big);
+}
+
+.gap-large {
+  gap: var(--gap-large);
 }
