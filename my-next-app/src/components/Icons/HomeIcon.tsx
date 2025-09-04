@@ -9,7 +9,7 @@ export default function HomeIcon({
   strokeWidth?: number;
 }) {
   return (
-    <Link href="/" className="icon">
+    <Link href="/" className="icon" title="Home">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
