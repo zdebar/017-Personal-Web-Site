@@ -7,12 +7,17 @@
 @import url("./text.css");
 
 /*Layout */
+html {
+  background-color: var(--background-color-0);
+}
+
 body {
   max-width: var(--background-width);
+  background-color: var(--background-color-1);
   min-width: 300px;
   margin: 0 auto;
   overflow-y: scroll;
-  box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--card-shadow);
 }
 
 main {

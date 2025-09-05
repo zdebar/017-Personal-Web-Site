@@ -16,7 +16,7 @@ export default function Header() {
     <>
       <header className="py-small w-main">
         <div className="flex-row justify-between align-center">
-          <HomeIcon color="black" strokeWidth={1.8} />
+          <HomeIcon color="var(--color)" strokeWidth={1.8} />
           <div className="flex-row justify-between align-center gap-small">
             <GitHubIcon gitHubHref="https://github.com/zdebar" />
             <button onClick={toggleForm} id="emailAddress" className="button">

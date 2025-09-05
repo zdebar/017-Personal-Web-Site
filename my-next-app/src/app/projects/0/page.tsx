@@ -13,7 +13,7 @@ export default function FlashCardApp() {
     <div className="project">
       <Section>
         <div className="flex-row-col justify-between mb-big gap-medium align-right text-left">
-          <h2>English Learning App</h2>
+          <h2>English App</h2>
           <div className="flex-row gap-small align-center">
             <GitHubIcon gitHubHref={project.github ?? "#"} />
             <Link

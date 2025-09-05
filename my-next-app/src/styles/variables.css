@@ -32,18 +32,20 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color-1: #ffffffff; /* Background color 1 for tabs */
-    --background-color-2: #efefefff; /* Background color 2 for tabs */
+    --background-color-0: #ffffff; /* Background color 0 for html */
+    --background-color-1: #ffffff; /* Background color 1 for body, tabs */
+    --background-color-2: #efefef; /* Background color 2 for tabs */
     --color: black;
-    --card-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
+    --card-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.05);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color-1: #efefefff; /* Background color 1 for tabs */
-    --background-color-2: #ffffffff; /* Background color 2 for tabs */
-    --color: black;
+    --background-color-0: #333333; /* Background color 0 for html */
+    --background-color-1: #282828; /* Background color 1 for body, tabs */
+    --background-color-2: #222222; /* Background color 2 for tabs */
+    --color: #ffffff;
     --card-shadow: none;
   }
 }
