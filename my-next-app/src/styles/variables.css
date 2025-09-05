@@ -1,13 +1,18 @@
 :root {
+  /* Text */
+  font-size: 14px;
+  --font-normal: "Ubuntu", sans-serif; /* Paragraphs, Links, Buttons */
+  --font-headings: "Montserrat", sans-serif; /* Headings */
+
   /* Borders */
   --border-radius: 2px; /* Border radius for inputs, cards, buttons */
 
   /* Spacing */
-  --gap-large: 60px; /* Intro title vertical padding */
-  --gap-big: 30px; /* Header top/bottom padding */
-  --gap-medium: 20px;
-  --gap-small: 10px;
-  --gap-tiny: 5px; /* Section horizontal padding */
+  --gap-large: 4rem; /* Intro title vertical padding */
+  --gap-big: 2rem; /* Header top/bottom padding */
+  --gap-medium: 1.33rem;
+  --gap-small: 0.66rem;
+  --gap-tiny: 0.33rem; /* Section horizontal padding */
 
   /* Sizes */
   --background-width: 1000px; /* Width for background elements */
@@ -24,10 +29,7 @@
   /* Colors */
   --button-color-1: #23ae19; /* Gradient color 1 for buttons */
   --button-color-2: #018f06; /* Gradient color 2 for buttons */
-
-  /* Text Fonts */
-  --font-normal: "Ubuntu", sans-serif; /* Paragraphs, Links, Buttons */
-  --font-headings: "Montserrat", sans-serif; /* Headings */
+  --button-color-3: #026c05ff; /* Gradient color 3 for buttons */
 }
 
 @media (prefers-color-scheme: light) {
@@ -37,6 +39,7 @@
     --background-color-2: #efefef; /* Background color 2 for tabs */
     --color: black;
     --card-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.05);
+    --button-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -47,5 +50,6 @@
     --background-color-2: #222222; /* Background color 2 for tabs */
     --color: #ffffff;
     --card-shadow: none;
+    --button-shadow: none;
   }
 }

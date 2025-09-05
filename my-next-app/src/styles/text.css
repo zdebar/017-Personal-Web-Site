@@ -1,6 +1,5 @@
 /* Text Styles */
 html {
-  font-size: 14px;
   font-family: var(--font-normal);
   font-weight: var(--normal-font-weight);
   color: var(--color);
