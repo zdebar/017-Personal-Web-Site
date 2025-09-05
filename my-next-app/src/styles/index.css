@@ -21,8 +21,17 @@ body {
 }
 
 main {
-  min-height: 75vh; /** Ensure footer is at the bottom of the page 
-  /** TODO: or this could be in body?*/
+  min-height: 75vh;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header {
+  background-color: var(--background-color-1);
 }
 
 section:nth-of-type(odd) {

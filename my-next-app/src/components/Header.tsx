@@ -13,19 +13,22 @@ export default function Header() {
   };
 
   return (
-    <>
-      <header className="py-small w-main">
-        <div className="flex-row justify-between align-center">
-          <HomeIcon color="var(--color)" strokeWidth={1.8} />
-          <div className="flex-row justify-between align-center gap-small">
-            <GitHubIcon gitHubHref="https://github.com/zdebar" />
-            <button onClick={toggleForm} id="emailAddress" className="button">
-              zdebarth@gmail.com
-            </button>
+    <section className="header">
+      <header className="py-small ">
+        <div className="w-main">
+          <div className="flex-row   justify-between align-center">
+            <HomeIcon color="var(--color)" strokeWidth={1.8} />
+            <div className="flex-row justify-between align-center gap-small">
+              <GitHubIcon gitHubHref="https://github.com/zdebar" />
+
+              <button onClick={toggleForm} id="emailAddress" className="button">
+                <span style={{ userSelect: "text" }}>zdebarth@gmail.com</span>
+              </button>
+            </div>
           </div>
+          {formVisible && <ContactForm />}
         </div>
-        {formVisible && <ContactForm />}
       </header>
-    </>
+    </section>
   );
 }
