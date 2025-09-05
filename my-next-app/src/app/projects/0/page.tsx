@@ -1,10 +1,10 @@
 import "../Projects.css";
 import Image from "next/image";
-import Section from "@/components/Section";
+import Section from "@/components/common/Section";
 import Link from "next/link";
 import { cards } from "../../../data/cards";
 import GitHubIcon from "@/components/Icons/GitHubIcon";
-import ImageCarousel from "@/components/ImageCarousel";
+import ImageCarousel from "@/components/common/ImageCarousel";
 
 export default function FlashCardApp() {
   const project = cards[2];

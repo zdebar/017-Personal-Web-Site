@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import ContactForm from "./ContactForm";
+import ContactForm from "./common/ContactForm";
 import GitHubIcon from "./Icons/GitHubIcon";
 import HomeIcon from "./Icons/HomeIcon";
 

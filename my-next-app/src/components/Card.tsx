@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CardData } from "../data/cards";
 import GitHubIcon from "./Icons/GitHubIcon";
-import ImageCarousel from "./ImageCarousel";
+import ImageCarousel from "./common/ImageCarousel";
 
 export default function Card({
   title,
