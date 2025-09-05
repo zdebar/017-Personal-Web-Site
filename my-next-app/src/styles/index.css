@@ -16,22 +16,16 @@ body {
 }
 
 main {
-  min-height: 75vh; /** Ensure footer is at the bottom of the page */
+  min-height: 75vh; /** Ensure footer is at the bottom of the page 
+  /** TODO: or this could be in body?*/
 }
 
-article {
-  max-width: var(--main-width); /** Limit width of main content */
-  margin: 0 auto;
-  padding: 0px var(--gap-small);
+article:nth-of-type(odd) {
+  background-color: var(--background-color-2); /** Alternate background color */
 }
 
-section:nth-of-type(odd) {
-  /** Alternate background color for sections */
-  background-color: var(--background-color-2);
-}
-
-header {
-  background-color: var(--background-color-1);
+footer {
+  padding: var(--gap-small) 0px;
 }
 
 input,

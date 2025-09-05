@@ -1,5 +1,6 @@
 /** Utility CSS classes */
 
+/** Flexbox Utilities */
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -37,10 +38,19 @@
   align-self: flex-end;
 }
 
+/** Text Utilities */
 strong {
   font-weight: bold;
 }
 
+/** Size Utilities */
+.w-main {
+  max-width: var(--main-width);
+  margin: 0 auto;
+  padding: 0px var(--gap-small);
+}
+
+/** Spacing Utilities */
 .gap-tiny {
   gap: var(--gap-tiny);
 }
@@ -59,4 +69,27 @@ strong {
 
 .gap-large {
   gap: var(--gap-large);
+}
+
+.py-small {
+  padding-top: var(--gap-small);
+  padding-bottom: var(--gap-small);
+}
+
+.py-big {
+  padding-top: var(--gap-big);
+  padding-bottom: var(--gap-big);
+}
+
+.py-large {
+  padding-top: var(--gap-large);
+  padding-bottom: var(--gap-large);
+}
+
+.pb-small {
+  padding-bottom: var(--gap-small);
+}
+
+.pb-large {
+  padding-bottom: var(--gap-large);
 }

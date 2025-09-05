@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import "./Header.css";
 import ContactForm from "./ContactForm";
 import GitHubIcon from "./Icons/GitHubIcon";
 import HomeIcon from "./Icons/HomeIcon";
@@ -15,22 +14,17 @@ export default function Header() {
 
   return (
     <>
-      <header>
-        <article>
-          <div className="flex-row justify-between align-center">
-            <HomeIcon color="black" strokeWidth={1.8} />
-            <div
-              className="justify-between flex-row align-center gap-small"
-              id="contactArea"
-            >
-              <GitHubIcon gitHubHref="https://github.com/zdebar" />
-              <button onClick={toggleForm} id="emailAddress" className="button">
-                zdebarth@gmail.com
-              </button>
-            </div>
+      <header className="py-small w-main">
+        <div className="flex-row justify-between align-center">
+          <HomeIcon color="black" strokeWidth={1.8} />
+          <div className="flex-row justify-between align-center gap-small">
+            <GitHubIcon gitHubHref="https://github.com/zdebar" />
+            <button onClick={toggleForm} id="emailAddress" className="button">
+              zdebarth@gmail.com
+            </button>
           </div>
-          {formVisible && <ContactForm />}
-        </article>
+        </div>
+        {formVisible && <ContactForm />}
       </header>
     </>
   );
