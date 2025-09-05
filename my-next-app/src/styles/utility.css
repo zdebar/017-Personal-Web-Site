@@ -16,6 +16,11 @@
   flex-direction: row;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
 @media (max-width: 600px) {
   .flex-row-col {
     flex-direction: column;

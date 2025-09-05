@@ -1,4 +1,3 @@
-import "./Section.css";
 import React from "react";
 
 interface SectionProps {
@@ -10,8 +9,8 @@ const Section: React.FC<SectionProps> = ({ title, children }) => {
   return (
     <section>
       <div className="w-main py-big">
-        <h3>{title}</h3>
-        <div>{children}</div>
+        <h2>{title}</h2>
+        {children}
       </div>
     </section>
   );
