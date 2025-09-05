@@ -1,17 +1,13 @@
 import React from "react";
 
 interface SectionProps {
-  title: string;
   children: React.ReactNode;
 }
 
-const Section: React.FC<SectionProps> = ({ title, children }) => {
+const Section: React.FC<SectionProps> = ({ children }) => {
   return (
     <section>
-      <div className="w-main py-big">
-        <h2>{title}</h2>
-        {children}
-      </div>
+      <div className="w-main py-big">{children}</div>
     </section>
   );
 };

@@ -113,7 +113,16 @@ strong {
   margin-bottom: var(--gap-small);
 }
 
+.my-big {
+  margin-top: var(--gap-big);
+  margin-bottom: var(--gap-big);
+}
+
 .my-medium {
   margin-top: var(--gap-medium);
   margin-bottom: var(--gap-medium);
+}
+
+.mb-big {
+  margin-bottom: var(--gap-big);
 }

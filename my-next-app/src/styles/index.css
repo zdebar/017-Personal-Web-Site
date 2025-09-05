@@ -79,3 +79,12 @@ a svg {
   border-radius: 25px;
   border: none;
 }
+
+.multi-column-text {
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.multi-column-text p {
+  margin-bottom: var(--gap-medium);
+}
