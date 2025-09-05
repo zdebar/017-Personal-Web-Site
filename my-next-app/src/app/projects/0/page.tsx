@@ -12,7 +12,7 @@ export default function FlashCardApp() {
   return (
     <div className="project">
       <Section>
-        <div className="flex-row justify-between mb-big">
+        <div className="flex-row-col justify-between mb-big gap-medium align-right text-left">
           <h2>English Learning App</h2>
           <div className="flex-row gap-small align-center">
             <GitHubIcon gitHubHref={project.github ?? "#"} />
@@ -21,7 +21,7 @@ export default function FlashCardApp() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="button">Try it here</button>
+              <button className="button">try it here</button>
             </Link>
           </div>
         </div>
@@ -90,6 +90,10 @@ export default function FlashCardApp() {
             <strong>Pronunciation repeat</strong> – Luckily, simply repeating
             after audio works surprisingly well. I tried it myself and it really
             helps.
+          </p>
+          <p>
+            <strong>App name</strong> - English App is a working title. But as I
+            read this page after me, maybe it will be &quot;Just practice&quot;.
           </p>
         </div>
       </Section>

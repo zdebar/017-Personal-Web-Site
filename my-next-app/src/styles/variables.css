@@ -3,33 +3,32 @@
   --border-radius: 2px; /* Border radius for inputs, cards, buttons */
 
   /* Spacing */
-  --gap-large: 60px;    /* Intro title vertical padding */
-  --gap-big: 30px;      /* Header top/bottom padding */
+  --gap-large: 60px; /* Intro title vertical padding */
+  --gap-big: 30px; /* Header top/bottom padding */
   --gap-medium: 20px;
   --gap-small: 10px;
-  --gap-tiny: 5px;      /* Section horizontal padding */
+  --gap-tiny: 5px; /* Section horizontal padding */
 
   /* Sizes */
   --background-width: 1000px; /* Width for background elements */
-  --main-width: 700px;        /* Max width for header, main, footer content */
-  --column-width: 300px;      /* Max width for text content */
-  --button-width: 100px;      /* Width for buttons */
-  --button-height: 35px;      /* Height for buttons */
-  --icon-size: 24px;          /* Size for icons */
+  --main-width: 700px; /* Max width for header, main, footer content */
+  --column-width: 300px; /* Max width for text content */
+  --button-width: 100px; /* Width for buttons */
+  --button-height: 35px; /* Height for buttons */
+  --icon-size: 24px; /* Size for icons */
 
   /* Font Weights */
   --normal-font-weight: 300;
   --bold-font-weight: 600;
 
   /* Colors */
-  --button-color-1: #23ae19;  /* Gradient color 1 for buttons */
-  --button-color-2: #018f06;  /* Gradient color 2 for buttons */
+  --button-color-1: #23ae19; /* Gradient color 1 for buttons */
+  --button-color-2: #018f06; /* Gradient color 2 for buttons */
 
   /* Text Fonts */
-  --font-normal: "Ubuntu", sans-serif;      /* Paragraphs, Links, Buttons */
-  --font-headings: "Montserrat", sans-serif;  /* Headings */
+  --font-normal: "Ubuntu", sans-serif; /* Paragraphs, Links, Buttons */
+  --font-headings: "Montserrat", sans-serif; /* Headings */
 }
-
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -37,16 +36,14 @@
     --background-color-2: #efefefff; /* Background color 2 for tabs */
     --color: black;
     --card-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
-    --card-color-1: #d32c28;
-    --card-color-2: #e5562f;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color-1: darkgray;   /* Background color 1 for tabs */
-    --background-color-2: lightgray;  /* Background color 2 for tabs */
-    --color: #ffffff;
+    --background-color-1: #efefefff; /* Background color 1 for tabs */
+    --background-color-2: #ffffffff; /* Background color 2 for tabs */
+    --color: black;
     --card-shadow: none;
-    --card-color-1: #d32c28;
-    --card-color-2: #e5562f;}
+  }
+}

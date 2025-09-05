@@ -35,6 +35,10 @@
   align-items: center;
 }
 
+.align-right {
+  align-items: end;
+}
+
 .self-center {
   align-self: center;
 }
@@ -46,6 +50,10 @@
 /** Text Utilities */
 strong {
   font-weight: bold;
+}
+
+text-left {
+  text-align: left;
 }
 
 /** Size Utilities */
