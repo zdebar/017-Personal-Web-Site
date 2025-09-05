@@ -1,10 +1,6 @@
 import "./Icon.css";
 
-export default function GitHubIcon({
-  gitHubHref = "https://github.com/zdebar",
-}: {
-  gitHubHref?: string;
-}) {
+export default function GitHubIcon({ gitHubHref }: { gitHubHref: string }) {
   return (
     <a
       href={gitHubHref}

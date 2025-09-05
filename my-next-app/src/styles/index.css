@@ -6,7 +6,7 @@
 @import url("./utility.css");
 @import url("./text.css");
 
-/* Main Layout */
+/*Layout */
 body {
   max-width: var(--background-width);
   min-width: 300px;
@@ -15,38 +15,23 @@ body {
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.05);
 }
 
-section {
-  max-width: var(--main-width);
-  margin: 0 auto;
-  padding: 0px var(--gap-tiny);
-}
-
 main {
-  min-height: 75vh;
+  min-height: 75vh; /** Ensure footer is at the bottom of the page */
 }
 
-header,
-footer {
+article {
+  max-width: var(--main-width); /** Limit width of main content */
+  margin: 0 auto;
+  padding: 0px var(--gap-small);
+}
+
+section:nth-of-type(odd) {
+  /** Alternate background color for sections */
+  background-color: var(--background-color-2);
+}
+
+header {
   background-color: var(--background-color-1);
-}
-
-/* General Component Styles */
-.button {
-  width: 200px;
-  height: 40px;
-  cursor: pointer;
-
-  color: white;
-  background: linear-gradient(
-    to right,
-    var(--button-color-1),
-    var(--button-color-2)
-  );
-
-  font-weight: var(--bold-font-weight);
-
-  border-radius: 25px;
-  border: none;
 }
 
 input,
@@ -80,4 +65,23 @@ form {
 a,
 a svg {
   cursor: pointer;
+}
+
+/* Component Styles */
+.button {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+
+  color: white;
+  background: linear-gradient(
+    to right,
+    var(--button-color-1),
+    var(--button-color-2)
+  );
+
+  font-weight: var(--bold-font-weight);
+
+  border-radius: 25px;
+  border: none;
 }

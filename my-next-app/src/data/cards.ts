@@ -9,7 +9,6 @@ export type CardData = {
   link?: string;
   github?: string;
   hosting?: string;
-  color?: string;
 };
 
 export const cards: CardData[] = [

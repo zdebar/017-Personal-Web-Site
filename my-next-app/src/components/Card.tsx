@@ -16,7 +16,6 @@ export default function Card({
   link,
   github,
   hosting,
-  color = "white",
 }: CardData) {
   const [currentImage, setCurrentImage] = useState(0);
   const hasMultipleImages = images && images.length > 1;
@@ -33,8 +32,8 @@ export default function Card({
   };
 
   return (
-    <div style={{ backgroundColor: color }}>
-      <section className="card flex-row-col gap-medium justify-between">
+    <section>
+      <article className="card flex-row-col gap-medium justify-between">
         <div className="flex-col gap-small" style={{ maxWidth: "300px" }}>
           <h2>{title}</h2>
           {version && <p>version: {version}</p>}
@@ -52,7 +51,7 @@ export default function Card({
             </div>
           )}
           {link && (
-            <Link href={link} target="_blank" rel="noopener noreferrer">
+            <Link href={link}>
               <button className="button">..more</button>
             </Link>
           )}
@@ -121,7 +120,7 @@ export default function Card({
             )}
           </div>
         )}
-      </section>
-    </div>
+      </article>
+    </section>
   );
 }

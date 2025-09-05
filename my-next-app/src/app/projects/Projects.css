@@ -1,3 +1,14 @@
+.paragraph {
+  min-height: 50px;
+  padding-top: var(--gap-large);
+  padding-bottom: var(--gap-large);
+  border: 1px solid black;
+}
+
+.project > :nth-child(odd) {
+  background-color: var(--background-color-2);
+}
+
 .links {
   display: flex;
   flex-direction: column;

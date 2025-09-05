@@ -4,7 +4,7 @@ import Section from "@/components/Section";
 
 export default function FlashCardApp() {
   return (
-    <main className="project-page">
+    <div className="project">
       <Section title="Links">
         <div className="links">
           <a
@@ -23,7 +23,6 @@ export default function FlashCardApp() {
           </a>
         </div>
       </Section>
-
       <Section title="Introduction">
         <p>
           I needed a simple language learning app to improve my vocabulary and
@@ -370,6 +369,6 @@ export default function FlashCardApp() {
           </li>
         </ul>
       </Section>
-    </main>
+    </div>
   );
 }

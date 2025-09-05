@@ -4,23 +4,22 @@ import React from "react";
 interface SectionProps {
   title: string;
   children: React.ReactNode;
-  barColor?: string;
-  containerColor?: string;
 }
 
-const Section: React.FC<SectionProps> = ({
-  title,
-  children,
-  barColor = "default-bar-color",
-  containerColor = "text-container",
-}) => {
+const Section: React.FC<SectionProps> = ({ title, children }) => {
   return (
-    <section className="group">
-      <div className={`bar ${barColor}`}>
+    <div
+      style={{
+        paddingTop: "var(--gap-large)",
+        paddingBottom: "var(--gap-large)",
+      }}
+    >
+      <section>
         <h3>{title}</h3>
-      </div>
-      <div className={`text-container ${containerColor}`}>{children}</div>
-    </section>
+
+        <div>{children}</div>
+      </section>
+    </div>
   );
 };
 

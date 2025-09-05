@@ -7,12 +7,8 @@ export default function ProjectList() {
       {cards
         .slice()
         .reverse()
-        .map((card, index) => {
-          const color =
-            index % 2 !== 0
-              ? "var(--background-color-1)"
-              : "var(--background-color-2)";
-          return <Card key={card.id} {...card} color={color} />;
+        .map((card) => {
+          return <Card key={card.id} {...card} />;
         })}
     </div>
   );

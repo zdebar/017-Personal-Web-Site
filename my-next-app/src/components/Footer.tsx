@@ -4,10 +4,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer>
-      <section>
-        <p>&copy; {currentYear} Zdeněk Barth</p>
-      </section>
-    </footer>
+    <section>
+      <footer>
+        <article>
+          <p>&copy; {currentYear} Zdeněk Barth</p>
+        </article>
+      </footer>
+    </section>
   );
 }

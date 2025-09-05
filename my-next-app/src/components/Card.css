@@ -1,5 +1,5 @@
 .card {
-  min-height: 400px;
+  min-height: 200px;
   padding-top: var(--gap-large);
   padding-bottom: var(--gap-large);
 }

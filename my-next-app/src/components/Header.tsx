@@ -16,21 +16,21 @@ export default function Header() {
   return (
     <>
       <header>
-        <section>
+        <article>
           <div className="flex-row justify-between align-center">
             <HomeIcon color="black" strokeWidth={1.8} />
             <div
               className="justify-between flex-row align-center gap-small"
               id="contactArea"
             >
-              <GitHubIcon />
+              <GitHubIcon gitHubHref="https://github.com/zdebar" />
               <button onClick={toggleForm} id="emailAddress" className="button">
                 zdebarth@gmail.com
               </button>
             </div>
           </div>
           {formVisible && <ContactForm />}
-        </section>
+        </article>
       </header>
     </>
   );

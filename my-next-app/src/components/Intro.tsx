@@ -8,7 +8,7 @@ export default function Intro() {
 
   return (
     <div className="intro">
-      <section>
+      <article>
         <div id="introTitle" className="intro-title">
           <h1>
             <span>Hi, I&apos;m</span> <span>Zdeněk Barth</span>
@@ -79,7 +79,7 @@ export default function Intro() {
             <p>Touch typing, Driving license B</p>
           </article>
         )}
-      </section>
+      </article>
     </div>
   );
 }
