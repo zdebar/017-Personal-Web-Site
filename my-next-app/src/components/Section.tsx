@@ -8,18 +8,12 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ title, children }) => {
   return (
-    <div
-      style={{
-        paddingTop: "var(--gap-large)",
-        paddingBottom: "var(--gap-large)",
-      }}
-    >
-      <section>
+    <section>
+      <div className="w-main py-big">
         <h3>{title}</h3>
-
         <div>{children}</div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

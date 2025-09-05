@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { CardData } from "../data/cards";
-import "./Card.css";
 import GitHubIcon from "./Icons/GitHubIcon";
 
 export default function Card({
@@ -33,27 +32,31 @@ export default function Card({
 
   return (
     <section>
-      <article className="card flex-row-col gap-medium justify-between">
-        <div className="flex-col gap-small" style={{ maxWidth: "300px" }}>
+      <article className="w-main py-large flex-row-col gap-large justify-between">
+        <div className="w-column">
           <h2>{title}</h2>
           {version && <p>version: {version}</p>}
-          <div className="flex-col gap-tiny">
+
+          <div className="flex-col gap-tiny my-medium">
             {texts.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
           {technologies && (
-            <div>
+            <div className="my-medium">
               <p>
                 <strong>Technologies:</strong>
               </p>
               <p>{technologies}</p>
             </div>
           )}
+
           {link && (
-            <Link href={link}>
-              <button className="button">..more</button>
-            </Link>
+            <div className="my-small">
+              <Link href={link}>
+                <button className="button">..more</button>
+              </Link>
+            </div>
           )}
           <div className="flex-row align-center gap-small">
             {hosting && (

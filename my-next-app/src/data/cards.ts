@@ -45,6 +45,6 @@ export const cards: CardData[] = [
     link: "/projects/0",
     github: "https://github.com/zdebar/020-flash-card-app-typescript",
     hosting: "https://020-flash-card-app-typescript.vercel.app/",
-    images: ["/images/02-001.png", "/images/02-002.png"],
+    images: ["/images/02-001.png", "/images/02-002.png", "/images/02-003.png"],
   },
 ];

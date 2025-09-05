@@ -20,7 +20,7 @@ main {
   /** TODO: or this could be in body?*/
 }
 
-article:nth-of-type(odd) {
+section:nth-of-type(odd) {
   background-color: var(--background-color-2); /** Alternate background color */
 }
 

@@ -44,6 +44,10 @@ strong {
 }
 
 /** Size Utilities */
+.w-column {
+  max-width: var(--column-width);
+}
+
 .w-main {
   max-width: var(--main-width);
   margin: 0 auto;
@@ -76,6 +80,11 @@ strong {
   padding-bottom: var(--gap-small);
 }
 
+.py-medium {
+  padding-top: var(--gap-medium);
+  padding-bottom: var(--gap-medium);
+}
+
 .py-big {
   padding-top: var(--gap-big);
   padding-bottom: var(--gap-big);
@@ -92,4 +101,14 @@ strong {
 
 .pb-large {
   padding-bottom: var(--gap-large);
+}
+
+.my-small {
+  margin-top: var(--gap-small);
+  margin-bottom: var(--gap-small);
+}
+
+.my-medium {
+  margin-top: var(--gap-medium);
+  margin-bottom: var(--gap-medium);
 }
