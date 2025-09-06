@@ -24,7 +24,12 @@ export default function Header() {
             <div className="flex-row justify-between align-center gap-small">
               <GitHubIcon gitHubHref="https://github.com/zdebar" />
 
-              <button onClick={toggleForm} id="emailAddress" className="button">
+              <button
+                onClick={toggleForm}
+                id="emailAddress"
+                className="button"
+                title="contact form"
+              >
                 <span style={{ userSelect: "text" }}>zdebarth@gmail.com</span>
               </button>
             </div>

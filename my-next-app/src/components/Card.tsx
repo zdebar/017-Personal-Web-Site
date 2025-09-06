@@ -18,10 +18,10 @@ export default function Card({
     <>
       <section>
         <article className="w-main py-large flex-row-col gap-large justify-between">
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 1 }} className="w-column">
             <h2>{title}</h2>
             {version && <p>version: {version}</p>}
-            <div className="flex-col gap-tiny my-medium">
+            <div className="flex-col gap-tiny my-medium ">
               {texts.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
@@ -36,14 +36,19 @@ export default function Card({
             )}
             {link && (
               <div className="my-small">
-                <Link href={link}>
+                <Link href={link} title="more about this project">
                   <button className="button">..more</button>
                 </Link>
               </div>
             )}
             <div className="flex-row align-center gap-small">
               {hosting && (
-                <Link href={hosting} target="_blank" rel="noopener noreferrer">
+                <Link
+                  href={hosting}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={hosting}
+                >
                   <button className="button">try it here</button>
                 </Link>
               )}

@@ -51,7 +51,7 @@ text-left {
 
 /** Size Utilities */
 .w-column {
-  max-width: var(--column-width);
+  min-width: var(--column-width);
 }
 
 .w-main {
@@ -101,8 +101,17 @@ text-left {
   padding-bottom: var(--gap-large);
 }
 
+.py-xlarge {
+  padding-top: var(--gap-xlarge);
+  padding-bottom: var(--gap-xlarge);
+}
+
 .pb-small {
   padding-bottom: var(--gap-small);
+}
+
+.pb-big {
+  padding-bottom: var(--gap-big);
 }
 
 .pb-large {

@@ -1,4 +1,3 @@
-"use client";
 import Section from "@/components/common/Section";
 
 export default function AboutMe() {
@@ -12,7 +11,6 @@ export default function AboutMe() {
           </a>
         </Section>
       </div>
-      <style jsx>{``}</style>
     </>
   );
 }

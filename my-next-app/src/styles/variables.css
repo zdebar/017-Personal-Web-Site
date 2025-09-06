@@ -8,7 +8,8 @@
   --border-radius: 2px; /* Border radius for inputs, cards, buttons */
 
   /* Spacing */
-  --gap-large: 6rem; /* Intro title vertical padding */
+  --gap-xlarge: 12rem; /* Intro vertical padding */
+  --gap-large: 6rem; /* Section vertical padding */
   --gap-big: 3rem; /* Header top/bottom padding */
   --gap-medium: 1.33rem;
   --gap-small: 0.66rem;
@@ -30,6 +31,19 @@
   --button-color-1: #23ae19; /* Gradient color 1 for buttons */
   --button-color-2: #018f06; /* Gradient color 2 for buttons */
   --button-color-3: #026c05ff; /* Gradient color 3 for buttons */
+}
+
+@media (min-height: 600p) and (max-height: 799px) {
+  /* TODO: not working, dont know why */
+  :root {
+    --gap-xlarge: 6rem;
+  }
+}
+
+@media (max-height: 599px) {
+  :root {
+    --gap-xlarge: 3rem;
+  }
 }
 
 @media (prefers-color-scheme: light) {

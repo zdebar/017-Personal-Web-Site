@@ -93,6 +93,14 @@ a svg {
   border: none;
 }
 
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:hover {
+  background: var(--button-color-2);
+}
+
 /* Link style for inline links and buttons */
 .link {
   color: blue;

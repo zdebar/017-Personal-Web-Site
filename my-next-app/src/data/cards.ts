@@ -28,8 +28,7 @@ export const cards: CardData[] = [
     id: 1,
     title: "Leetcode 67 / 75",
     texts: [
-      "Basic algorithms with Leetcode 75.",
-      "I have already finished Data Structures and Algorithms in the past. This is currated list of problems for practice.",
+      "Basic algorithms practice with Leetcode 75. I simply need more practice in basic algorithms.",
     ],
     technologies: "Python",
     version: "in progress",

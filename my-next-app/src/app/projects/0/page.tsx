@@ -1,5 +1,5 @@
 "use client";
-import "../Projects.css";
+
 import Image from "next/image";
 import Section from "@/components/common/Section";
 import Link from "next/link";
@@ -12,7 +12,7 @@ export default function FlashCardApp() {
 
   return (
     <>
-      <div className="project">
+      <div>
         <Section>
           <div className="flex-row-col justify-between mb-big gap-medium align-right text-left">
             <h2>English App</h2>

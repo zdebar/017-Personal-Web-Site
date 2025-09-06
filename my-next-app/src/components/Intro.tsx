@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import "./Intro.css";
 import Link from "next/link";
 
 export default function Intro() {
@@ -9,8 +8,8 @@ export default function Intro() {
 
   return (
     <>
-      <div className="w-main py-large">
-        <div className="pb-large">
+      <div className="w-main py-xlarge">
+        <div className="pb-big">
           <h1>
             <span>Hi, I&apos;m</span> <span>Zdeněk Barth</span>
           </h1>
@@ -21,7 +20,7 @@ export default function Intro() {
         <p className="pb-small">
           I am a Full Stack Web Developer with knowledge in both frontend and
           backend development.{" "}
-          <Link href="/projects/AboutMe" className="link" title="About Me">
+          <Link href="/projects/AboutMe" className="link" title="more about me">
             .. more
           </Link>
         </p>
@@ -31,6 +30,7 @@ export default function Intro() {
           <button
             type="button"
             className="link"
+            title="show more skills"
             style={{
               background: "none",
               border: "none",
