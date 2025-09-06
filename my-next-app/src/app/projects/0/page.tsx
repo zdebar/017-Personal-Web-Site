@@ -152,7 +152,7 @@ export default function FlashCardApp() {
           width={560}
           height={995}
           layout="responsive"
-          className="image-container"
+          className="screenshot"
         />
       </Section>
       <Section>
