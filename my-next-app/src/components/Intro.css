@@ -14,6 +14,12 @@ span {
   text-decoration: underline;
 }
 
+@media (prefers-color-scheme: dark) {
+  .link {
+    color: lightblue;
+  }
+}
+
 @media (max-width: 560px) {
   .skills {
     display: flex;

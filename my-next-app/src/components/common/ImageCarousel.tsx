@@ -41,10 +41,10 @@ export default function ImageCarousel({
       className="flex-row align-center self-center"
       style={{
         position: "relative",
-        width: `${imageWidth}px`,
-        height: `${imageHeight}px`,
-        maxWidth: `${maxWidth}px`,
-        maxHeight: `${maxHeight}px`,
+        width: "100%",
+        maxWidth: `${imageWidth}px`, // max natural width
+        aspectRatio: `${imageWidth} / ${imageHeight}`, // keep aspect ratio
+        height: "auto",
       }}
     >
       {hasMultipleImages && (
