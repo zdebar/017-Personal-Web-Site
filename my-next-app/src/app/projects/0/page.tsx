@@ -147,7 +147,7 @@ export default function FlashCardApp() {
           </p>
         </div>
         <Image
-          src="/images/010.png"
+          src="/images/02/02-dat-01.png"
           alt="v0.7.0 Database Scheme"
           width={560}
           height={995}
@@ -194,12 +194,12 @@ export default function FlashCardApp() {
           </p>
         </div>
         <Image
-          src="/images/02-008.png"
+          src="/images/02/02-rep-01.png"
           alt="v0.7.0 Database Scheme"
           width={560}
           height={995}
           layout="responsive"
-          className="image-container"
+          className="screenshot"
         />
       </Section>
       <Section>
