@@ -8,9 +8,16 @@ import ChevronRightIcon from "./ChevronRightIcon";
 interface ImageCarouselProps {
   images: string[];
   alt: string;
+  maxWidth?: number;
+  maxHeight?: number;
 }
 
-export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
+export default function ImageCarousel({
+  images,
+  alt,
+  maxWidth = 400,
+  maxHeight = 400,
+}: ImageCarouselProps) {
   const [currentImage, setCurrentImage] = useState(0);
   const hasMultipleImages = images.length > 1;
 
@@ -26,9 +33,9 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
       className="flex-row align-center self-center"
       style={{
         position: "relative",
-        width: "300px",
-        maxWidth: "400px",
-        height: "400px",
+        width: `${maxWidth}px`,
+        maxWidth: `${maxWidth}px`,
+        height: `${maxHeight}px`,
       }}
     >
       {hasMultipleImages && (
@@ -55,6 +62,7 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
         alt={alt}
         fill
         style={{ objectFit: "contain" }}
+        sizes={`(max-width: ${maxWidth}px) 100vw, ${maxWidth}px`}
       />
       {hasMultipleImages && (
         <button
