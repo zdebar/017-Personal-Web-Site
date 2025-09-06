@@ -16,7 +16,7 @@ body {
   background-color: var(--background-color-1);
   min-width: 300px;
   margin: 0 auto;
-  overflow-y: scroll;
+  overflow-y: auto;
   box-shadow: var(--card-shadow);
 }
 
