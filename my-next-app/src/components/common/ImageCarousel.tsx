@@ -74,7 +74,6 @@ export default function ImageCarousel({
         style={{ objectFit: "contain" }}
         sizes={`(max-width: ${maxWidth}px) 100vw, ${maxWidth}px`}
         onLoad={handleImageLoad}
-        className="screenshot"
       />
       {hasMultipleImages && (
         <button
