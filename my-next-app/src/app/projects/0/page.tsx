@@ -225,7 +225,11 @@ export default function FlashCardApp() {
           </p>
         </div>
         <div className="flex-col justify-center align-center mb-big">
-          <ImageCarousel images={project.images ?? []} alt="screenshots" />
+          <ImageCarousel
+            images={project.images ?? []}
+            alt="screenshots"
+            maxHeight={570}
+          />
         </div>
       </Section>
     </div>

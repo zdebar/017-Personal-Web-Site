@@ -19,6 +19,8 @@ export default function ImageCarousel({
   maxHeight = 400,
 }: ImageCarouselProps) {
   const [currentImage, setCurrentImage] = useState(0);
+  const [imageWidth, setImageWidth] = useState<number>(maxWidth);
+  const [imageHeight, setImageHeight] = useState<number>(maxHeight);
   const hasMultipleImages = images.length > 1;
 
   const handlePrev = () => {
@@ -28,14 +30,21 @@ export default function ImageCarousel({
     setCurrentImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
+  const handleImageLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const target = e.target as HTMLImageElement;
+    setImageWidth(target.naturalWidth);
+    setImageHeight(target.naturalHeight);
+  };
+
   return (
     <div
       className="flex-row align-center self-center"
       style={{
         position: "relative",
-        width: `${maxWidth}px`,
-        maxWidth: `${maxWidth}px`,
-        height: `${maxHeight}px`,
+        width: `${imageWidth + 40}px`,
+        height: `${imageHeight}px`,
+        maxWidth: `${maxWidth + 40}px`,
+        maxHeight: `${maxHeight}px`,
       }}
     >
       {hasMultipleImages && (
@@ -44,7 +53,7 @@ export default function ImageCarousel({
             position: "absolute",
             left: 0,
             top: "50%",
-            transform: "translateY(-50%)",
+            transform: "translate(-50%, -50%)",
             zIndex: 2,
             background: "none",
             border: "none",
@@ -63,6 +72,7 @@ export default function ImageCarousel({
         fill
         style={{ objectFit: "contain" }}
         sizes={`(max-width: ${maxWidth}px) 100vw, ${maxWidth}px`}
+        onLoad={handleImageLoad}
       />
       {hasMultipleImages && (
         <button
@@ -70,7 +80,7 @@ export default function ImageCarousel({
             position: "absolute",
             right: 0,
             top: "50%",
-            transform: "translateY(-50%)",
+            transform: "translate(50%, -50%)",
             zIndex: 2,
             background: "none",
             border: "none",
