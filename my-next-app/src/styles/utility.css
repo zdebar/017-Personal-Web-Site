@@ -133,6 +133,10 @@ text-left {
   background-color: var(--background-color-1);
 }
 
+.color {
+  color: var(--color);
+}
+
 /* Text Spacing */
 .multi-column-text {
   column-count: 2;

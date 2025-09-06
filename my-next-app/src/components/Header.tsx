@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+
 import { useState } from "react";
 import ContactForm from "./common/ContactForm";
 import GitHubIcon from "./Icons/GitHubIcon";
@@ -13,10 +13,13 @@ export default function Header() {
   };
 
   return (
-    <div className="header bg-color-1">
+    <div
+      className="header bg-color-1"
+      style={{ position: "sticky", top: 0, zIndex: 100 }}
+    >
       <header className="py-small ">
         <div className="w-main">
-          <div className="flex-row   justify-between align-center">
+          <div className="flex-row  justify-between align-center">
             <HomeIcon color="var(--color)" strokeWidth={1.8} />
             <div className="flex-row justify-between align-center gap-small">
               <GitHubIcon gitHubHref="https://github.com/zdebar" />

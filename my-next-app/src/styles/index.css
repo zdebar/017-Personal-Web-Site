@@ -93,8 +93,44 @@ a svg {
   border: none;
 }
 
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
+/* Link style for inline links and buttons */
+.link {
+  color: blue;
+  text-decoration: underline;
+  font-family: var(--font-normal);
+  font-weight: var(--normal-font-weight);
+  font-size: 1rem;
+  background: none;
+  border: "none";
+  padding: 0;
+  cursor: "pointer";
+  marginleft: "5px";
+}
+
+@media (prefers-color-scheme: dark) {
+  .link {
+    color: lightblue;
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin-top: var(--gap-tiny);
+}
+
+span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills > *:nth-child(even) {
+    margin-bottom: var(--gap-tiny); /* extra gap for every even child */
+  }
 }
