@@ -134,3 +134,7 @@ text-left {
 .mb-big {
   margin-bottom: var(--gap-big);
 }
+
+.bg-color-1 {
+  background-color: var(--background-color-1);
+}

@@ -13,7 +13,7 @@ export default function Header() {
   };
 
   return (
-    <section className="header">
+    <div className="header bg-color-1">
       <header className="py-small ">
         <div className="w-main">
           <div className="flex-row   justify-between align-center">
@@ -29,6 +29,6 @@ export default function Header() {
           {formVisible && <ContactForm />}
         </div>
       </header>
-    </section>
+    </div>
   );
 }

@@ -24,16 +24,6 @@ main {
   min-height: 75vh;
 }
 
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-header {
-  background-color: var(--background-color-1);
-}
-
 section:nth-of-type(odd) {
   background-color: var(--background-color-2); /** Alternate background color */
 }
@@ -46,12 +36,13 @@ input,
 textarea {
   width: 100%;
   padding: var(--gap-tiny);
+  color: var(--color);
   background-color: var(--background-color-1);
 
   font-size: 1rem;
   font-weight: var(--normal-font-weight);
 
-  border: 1px black solid;
+  border: 1px var(--color) solid;
   border-radius: var(--border-radius);
   margin: 0px;
 }
@@ -107,4 +98,10 @@ a svg {
   .multi-column-text {
     column-count: 1;
   }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }

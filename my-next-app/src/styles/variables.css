@@ -8,8 +8,8 @@
   --border-radius: 2px; /* Border radius for inputs, cards, buttons */
 
   /* Spacing */
-  --gap-large: 4rem; /* Intro title vertical padding */
-  --gap-big: 2rem; /* Header top/bottom padding */
+  --gap-large: 6rem; /* Intro title vertical padding */
+  --gap-big: 3rem; /* Header top/bottom padding */
   --gap-medium: 1.33rem;
   --gap-small: 0.66rem;
   --gap-tiny: 0.33rem; /* Section horizontal padding */
