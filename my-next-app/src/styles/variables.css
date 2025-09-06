@@ -33,14 +33,13 @@
   --button-color-3: #026c05ff; /* Gradient color 3 for buttons */
 }
 
-@media (min-height: 600p) and (max-height: 799px) {
-  /* TODO: not working, dont know why */
+@media (min-height: 500px) and (max-height: 799px) {
   :root {
-    --gap-xlarge: 6rem;
+    --gap-xlarge: 8rem;
   }
 }
 
-@media (max-height: 599px) {
+@media (max-height: 499px) {
   :root {
     --gap-xlarge: 3rem;
   }

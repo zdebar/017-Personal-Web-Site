@@ -29,74 +29,44 @@ export default function FlashCardApp() {
           </div>
           <div className="multi-column-text">
             <p>
-              <strong>Intro</strong> – I don&#39;t like long explanations; no
-              one reads them anyway. I&#39;ll just describe my English learning
-              app. If you want to know more, you can find links to the hosting
-              and GitHub repository above.
+              <strong>Intro</strong> – I couldn&#39;t find a suitable app for
+              myself, so I created one. It&#39;s designed to help me improve my
+              pronunciation and help others learn more efficiently.
             </p>
             <p>
-              <strong>Main goal</strong> – I couldn&#39;t find a suitable app
-              for myself, so I made one. It&#39;s designed to help me improve my
-              pronunciation, and for others to learn faster.
+              <strong>Main</strong> – Fast-paced speaking and listening
+              practice, designed to maximize daily repetitions.
             </p>
             <p>
-              <strong>Languages</strong> – So far, it&#39;s only Czech to
-              English. Due to multiple changes during development, the app is
-              ready to be adapted for learning other languages too.
+              <strong>Languages</strong> – Currently Czech to English, but ready
+              for expansion.
             </p>
             <p>
-              <strong>Continuous flow</strong> – Vocabulary and grammar are
-              mixed together. Just one practice button—no need to decide
-              what&#39;s next. Just practice.
+              <strong>Flashcards</strong> – Vocabulary and grammar are mixed
+              together in one continuous practice flow. No need to worry about
+              what to learn next.
             </p>
             <p>
-              <strong>Small chunks</strong> – Learning is done in small chunks
-              of 10 items. No need to reserve time for learning. Got a minute?
-              Practice!
+              <strong>Listening and Speaking</strong> – These are the most
+              challenging skills for everyone, so why not focus on them from the
+              start?
             </p>
             <p>
-              <strong>Spaced repetition</strong> – The app automatically gives
-              you items to practice based on your previous performance. No need
-              to think about what&#39;s next. Just practice!
+              <strong>Spaced Repetition</strong> – The algorithm is time-dense,
+              with at least 5 repetitions on the first day.
             </p>
             <p>
-              <strong>Listening and speaking</strong> – Exclusive focus on
-              listening and speaking. No writing. Everyone wants to speak, so
-              why start with writing?
+              <strong>Anytime</strong> – No daily limit. You can practice for 5
+              minutes or 5 hours.
             </p>
             <p>
-              <strong>Maximized daily repetitions</strong> – Flashcards for
-              dense practice. Why waste time with games? Have self-discipline
-              and practice.
+              <strong>Simple Feedback</strong> – Tracks daily items learned and
+              practice blocks completed.
             </p>
             <p>
-              <strong>Simple feedback</strong> – The app immediately shows your
-              progress in terms of learned items. No games are necessary. Anyone
-              using the app is already self-motivated, so just showing small
-              progress is best.
-            </p>
-            <p>
-              <strong>Daily Start</strong> – Sometimes it&#39;s hard to start.
-              The app tracks your daily practice count. The UserDashboard shows
-              a track of 40 practice blocks, which is roughly equivalent to 20
-              minutes of practice a day. This is only a recommended minimum—you
-              can and should practice more.
-            </p>
-            <p>
-              <strong>Pronunciation check</strong> – I originally intended to
-              use a tool to automatically check pronunciation. They are all
-              terrible—barely recognize speech, and pronunciation is completely
-              unreliable.
-            </p>
-            <p>
-              <strong>Pronunciation repeat</strong> – Luckily, simply repeating
-              after audio works surprisingly well. I tried it myself and it
-              really helps.
-            </p>
-            <p>
-              <strong>App name</strong> - English App is a working title. But as
-              I read this page after me, maybe it will be &quot;Just
-              practice&quot;.
+              <strong>Pronunciation Check</strong> – Originally tested APIs for
+              automatic pronunciation recognition, but they weren&#39;t accurate
+              enough. Simple repetition after listening works slowly but surely.
             </p>
           </div>
         </Section>
