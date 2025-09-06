@@ -41,9 +41,9 @@ export default function ImageCarousel({
       className="flex-row align-center self-center"
       style={{
         position: "relative",
-        width: `${imageWidth + 40}px`,
+        width: `${imageWidth}px`,
         height: `${imageHeight}px`,
-        maxWidth: `${maxWidth + 40}px`,
+        maxWidth: `${maxWidth}px`,
         maxHeight: `${maxHeight}px`,
       }}
     >
@@ -53,7 +53,7 @@ export default function ImageCarousel({
             position: "absolute",
             left: 0,
             top: "50%",
-            transform: "translate(-50%, -50%)",
+            transform: "translate(50%, -50%)",
             zIndex: 2,
             background: "none",
             border: "none",
@@ -80,7 +80,7 @@ export default function ImageCarousel({
             position: "absolute",
             right: 0,
             top: "50%",
-            transform: "translate(50%, -50%)",
+            transform: "translate(-50%, -50%)",
             zIndex: 2,
             background: "none",
             border: "none",
