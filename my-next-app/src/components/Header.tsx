@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useState } from "react";
 import ContactForm from "./common/ContactForm";
 import GitHubIcon from "./Icons/GitHubIcon";

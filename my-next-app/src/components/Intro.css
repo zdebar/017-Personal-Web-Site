@@ -12,6 +12,9 @@ span {
 .link {
   color: blue;
   text-decoration: underline;
+  font-family: var(--font-normal);
+  font-weight: var(--normal-font-weight);
+  font-size: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {

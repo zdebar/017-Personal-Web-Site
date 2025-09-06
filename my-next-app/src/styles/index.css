@@ -9,6 +9,7 @@
 /*Layout */
 html {
   background-color: var(--background-color-0);
+  height: 100%;
 }
 
 body {
@@ -18,10 +19,14 @@ body {
   margin: 0 auto;
   overflow-y: auto;
   box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: left;
 }
 
 main {
-  min-height: 75vh;
+  flex: 1;
 }
 
 section:nth-of-type(odd) {
@@ -30,6 +35,9 @@ section:nth-of-type(odd) {
 
 footer {
   padding: var(--gap-small) 0px;
+  align-items: right;
+  align-content: right;
+  self-align: right;
 }
 
 input,

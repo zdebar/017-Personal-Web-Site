@@ -5,9 +5,9 @@ import "../styles/index.css";
 
 export default function HomePage() {
   return (
-    <main>
+    <>
       <Intro />
       <ProjectList />
-    </main>
+    </>
   );
 }

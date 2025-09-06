@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import "./Intro.css";
+import Link from "next/link";
 
 export default function Intro() {
   const [showSkills, setShowSkills] = useState(false);
@@ -18,7 +19,10 @@ export default function Intro() {
       </div>
       <p className="pb-small">
         I am a Full Stack Web Developer with knowledge in both frontend and
-        backend development.
+        backend development.{" "}
+        <Link href="/projects/AboutMe" className="link" title="About Me">
+          .. more
+        </Link>
       </p>
       <p>
         <strong>React</strong>, Tailwind, Node.js, Next.js, PostgreSQL,
