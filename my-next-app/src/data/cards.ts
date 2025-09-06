@@ -20,6 +20,7 @@ export const cards: CardData[] = [
       "This site.",
       "Here is React actualy unnecessary. It is static site. I used it only for practice.",
     ],
+    images: ["/images/00/00-001.png", "/images/00/00-002.png"],
     technologies: "React, Next.js, TypeScript, CSS",
     github: "https://github.com/zdebar/017-Personal-Web-Site",
   },

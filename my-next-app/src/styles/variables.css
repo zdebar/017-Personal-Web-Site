@@ -1,8 +1,8 @@
 :root {
   /* Text */
   font-size: 14px;
-  --font-normal: "Ubuntu", sans-serif; /* Paragraphs, Links, Buttons */
-  --font-headings: "Montserrat", sans-serif; /* Headings */
+  --font-normal: "Ubuntu", serif; /* Paragraphs, Links, Buttons */
+  --font-headings: "Montserrat", serif; /* Headings */
 
   /* Borders */
   --border-radius: 2px; /* Border radius for inputs, cards, buttons */
@@ -24,7 +24,7 @@
 
   /* Font Weights */
   --normal-font-weight: 300;
-  --bold-font-weight: 600;
+  --bold-font-weight: 700;
 
   /* Colors */
   --button-color-1: #23ae19; /* Gradient color 1 for buttons */
@@ -45,9 +45,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color-0: #333333; /* Background color 0 for html */
-    --background-color-1: #282828; /* Background color 1 for body, tabs */
-    --background-color-2: #222222; /* Background color 2 for tabs */
+    --background-color-0: #0e0e0eff; /* Background color 0 for html */
+    --background-color-1: #1a1a1aff; /* Background color 1 for body, tabs */
+    --background-color-2: #1d1d1dff; /* Background color 2 for tabs */
     --color: #ffffff;
     --card-shadow: none;
     --button-shadow: none;

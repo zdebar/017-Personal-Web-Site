@@ -59,6 +59,7 @@ export default function ImageCarousel({
             border: "none",
             fontSize: "2rem",
             cursor: "pointer",
+            color: "inherit",
           }}
           onClick={handlePrev}
           aria-label="Previous image"
@@ -73,6 +74,7 @@ export default function ImageCarousel({
         style={{ objectFit: "contain" }}
         sizes={`(max-width: ${maxWidth}px) 100vw, ${maxWidth}px`}
         onLoad={handleImageLoad}
+        className="screenshot"
       />
       {hasMultipleImages && (
         <button
@@ -86,6 +88,7 @@ export default function ImageCarousel({
             border: "none",
             fontSize: "2rem",
             cursor: "pointer",
+            color: "inherit",
           }}
           onClick={handleNext}
           aria-label="Next image"

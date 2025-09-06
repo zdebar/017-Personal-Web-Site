@@ -44,7 +44,7 @@ export default function Card({
             <div className="flex-row align-center gap-small">
               {hosting && (
                 <Link href={hosting} target="_blank" rel="noopener noreferrer">
-                  <button className="button">Test here</button>
+                  <button className="button">try it here</button>
                 </Link>
               )}
               {github && <GitHubIcon gitHubHref={github} />}
