@@ -13,13 +13,13 @@ export default function ChevronDownButton({
     <a href={`#${targetId}`} title={title} style={{ textDecoration: "none" }}>
       <div
         style={{
-          width: "60px",
-          height: "60px",
+          width: "50px",
+          height: "50px",
           borderRadius: "50%",
           color: "black",
           backgroundColor: "white",
           position: "absolute",
-          top: "-30px",
+          top: "-25px",
           right: "4px",
           textAlign: "center",
           padding: "10px",

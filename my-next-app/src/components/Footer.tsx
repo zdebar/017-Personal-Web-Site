@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="w-main py-medium">
-      <p>&copy; {new Date().getFullYear()} Zdeněk Barth</p>
+      <p>&copy; 2025 Zdeněk Barth</p>
     </footer>
   );
 }

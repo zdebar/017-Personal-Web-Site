@@ -122,6 +122,10 @@ text-left {
   padding-bottom: var(--gap-large);
 }
 
+.pl-small {
+  padding-left: var(--gap-small);
+}
+
 .my-small {
   margin-top: var(--gap-small);
   margin-bottom: var(--gap-small);
@@ -135,6 +139,10 @@ text-left {
 .my-medium {
   margin-top: var(--gap-medium);
   margin-bottom: var(--gap-medium);
+}
+
+.ml-small {
+  margin-left: var(--gap-small);
 }
 
 .mb-big {

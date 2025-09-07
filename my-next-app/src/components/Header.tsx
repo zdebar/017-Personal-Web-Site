@@ -1,12 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ContactForm from "./common/ContactForm";
 import GitHubIcon from "./Icons/GitHubIcon";
 import HomeIcon from "./Icons/HomeIcon";
 
 export default function Header() {
   const [formVisible, setFormVisible] = useState(false);
+
+  useEffect(() => {
+    const ensureScrolled = () => {
+      if (window.scrollY === 0) {
+        window.scrollTo({ top: 1, behavior: "instant" });
+      }
+    };
+    window.addEventListener("scroll", ensureScrolled);
+    ensureScrolled(); // check on mount
+    return () => window.removeEventListener("scroll", ensureScrolled);
+  }, []);
 
   const toggleForm = () => {
     setFormVisible((prev) => !prev);

@@ -24,7 +24,7 @@ export default function Intro() {
             .. about me
           </Link>
         </p>
-        <p>
+        <p className="pb-small">
           <strong>React</strong>, Tailwind, Node.js, Next.js, PostgreSQL,
           Typescript, Python
           <button

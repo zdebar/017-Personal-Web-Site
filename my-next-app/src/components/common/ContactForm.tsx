@@ -61,6 +61,7 @@ export default function ContactForm() {
             id="message"
             required
             placeholder="your message"
+            style={{ minHeight: "48px" }}
           ></textarea>
         </label>
         <button

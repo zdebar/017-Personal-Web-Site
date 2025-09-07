@@ -29,8 +29,8 @@
 
   /* Colors */
 
-  --color-primary-1: #ed3d66ff; /* Gradient color 1 for buttons */
-  --color-primary-2: #e92855ff; /* Gradient color 2 for buttons */
+  --color-primary-1: #ed403dff; /* Gradient color 1 for buttons */
+  --color-primary-2: #eb3431ff; /* Gradient color 2 for buttons */
   --color-secondary-1: #23ae19; /* Secondary color for highlights */
   --color-secondary-2: #018f06; /* Secondary color 2 for highlights */
 }

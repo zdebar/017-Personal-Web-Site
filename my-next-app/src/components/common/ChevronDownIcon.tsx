@@ -3,8 +3,8 @@ import React from "react";
 export default function ChevronDownIcon() {
   return (
     <svg
-      width="32"
-      height="32"
+      width="26"
+      height="26"
       fill="currentColor"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
