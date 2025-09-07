@@ -20,7 +20,7 @@ export default function ImageCarousel({
 }: ImageCarouselProps) {
   const [currentImage, setCurrentImage] = useState(0);
   const [imageWidth, setImageWidth] = useState<number>(maxWidth);
-  const [imageHeight, setImageHeight] = useState<number>(maxHeight);
+  const [aspectRatio, setAspectRatio] = useState<number>(maxWidth / maxHeight); // width / height
   const hasMultipleImages = images.length > 1;
 
   const handlePrev = () => {
@@ -32,8 +32,36 @@ export default function ImageCarousel({
 
   const handleImageLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const target = e.target as HTMLImageElement;
-    setImageWidth(target.naturalWidth);
-    setImageHeight(target.naturalHeight);
+    const naturalWidth = target.naturalWidth;
+    const naturalHeight = target.naturalHeight;
+    const ratio = naturalWidth / naturalHeight;
+
+    let displayWidth = naturalWidth;
+    let displayHeight = naturalHeight;
+
+    // Pokud je obrázek větší než max, zmenši ho při zachování poměru stran
+    if (naturalWidth > maxWidth || naturalHeight > maxHeight) {
+      if (ratio > 1) {
+        // Širší než vyšší
+        displayWidth = Math.min(naturalWidth, maxWidth);
+        displayHeight = displayWidth / ratio;
+        if (displayHeight > maxHeight) {
+          displayHeight = maxHeight;
+          displayWidth = displayHeight * ratio;
+        }
+      } else {
+        // Vyšší než širší
+        displayHeight = Math.min(naturalHeight, maxHeight);
+        displayWidth = displayHeight * ratio;
+        if (displayWidth > maxWidth) {
+          displayWidth = maxWidth;
+          displayHeight = displayWidth / ratio;
+        }
+      }
+    }
+
+    setAspectRatio(ratio);
+    setImageWidth(displayWidth);
   };
 
   return (
@@ -43,7 +71,7 @@ export default function ImageCarousel({
         position: "relative",
         width: "100%",
         maxWidth: `${imageWidth}px`, // max natural width
-        aspectRatio: `${imageWidth} / ${imageHeight}`, // keep aspect ratio
+        aspectRatio: `${aspectRatio}`, // keep aspect ratio
         height: "auto",
       }}
     >

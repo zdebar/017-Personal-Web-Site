@@ -76,7 +76,9 @@ export default function Card({
                 {github && <GitHubIcon gitHubHref={github} />}
               </div>
             </div>
-            {images && <ImageCarousel images={images} alt={title} />}
+            {images && (
+              <ImageCarousel images={images} alt={title} maxHeight={800} />
+            )}
           </div>
         </article>
       </section>
