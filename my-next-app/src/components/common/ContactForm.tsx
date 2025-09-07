@@ -63,7 +63,10 @@ export default function ContactForm() {
             placeholder="your message"
           ></textarea>
         </label>
-        <button type="submit" className="button align-end">
+        <button
+          type="submit"
+          className="button align-end shadow bg-gradient-secondary"
+        >
           Send
         </button>
       </form>

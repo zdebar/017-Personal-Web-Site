@@ -110,6 +110,10 @@ text-left {
   padding-bottom: var(--gap-small);
 }
 
+.pb-medium {
+  padding-bottom: var(--gap-medium);
+}
+
 .pb-big {
   padding-bottom: var(--gap-big);
 }

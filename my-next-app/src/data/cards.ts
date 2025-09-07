@@ -2,6 +2,7 @@ export type CardData = {
   id: number;
   title: string;
   version?: string;
+  update?: string;
   texts: string[];
   technologies?: string;
   images?: string[];
@@ -16,6 +17,7 @@ export const cards: CardData[] = [
     id: 0,
     title: "Personal Website",
     version: "2.0.0",
+    update: "09/2025",
     texts: [
       "This site.",
       "Here is React actualy unnecessary. It is static site. I used it only for practice.",
@@ -32,6 +34,7 @@ export const cards: CardData[] = [
     ],
     technologies: "Python",
     version: "in progress",
+    update: "09/2025",
     date: "2025-08-08",
     images: ["/images/01-000.png"],
   },
@@ -39,6 +42,7 @@ export const cards: CardData[] = [
     id: 2,
     title: "English App",
     version: "0.7.0",
+    update: "09/2025",
     texts: [
       "Fast practice drill. Up to 400 words or sentences in 20 minutes of practice. Hopefully improved pronunciation for me, and faster learning for others.",
       "It's all based on flash cards, spaced repetition, and exclusive focus listening and speaking.",

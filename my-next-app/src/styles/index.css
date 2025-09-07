@@ -81,24 +81,42 @@ a svg {
   cursor: pointer;
 
   color: white;
-  background: linear-gradient(
-    to right,
-    var(--button-color-1),
-    var(--button-color-2)
-  );
-
   font-weight: var(--bold-font-weight);
 
   border-radius: 25px;
   border: none;
 }
 
-.button:active {
-  transform: translateY(1px);
+.shadow {
+  box-shadow: var(--button-shadow);
 }
 
-.button:hover {
-  background: var(--button-color-2);
+.shadow:active {
+  box-shadow: none;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(
+    to right,
+    var(--color-primary-1),
+    var(--color-primary-2)
+  );
+}
+
+.bg-gradient-primary:hover {
+  background: var(--color-primary-2);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(
+    to right,
+    var(--color-secondary-1),
+    var(--color-secondary-2)
+  );
+}
+
+.bg-gradient-secondary:hover {
+  background: var(--color-secondary-2);
 }
 
 /* Link style for inline links and buttons */

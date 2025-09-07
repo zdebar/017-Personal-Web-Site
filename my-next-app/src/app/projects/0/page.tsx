@@ -23,7 +23,9 @@ export default function FlashCardApp() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="button">try it here</button>
+                <button className="button bg-gradient-secondary shadow">
+                  try it here
+                </button>
               </Link>
             </div>
           </div>

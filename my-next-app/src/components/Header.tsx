@@ -27,10 +27,10 @@ export default function Header() {
               <button
                 onClick={toggleForm}
                 id="emailAddress"
-                className="button"
+                className="button bg-gradient-primary shadow"
                 title="contact form"
               >
-                <span style={{ userSelect: "text" }}>zdebarth@gmail.com</span>
+                <span>zdebarth@gmail.com</span>
               </button>
             </div>
           </div>

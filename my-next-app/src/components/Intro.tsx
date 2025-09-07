@@ -21,7 +21,7 @@ export default function Intro() {
           I am a Full Stack Web Developer with knowledge in both frontend and
           backend development.{" "}
           <Link href="/projects/AboutMe" className="link" title="more about me">
-            .. more
+            .. about me
           </Link>
         </p>
         <p>
