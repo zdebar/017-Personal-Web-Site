@@ -87,6 +87,15 @@ a svg {
   border: none;
 }
 
+.link-button {
+  display: inline-flex;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
 .shadow {
   box-shadow: var(--button-shadow);
 }

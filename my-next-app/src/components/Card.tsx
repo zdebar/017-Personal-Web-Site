@@ -53,10 +53,12 @@ export default function Card({
               )}
               {link && (
                 <div className="my-small">
-                  <Link href={link} title="more about this project">
-                    <button className="button bg-gradient-secondary shadow">
-                      ..more
-                    </button>
+                  <Link
+                    href={link}
+                    title="more about this project"
+                    className="button bg-gradient-secondary shadow link-button"
+                  >
+                    ..more
                   </Link>
                 </div>
               )}
@@ -67,10 +69,9 @@ export default function Card({
                     target="_blank"
                     rel="noopener noreferrer"
                     title={hosting}
+                    className="button bg-gradient-secondary shadow link-button"
                   >
-                    <button className="button bg-gradient-secondary shadow">
-                      try it here
-                    </button>
+                    try it here
                   </Link>
                 )}
                 {github && <GitHubIcon gitHubHref={github} />}
@@ -87,7 +88,7 @@ export default function Card({
           display: flex;
           flex-direction: row;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
           .flex-row-col {
             flex-direction: column;
           }
