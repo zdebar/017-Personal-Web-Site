@@ -17,7 +17,6 @@ export default function ChevronDownButton({
           height: "50px",
           borderRadius: "50%",
           color: "black",
-          backgroundColor: "white",
           position: "absolute",
           top: "-25px",
           right: "4px",
@@ -29,10 +28,18 @@ export default function ChevronDownButton({
           fontSize: "0.8rem",
           cursor: "pointer",
         }}
-        className="shadow"
+        className="shadow bg-white"
       >
         <ChevronDownIcon />
       </div>
+      <style jsx>{`
+        .bg-white {
+          background-color: white;
+        }
+        .bg-white:hover {
+          background-color: lightgray;
+        }
+      `}</style>
     </a>
   );
 }

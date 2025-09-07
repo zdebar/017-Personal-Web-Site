@@ -22,6 +22,7 @@ export default function FlashCardApp() {
                 href={project.hosting ?? "#"}
                 target="_blank"
                 rel="noopener noreferrer"
+                title={project.hosting ?? "#"}
               >
                 <button className="button bg-gradient-secondary shadow">
                   try it here
@@ -91,13 +92,7 @@ export default function FlashCardApp() {
             <p>
               <strong>What&#39;s next</strong> – Fill in the data, test it,
               polish the app, then probably rewrite it as a downloadable mobile
-              app with React Native and SQLite. Finally, rewrite this incoherent
-              mess pretending to be a project page.
-            </p>
-            <p>
-              <strong>When</strong> – Ideally, all this in the next 2 months. I
-              already have other pet projects waiting for me, but I like to
-              finish things first—one after another. Just be patient.
+              app with React Native and SQLite.
             </p>
           </div>
         </Section>
