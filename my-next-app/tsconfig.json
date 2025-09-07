@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "pages/OLD_document.tsx"
+    "../archive/OLD_document.tsxocument.tsx"
   ],
   "exclude": ["node_modules"]
 }

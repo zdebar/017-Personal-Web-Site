@@ -5,26 +5,36 @@ import { useState } from "react";
 export default function ContactForm() {
   const [responseMessage, setResponseMessage] = useState<string | null>(null);
 
-  const handleFormSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
-    const form = event.target as HTMLFormElement;
-    const formData = new FormData(form);
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
 
-    try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
-      });
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    const JSONdata = JSON.stringify(data);
+
+    const endpoint = form.getAttribute("action");
+
+    const options: RequestInit = {
+      method: "POST",
+      body: JSONdata,
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    };
+
+    if (typeof endpoint === "string") {
+      const response = await fetch(endpoint, options);
+      const result = await response.json();
 
       if (response.ok) {
         setResponseMessage("Message sent successfully!");
         form.reset();
       } else {
-        setResponseMessage("Error sending message.");
+        setResponseMessage(result.errors?.[0]?.message || "An error occurred.");
       }
-    } catch (error) {
-      setResponseMessage(`Error sending message: ${error}`);
     }
   };
 
