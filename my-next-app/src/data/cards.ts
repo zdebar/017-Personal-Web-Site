@@ -30,7 +30,7 @@ export const cards: CardData[] = [
     id: 1,
     title: "Leetcode 67 / 75",
     texts: [
-      "Basic algorithms practice with Leetcode 75. I simply need more practice in basic algorithms.",
+      "I already did basic Data Structures and Algorithms courses on Udemy. This is to memorize it more with practice.",
     ],
     technologies: "Python",
     version: "in progress",
@@ -44,6 +44,7 @@ export const cards: CardData[] = [
     version: "0.7.0",
     update: "09/2025",
     texts: [
+      "English improvement app I allways find and could not find anywhere.",
       "Fast practice drill. Up to 400 words or sentences in 20 minutes of practice. Hopefully improved pronunciation for me, and faster learning for others.",
       "It's all based on flash cards, spaced repetition, and exclusive focus listening and speaking.",
     ],

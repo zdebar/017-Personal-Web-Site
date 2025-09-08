@@ -5,7 +5,6 @@ export default function AboutMe() {
     <>
       <div>
         <Section>
-          <h3>Will finish later, right now you can download CV.</h3>
           <a href="/zdenek_barth_cv.pdf" download>
             Download CV (PDF, 0,3 MB)
           </a>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import "./Icon.css";
 
 export default function HomeIcon({
@@ -8,8 +9,22 @@ export default function HomeIcon({
   color?: string;
   strokeWidth?: number;
 }) {
+  const pathname = usePathname();
+
+  const handleClick = (e: React.MouseEvent) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "auto" });
+    }
+  };
+
   return (
-    <Link href="/" className="icon ml-small" title="Home">
+    <Link
+      href="/"
+      className="icon ml-medium"
+      title="Home"
+      onClick={handleClick}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

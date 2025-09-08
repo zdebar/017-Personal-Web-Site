@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import config from "../../../app.config";
 
 export default function ContactForm() {
   const [responseMessage, setResponseMessage] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -45,8 +47,27 @@ export default function ContactForm() {
         action="https://formspree.io/f/xdkazldg"
         method="POST"
         onSubmit={handleFormSubmit}
-        className="flex-col gap-tiny"
+        className="flex-col gap-tiny my-tiny"
       >
+        <div className="flex-row justify-end  gap-small">
+          {copied && (
+            <p className="align-end success-message">
+              email copied to clipboard
+            </p>
+          )}
+          <button
+            type="button"
+            className="button align-end shadow bg-gradient-secondary "
+            onClick={() => {
+              navigator.clipboard.writeText(config.contactMail);
+              setCopied(true);
+              setTimeout(() => setCopied(false), 2000); // Hide after 2s
+            }}
+            title="copy email to clipboard"
+          >
+            {config.contactMail}
+          </button>
+        </div>
         <label htmlFor="email">
           <input
             type="email"
@@ -74,27 +95,31 @@ export default function ContactForm() {
             style={{ minHeight: "48px" }}
           ></textarea>
         </label>
-        <button
-          type="submit"
-          className="button align-end shadow bg-gradient-secondary"
-        >
-          Send
-        </button>
+        <div className="align-end flex-row gap-small justify-end">
+          {responseMessage && (
+            <p
+              id="responseMessage"
+              className="align-end"
+              style={{
+                visibility: responseMessage ? "visible" : "hidden",
+                color:
+                  responseMessage === "Message sent successfully!"
+                    ? "var(--success-color)"
+                    : "var(--error-color)",
+              }}
+            >
+              {responseMessage}
+            </p>
+          )}
+          <button
+            type="submit"
+            className="button shadow bg-gradient-secondary "
+            title={`send mail to ${config.contactMail}`}
+          >
+            Send
+          </button>
+        </div>
       </form>
-      {responseMessage && (
-        <p
-          id="responseMessage"
-          style={{
-            visibility: responseMessage ? "visible" : "hidden",
-            color:
-              responseMessage === "Message sent successfully!"
-                ? "green"
-                : "red",
-          }}
-        >
-          {responseMessage}
-        </p>
-      )}
     </div>
   );
 }

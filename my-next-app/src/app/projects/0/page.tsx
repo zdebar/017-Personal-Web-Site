@@ -14,7 +14,7 @@ export default function FlashCardApp() {
     <>
       <div>
         <Section>
-          <div className="flex-row-col justify-between mb-big gap-medium align-right text-left">
+          <div className="flex-row-col justify-between mb-big gap-medium align-end text-left">
             <h2>English App</h2>
             <div className="flex-row gap-small align-center">
               <GitHubIcon gitHubHref={project.github ?? "#"} />
@@ -86,12 +86,11 @@ export default function FlashCardApp() {
             <p>
               <strong>What have I learned</strong> – The technical side is much
               easier than it seems. Figuring out which features are useful is
-              hard.
+              way harder.
             </p>
             <p>
-              <strong>What&#39;s next</strong> – Fill in the data, test it,
-              polish the app, then probably rewrite it as a downloadable mobile
-              app with React Native and SQLite.
+              <strong>What&#39;s next</strong> – I. fill the data, II. convert
+              to offline mobile app
             </p>
           </div>
         </Section>
