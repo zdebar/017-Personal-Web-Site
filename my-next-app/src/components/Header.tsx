@@ -1,64 +1,18 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ContactForm from "./common/ContactForm";
 import GitHubIcon from "./Icons/GitHubIcon";
 import HomeIcon from "./Icons/HomeIcon";
-import Image from "next/image";
-
-type ThemeType = "light" | "dark" | "system";
+import { useTheme } from "@/hooks/useTheme";
+import ThemeSwitchButton from "./common/ThemeSwitchButton";
 
 export default function Header() {
   const [formVisible, setFormVisible] = useState(false);
-  const [theme, setTheme] = useState<ThemeType>("system");
-  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">("dark");
-
-  // Helper to get system theme
-  const getSystemTheme = () =>
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-
-  // Load theme from localStorage on mount
-  useEffect(() => {
-    const stored = localStorage.getItem("theme");
-    if (stored === "light" || stored === "dark" || stored === "system") {
-      setTheme(stored as ThemeType);
-    }
-  }, []);
-
-  // Listen for system theme changes if "system" is selected
-  useEffect(() => {
-    if (theme === "system") {
-      const updateTheme = () => setResolvedTheme(getSystemTheme());
-      updateTheme();
-      window
-        .matchMedia("(prefers-color-scheme: dark)")
-        .addEventListener("change", updateTheme);
-      return () =>
-        window
-          .matchMedia("(prefers-color-scheme: dark)")
-          .removeEventListener("change", updateTheme);
-    } else {
-      setResolvedTheme(theme);
-    }
-  }, [theme]);
-
-  // Apply theme to body and save to localStorage
-  useEffect(() => {
-    document.body.className = resolvedTheme;
-    localStorage.setItem("theme", theme);
-  }, [resolvedTheme, theme]);
+  const { theme, toggleTheme } = useTheme();
 
   const toggleForm = () => {
     setFormVisible((prev) => !prev);
-  };
-
-  // Cycle through themes: dark -> light -> system -> dark ...
-  const toggleTheme = () => {
-    setTheme((prev) =>
-      prev === "dark" ? "light" : prev === "light" ? "system" : "dark"
-    );
   };
 
   return (
@@ -74,39 +28,7 @@ export default function Header() {
           >
             <HomeIcon color="var(--color)" strokeWidth={1.8} />
             <div className="flex-row justify-between align-center gap-small">
-              <button
-                onClick={toggleTheme}
-                className="icon"
-                title="switch theme"
-                style={{ color: "var(--color)" }}
-              >
-                {theme === "system" ? (
-                  <Image
-                    src="/icons/system.svg"
-                    alt="system icon"
-                    width={24}
-                    height={24}
-                    style={{ color: "var(--color)" }}
-                    title="system theme"
-                  />
-                ) : theme === "dark" ? (
-                  <Image
-                    src="/icons/dark.svg"
-                    alt="dark icon"
-                    width={24}
-                    height={24}
-                    title="dark theme"
-                  />
-                ) : (
-                  <Image
-                    src="/icons/light.svg"
-                    alt="light icon"
-                    width={24}
-                    height={24}
-                    title="light theme"
-                  />
-                )}
-              </button>
+              <ThemeSwitchButton theme={theme} toggleTheme={toggleTheme} />
               <GitHubIcon gitHubHref="https://github.com/zdebar" />
 
               <button
