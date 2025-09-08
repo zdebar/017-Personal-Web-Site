@@ -15,12 +15,12 @@ export default function ChevronDownButton({
       title={title}
       style={{
         textDecoration: "none",
-        width: "50px",
-        height: "50px",
+        width: "40px",
+        height: "40px",
         borderRadius: "50%",
         color: "black",
         position: "absolute",
-        top: "-25px",
+        top: "-20px",
         right: "4px",
         textAlign: "center",
         padding: "10px",

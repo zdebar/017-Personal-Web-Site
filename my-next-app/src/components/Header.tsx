@@ -37,7 +37,7 @@ export default function Header() {
                 className="button bg-gradient-secondary shadow my-small"
                 title="contact form"
               >
-                <span>contact me</span>
+                <span>{!formVisible ? "say hi" : "don't say hi"}</span>
               </button>
             </div>
           </div>

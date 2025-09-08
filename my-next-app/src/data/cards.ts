@@ -18,10 +18,7 @@ export const cards: CardData[] = [
     title: "Personal Website",
     version: "2.0.0",
     update: "09/2025",
-    texts: [
-      "This site.",
-      "Here is React actualy unnecessary. It is static site. I used it only for practice.",
-    ],
+    texts: ["This site."],
     images: ["/images/00/00-001.png", "/images/00/00-002.png"],
     technologies: "React, Next.js, TypeScript, CSS",
     github: "https://github.com/zdebar/017-Personal-Web-Site",
