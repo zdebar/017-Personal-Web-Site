@@ -64,6 +64,11 @@ text-left {
   padding: 0px var(--gap-small);
 }
 
+.w-background {
+  width: var(--background-width);
+  margin: 0 auto;
+}
+
 /** Spacing Utilities */
 .gap-tiny {
   gap: var(--gap-tiny);

@@ -41,13 +41,16 @@ export default function ContactForm() {
   };
 
   return (
-    <div>
+    <div
+      style={{ position: "absolute", width: "100%", zIndex: 10 }}
+      className="w-background bg-color-1"
+    >
       <form
         id="contactForm"
         action="https://formspree.io/f/xdkazldg"
         method="POST"
         onSubmit={handleFormSubmit}
-        className="flex-col gap-tiny my-tiny"
+        className="flex-col gap-tiny my-tiny w-main"
       >
         <div className="flex-row justify-end  gap-small">
           {copied && (

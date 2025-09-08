@@ -14,11 +14,11 @@ export default function Header() {
 
   return (
     <div
-      className="bg-color-1 "
+      className="bg-color-1 w-background"
       style={{ position: "sticky", top: 0, zIndex: 100 }}
     >
-      <header className="py-medium">
-        <div className="w-main ">
+      <header className="py-medium bg-color-1" style={{ position: "relative" }}>
+        <div className="w-main">
           <div className="flex-row justify-between align-center">
             <HomeIcon color="var(--color)" strokeWidth={1.8} />
             <div className="flex-row justify-between align-center gap-small">
@@ -34,8 +34,8 @@ export default function Header() {
               </button>
             </div>
           </div>
-          {formVisible && <ContactForm />}
         </div>
+        {formVisible && <ContactForm />}
       </header>
     </div>
   );
