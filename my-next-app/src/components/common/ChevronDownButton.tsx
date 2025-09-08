@@ -29,6 +29,7 @@ export default function ChevronDownButton({
         justifyContent: "center",
         fontSize: "0.8rem",
         cursor: "pointer",
+        zIndex: 10,
       }}
       className="shadow bg-white"
     >

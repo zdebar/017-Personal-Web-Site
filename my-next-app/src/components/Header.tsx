@@ -27,7 +27,7 @@ export default function Header() {
               <button
                 onClick={toggleForm}
                 id="emailAddress"
-                className="button bg-gradient-primary shadow"
+                className="button bg-gradient-secondary shadow"
                 title="contact form"
               >
                 <span>contact me</span>

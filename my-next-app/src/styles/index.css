@@ -110,6 +110,7 @@ a svg {
     var(--color-primary-1),
     var(--color-primary-2)
   );
+  color: black;
 }
 
 .bg-gradient-primary:hover {

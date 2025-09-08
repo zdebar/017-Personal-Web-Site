@@ -2,13 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import AnimatedSvgWave from "./AnimatedSvgWave";
 
 export default function Intro() {
   const [showSkills, setShowSkills] = useState(false);
 
   return (
-    <>
-      <div className="w-main py-xlarge">
+    <div className="py-xlarge" style={{ position: "relative" }}>
+      <AnimatedSvgWave />
+      <div className="w-main " style={{ zIndex: 2, position: "relative" }}>
         <div className="pb-big">
           <h1>
             <span>Hi, I&apos;m</span> <span>Zdeněk Barth</span>
@@ -82,6 +84,7 @@ export default function Intro() {
           </div>
         )}
       </div>
+
       <style jsx>{`
         span {
           display: inline-block;
@@ -102,6 +105,6 @@ export default function Intro() {
           }
         }
       `}</style>
-    </>
+    </div>
   );
 }
