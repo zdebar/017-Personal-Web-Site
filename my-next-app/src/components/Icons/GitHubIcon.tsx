@@ -7,7 +7,10 @@ export default function GitHubIcon({ gitHubHref }: { gitHubHref: string }) {
       target="_blank"
       rel="noopener noreferrer"
       className="icon"
-      style={{ backgroundColor: "white" }}
+      style={{
+        backgroundColor: "var(--color)",
+        fill: "var(--background-color-1)",
+      }}
       title={gitHubHref}
     >
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

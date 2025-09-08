@@ -49,24 +49,24 @@
   }
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-color-0: #ffffff; /* Background color 0 for html */
-    --background-color-1: #ffffff; /* Background color 1 for body, tabs */
-    --background-color-2: #efefef; /* Background color 2 for tabs */
-    --color: black;
-    --card-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.05);
-    --button-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
-  }
+/* Light theme overrides (optional, for clarity) */
+body.light,
+html.light {
+  --background-color-0: #ffffff;
+  --background-color-1: #ffffff;
+  --background-color-2: #efefef;
+  --color: black;
+  --card-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.05);
+  --button-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color-0: #0e0e0eff; /* Background color 0 for html */
-    --background-color-1: #1a1a1aff; /* Background color 1 for body, tabs */
-    --background-color-2: #1d1d1dff; /* Background color 2 for tabs */
-    --color: #ffffff;
-    --card-shadow: none;
-    --button-shadow: none;
-  }
+/* Dark theme overrides */
+body.dark,
+html.dark {
+  --background-color-0: #0e0e0eff;
+  --background-color-1: #1a1a1aff;
+  --background-color-2: #1d1d1dff;
+  --color: white;
+  --card-shadow: none;
+  --button-shadow: none;
 }

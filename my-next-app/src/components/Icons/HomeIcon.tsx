@@ -21,9 +21,10 @@ export default function HomeIcon({
   return (
     <Link
       href="/"
-      className="icon ml-medium"
+      className="icon"
       title="Home"
       onClick={handleClick}
+      style={{ width: 28, height: 28 }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

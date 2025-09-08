@@ -9,6 +9,7 @@
 /*Layout */
 html {
   background-color: var(--background-color-0);
+  color: var(--color);
   height: 100%;
 }
 
@@ -19,6 +20,7 @@ body {
   margin: 0 auto;
   overflow-y: auto;
   box-shadow: var(--card-shadow);
+  color: var(--color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -87,6 +89,13 @@ a svg {
   border: none;
 }
 
+.button-transparent {
+  background: none;
+  cursor: pointer;
+  border: none;
+  color: var(--color);
+}
+
 .link-button {
   display: inline-flex;
   text-align: center;
@@ -141,6 +150,12 @@ a svg {
   padding: 0;
   cursor: "pointer";
   marginleft: "5px";
+}
+
+.dark {
+  .link {
+    color: lightblue;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
