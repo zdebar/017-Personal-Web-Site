@@ -5,11 +5,17 @@
 // Pink: #F78DA7
 // Blue: #8ED1FC
 
-export default function AnimatedSvgWave() {
-  // Parent container should have position: relative for absolute positioning to work
+interface AnimatedSvgWaveProps {
+  widthPx?: number;
+}
+
+export default function AnimatedSvgWave({
+  widthPx = 1440,
+}: AnimatedSvgWaveProps) {
+  // Parent container should have position: relative and overflow: hidden for proper clipping
   return (
     <svg
-      width="100%"
+      width={widthPx}
       height="auto"
       id="svg"
       viewBox="0 0 1440 490"
@@ -21,7 +27,6 @@ export default function AnimatedSvgWave() {
         position: "absolute",
         left: 0,
         bottom: 0,
-        width: "100%",
         height: "auto",
       }}
     >

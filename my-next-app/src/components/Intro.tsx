@@ -8,8 +8,11 @@ export default function Intro() {
   const [showSkills, setShowSkills] = useState(false);
 
   return (
-    <div className="py-xlarge" style={{ position: "relative" }}>
-      <AnimatedSvgWave />
+    <div
+      className="py-xlarge"
+      style={{ position: "relative", overflow: "hidden" }}
+    >
+      <AnimatedSvgWave widthPx={1000} />
       <div className="w-main " style={{ zIndex: 2, position: "relative" }}>
         <div className="pb-big">
           <h1>
