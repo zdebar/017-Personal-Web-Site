@@ -36,6 +36,7 @@ export function useTheme() {
 
   useEffect(() => {
     document.body.className = resolvedTheme;
+    document.documentElement.className = resolvedTheme;
     localStorage.setItem("theme", theme);
   }, [resolvedTheme, theme]);
 

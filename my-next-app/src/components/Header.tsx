@@ -20,7 +20,7 @@ export default function Header() {
       className="bg-color-1 "
       style={{ position: "sticky", top: 0, zIndex: 100 }}
     >
-      <header className="py-medium bg-color-1" style={{ position: "relative" }}>
+      <header className="py-small bg-color-1" style={{ position: "relative" }}>
         <div className="w-main">
           <div
             className="flex-row justify-between align-center"
@@ -37,7 +37,9 @@ export default function Header() {
                 className="button bg-gradient-secondary shadow my-small"
                 title="contact form"
               >
-                <span>{!formVisible ? "say hi" : "don't say hi"}</span>
+                <span>
+                  {!formVisible ? "contact me" : "close contact form"}
+                </span>
               </button>
             </div>
           </div>

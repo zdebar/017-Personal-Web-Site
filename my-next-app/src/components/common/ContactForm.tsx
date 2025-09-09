@@ -52,7 +52,8 @@ export default function ContactForm() {
         onSubmit={handleFormSubmit}
         className="flex-col gap-tiny my-tiny w-main"
       >
-        <div className="flex-row justify-end  gap-small">
+        <div className="flex-row justify-between  gap-small">
+          <p className="align-end ">sent to: {config.contactMail}</p>
           {copied && (
             <p className="align-end success-message">
               email copied to clipboard
@@ -60,15 +61,15 @@ export default function ContactForm() {
           )}
           <button
             type="button"
-            className="button align-end shadow bg-gradient-secondary "
+            className="button align-end shadow bg-gradient-primary"
             onClick={() => {
               navigator.clipboard.writeText(config.contactMail);
               setCopied(true);
               setTimeout(() => setCopied(false), 2000); // Hide after 2s
             }}
-            title="copy email to clipboard"
+            title={`copy ${config.contactMail} to clipboard`}
           >
-            {config.contactMail}
+            copy email to clipboard
           </button>
         </div>
         <label htmlFor="email">
