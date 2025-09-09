@@ -155,6 +155,14 @@ text-left {
   margin-bottom: var(--gap-medium);
 }
 
+.mt-tiny {
+  margin-top: var(--gap-tiny);
+}
+
+.mt-small {
+  margin-top: var(--gap-small);
+}
+
 .ml-small {
   margin-left: var(--gap-small);
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import AnimatedSvgWave from "./AnimatedSvgWave";
 
 export default function Intro() {
@@ -25,12 +25,12 @@ export default function Intro() {
         <p className="pb-small">
           I am a Full Stack Web Developer with knowledge in both frontend and
           backend development.
-          <Link href="/projects/AboutMe" className="link" title="more about me">
+          {/* <Link href="/projects/AboutMe" className="link" title="more about me" >
             .. about me
-          </Link>
+          </Link> */}
         </p>
         <p className="pb-small">
-          <strong>React</strong>, Tailwind, Node.js, Next.js, PostgreSQL,
+          <strong>React</strong>, Tailwind CSS, Node.js, Next.js, PostgreSQL,
           Typescript, Python
           <button
             type="button"

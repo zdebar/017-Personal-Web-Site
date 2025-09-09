@@ -10,6 +10,7 @@ interface ImageCarouselProps {
   alt: string;
   maxWidth?: number;
   maxHeight?: number;
+  className?: string;
 }
 
 export default function ImageCarousel({
@@ -17,6 +18,7 @@ export default function ImageCarousel({
   alt,
   maxWidth = 400,
   maxHeight = 400,
+  className = "",
 }: ImageCarouselProps) {
   const [currentImage, setCurrentImage] = useState(0);
   const [imageWidth, setImageWidth] = useState<number>(maxWidth);
@@ -66,7 +68,7 @@ export default function ImageCarousel({
 
   return (
     <div
-      className="flex-row align-center self-center"
+      className={`flex-row align-center self-center ${className}`}
       style={{
         position: "relative",
         width: "100%",

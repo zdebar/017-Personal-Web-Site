@@ -24,7 +24,7 @@ export default function HomeIcon({
       className="icon"
       title="Home"
       onClick={handleClick}
-      style={{ width: 28, height: 28 }}
+      style={{ width: 27, height: 27 }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

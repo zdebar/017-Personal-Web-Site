@@ -20,7 +20,7 @@ export default function Card({
       <section id={title}>
         <article className="w-main py-large " style={{ position: "relative" }}>
           <ChevronDownButton targetId={title} />
-          <h2 className="pb-medium">{title}</h2>
+          <h2 className="pb-big">{title}</h2>
           <div className="flex-row-col gap-big justify-between">
             <div style={{ flex: 1 }} className="flex-col-row w-column gap-big">
               <div>
@@ -82,7 +82,12 @@ export default function Card({
               </div>
             </div>
             {images && (
-              <ImageCarousel images={images} alt={title} maxHeight={800} />
+              <ImageCarousel
+                images={images}
+                alt={title}
+                maxHeight={800}
+                className="mt-tiny"
+              />
             )}
           </div>
         </article>
