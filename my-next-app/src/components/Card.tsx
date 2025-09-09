@@ -45,9 +45,9 @@ export default function Card({
                   ))}
                 </div>
               </div>
-              <div>
+              <div className="flex-col gap-small ">
                 {technologies && (
-                  <div>
+                  <div className="mb-small">
                     <p>
                       <strong>Technologies:</strong>
                     </p>
@@ -55,7 +55,7 @@ export default function Card({
                   </div>
                 )}
                 {link && (
-                  <div className="my-small">
+                  <div>
                     <Link
                       href={link}
                       title="more about this project"

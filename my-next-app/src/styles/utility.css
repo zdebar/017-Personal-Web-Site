@@ -163,6 +163,10 @@ text-left {
   margin-left: var(--gap-medium);
 }
 
+.mb-small {
+  margin-bottom: var(--gap-small);
+}
+
 .mb-big {
   margin-bottom: var(--gap-big);
 }
