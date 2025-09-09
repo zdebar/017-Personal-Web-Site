@@ -5,7 +5,7 @@ export default function ChevronLeftIcon() {
     <svg
       width="32"
       height="32"
-      fill="currentColor"
+      fill="var(--color-chevron)"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

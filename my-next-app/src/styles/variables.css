@@ -31,6 +31,7 @@
 
   --color-primary-1: #8ed1fc; /* Gradient color 1 for buttons */
   --color-primary-2: #68c2fbff; /* Gradient color 2 for buttons */
+  --color-chevron: #f78da7; /* Chevron icon color */
   --color-secondary-1: #23ae19; /* Secondary color for highlights */
   --color-secondary-2: #018f06; /* Secondary color 2 for highlights */
   --success-color: green; /* Success message color */
@@ -63,7 +64,7 @@ html.light {
 /* Dark theme overrides */
 body.dark,
 html.dark {
-  --background-color-0: #0e0e0eff;
+  --background-color-0: #161616ff;
   --background-color-1: #1a1a1aff;
   --background-color-2: #1d1d1dff;
   --color: white;
