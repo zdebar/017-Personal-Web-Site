@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 interface ThemeSwitchButtonProps {
-  theme: "light" | "dark" | "system";
+  theme: "light" | "dark";
   toggleTheme: () => void;
 }
 
@@ -16,17 +16,9 @@ export default function ThemeSwitchButton({
       title="switch theme"
       style={{ color: "var(--color)" }}
     >
-      {theme === "system" ? (
+      {theme === "dark" ? (
         <Image
-          src="/icons/system.svg"
-          alt="system icon"
-          width={24}
-          height={24}
-          title="system theme"
-        />
-      ) : theme === "dark" ? (
-        <Image
-          src="/icons/dark.svg"
+          src="/icons/moon.svg"
           alt="dark icon"
           width={24}
           height={24}
@@ -34,7 +26,7 @@ export default function ThemeSwitchButton({
         />
       ) : (
         <Image
-          src="/icons/light.svg"
+          src="/icons/sun.svg"
           alt="light icon"
           width={24}
           height={24}
