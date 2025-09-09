@@ -18,7 +18,7 @@
   /* Sizes */
   --background-width: 1000px; /* Width for background elements */
   --main-width: 700px; /* Max width for header, main, footer content */
-  --column-width: 300px; /* Max width for text content */
+  --column-width: 40px; /* Max width for text content */
   --button-width: 100px; /* Width for buttons */
   --button-height: 35px; /* Height for buttons */
   --icon-size: 24px; /* Size for icons */

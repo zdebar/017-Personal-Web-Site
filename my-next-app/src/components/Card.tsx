@@ -20,61 +20,65 @@ export default function Card({
       <section id={title}>
         <article className="w-main py-large " style={{ position: "relative" }}>
           <ChevronDownButton targetId={title} />
-          <div className=" flex-row-col gap-large justify-between">
-            <div style={{ flex: 1 }} className="w-column">
-              <h2 className="pb-medium">{title}</h2>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "80px 1fr",
-                }}
-              >
-                <p>
-                  <strong>version:</strong>
-                </p>
-                <p>{version}</p>
-                <p>
-                  <strong>update:</strong>
-                </p>
-                <p>09/2025</p>
-              </div>
-              <div className="flex-col gap-tiny my-medium ">
-                {texts.map((text, index) => (
-                  <p key={index}>{text}</p>
-                ))}
-              </div>
-              {technologies && (
-                <div className="my-medium">
+          <h2 className="pb-medium">{title}</h2>
+          <div className="flex-row-col gap-big justify-between">
+            <div style={{ flex: 1 }} className="flex-col-row w-column gap-big">
+              <div>
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "80px 1fr",
+                  }}
+                >
                   <p>
-                    <strong>Technologies:</strong>
+                    <strong>version:</strong>
                   </p>
-                  <p>{technologies}</p>
+                  <p>{version}</p>
+                  <p>
+                    <strong>update:</strong>
+                  </p>
+                  <p>09/2025</p>
                 </div>
-              )}
-              {link && (
-                <div className="my-small">
-                  <Link
-                    href={link}
-                    title="more about this project"
-                    className="button bg-gradient-secondary shadow link-button"
-                  >
-                    ..more
-                  </Link>
+                <div className="flex-col gap-tiny my-medium ">
+                  {texts.map((text, index) => (
+                    <p key={index}>{text}</p>
+                  ))}
                 </div>
-              )}
-              <div className="flex-row align-center gap-small">
-                {hosting && (
-                  <Link
-                    href={hosting}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title={hosting}
-                    className="button bg-gradient-secondary shadow link-button"
-                  >
-                    try it here
-                  </Link>
+              </div>
+              <div>
+                {technologies && (
+                  <div>
+                    <p>
+                      <strong>Technologies:</strong>
+                    </p>
+                    <p>{technologies}</p>
+                  </div>
                 )}
-                {github && <GitHubIcon gitHubHref={github} />}
+                {link && (
+                  <div className="my-small">
+                    <Link
+                      href={link}
+                      title="more about this project"
+                      className="button bg-gradient-secondary shadow link-button"
+                    >
+                      ..more
+                    </Link>
+                  </div>
+                )}
+                <div className="flex-row align-center gap-small">
+                  {hosting && (
+                    <Link
+                      href={hosting}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={hosting}
+                      className="button bg-gradient-secondary shadow link-button"
+                    >
+                      try it here
+                    </Link>
+                  )}
+                  {github && <GitHubIcon gitHubHref={github} />}
+                </div>
               </div>
             </div>
             {images && (
@@ -88,9 +92,20 @@ export default function Card({
           display: flex;
           flex-direction: row;
         }
+        .flex-col-row {
+          display: default;
+        }
+
         @media (max-width: 800px) {
           .flex-row-col {
             flex-direction: column;
+          }
+        }
+
+        @media (min-width: 500px) and (max-width: 800px) {
+          .flex-col-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
           }
         }
       `}</style>
