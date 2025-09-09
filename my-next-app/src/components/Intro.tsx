@@ -24,7 +24,7 @@ export default function Intro() {
         </div>
         <p className="pb-small">
           I am a Full Stack Web Developer with knowledge in both frontend and
-          backend development.{" "}
+          backend development.
           <Link href="/projects/AboutMe" className="link" title="more about me">
             .. about me
           </Link>

@@ -140,7 +140,7 @@ a svg {
 
 /* Link style for inline links and buttons */
 .link {
-  color: blue;
+  color: var(--color-link);
   text-decoration: underline;
   font-family: var(--font-normal);
   font-weight: var(--normal-font-weight);
@@ -152,36 +152,7 @@ a svg {
   marginleft: "5px";
 }
 
-.dark {
-  .link {
-    color: lightblue;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .link {
-    color: lightblue;
-  }
-}
-
-.skills {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  margin-top: var(--gap-tiny);
-}
-
 span {
   display: inline-block;
   white-space: nowrap;
-}
-
-@media (max-width: 560px) {
-  .skills {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skills > *:nth-child(even) {
-    margin-bottom: var(--gap-tiny); /* extra gap for every even child */
-  }
 }

@@ -57,6 +57,7 @@ html.light {
   --background-color-1: #ffffff;
   --background-color-2: #efefef;
   --color: black;
+  --color-link: #f40f48ff; /* Link color */
   --card-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.05);
   --button-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
 }
@@ -68,6 +69,7 @@ html.dark {
   --background-color-1: #1a1a1aff;
   --background-color-2: #1d1d1dff;
   --color: white;
+  --color-link: blue;
   --card-shadow: none;
   --button-shadow: none;
 }
