@@ -18,8 +18,8 @@ export default function Header() {
   return (
     <div className="sticky z-100 top-0 bg-A-100 panel">
       <header className="relative">
-        <div className="content py-4">
-          <div className="flex justify-between items-center overflow-hidden">
+        <div className="py-4">
+          <div className="flex justify-between items-center overflow-hidden content">
             <HomeIcon />
             <div className="flex justify-between items-center gap-4">
               <ThemeSwitchButton theme={theme} toggleTheme={toggleTheme} />

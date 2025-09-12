@@ -23,7 +23,6 @@
 }
 
 /** Base Styles */
-
 html {
   font-size: 14px;
   @apply font-base text-black font-light leading-[1.5];
@@ -37,24 +36,65 @@ h5 {
   @apply font-headings font-bold leading-[1.2];
 }
 
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
 body {
   @apply bg-A-200 min-w-xs max-w-5xl m-auto overflow-y-auto shadow-2xl min-h-screen;
   @apply flex flex-col items-start;
 }
-
-/* main {
-  flex: 1;
-} */
 
 span {
   display: inline-block;
   white-space: nowrap;
 }
 
+section:nth-of-type(odd) {
+  @apply bg-A-300;
+}
+
+input,
+textarea {
+  @apply w-full p-1 text-black bg-white text-base font-normal border border-black rounded-md m-0;
+}
+
+input {
+  @apply h-6;
+}
+
+textarea {
+  @apply h-24 resize-y mb-[-4px];
+}
+
+form {
+  margin-top: var(--gap-small);
+}
+
+main {
+  @apply flex-1;
+}
+
 /** Component size */
 
 .panel {
-  @apply w-5xl m-auto;
+  @apply w-5xl my-auto;
 }
 
 .content {
@@ -87,6 +127,14 @@ span {
 
 /** Component styling */
 
+.success {
+  @apply text-green-600;
+}
+
+.fail {
+  @apply text-red-600;
+}
+
 .shadow {
   /* TODO: redo to tailwind */
   box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
@@ -100,6 +148,7 @@ span {
     var(--color-primary-2)
   );
   color: black;
+  font-weight: normal;
 }
 
 .button-blue:hover {
@@ -146,39 +195,6 @@ span {
   }
 }
 
-section:nth-of-type(odd) {
-  background-color: var(--background-color-2); /** Alternate background color */
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: var(--gap-tiny);
-  color: var(--color);
-  background-color: var(--background-color-1);
-
-  font-size: 1rem;
-  font-weight: var(--normal-font-weight);
-
-  border: 1px var(--color) solid;
-  border-radius: var(--border-radius);
-  margin: 0px;
-}
-
-input {
-  height: 25px;
-}
-
-textarea {
-  height: 100px;
-  resize: vertical;
-  margin-bottom: -3px;
-}
-
-form {
-  margin-top: var(--gap-small);
-}
-
 .button-transparent {
   background: none;
   cursor: pointer;
@@ -202,9 +218,4 @@ form {
   padding: 0;
   cursor: "pointer";
   marginleft: "5px";
-}
-
-span {
-  display: inline-block;
-  white-space: nowrap;
 }

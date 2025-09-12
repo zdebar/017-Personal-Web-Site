@@ -41,31 +41,24 @@ export default function ContactForm() {
   };
 
   return (
-    <div
-      style={{ position: "absolute", width: "100%", zIndex: 10 }}
-      className="w-background bg-color-1"
-    >
+    <div className="panel bg-A-200 absolute w-screen z-10 ">
       <form
         id="contactForm"
         action="https://formspree.io/f/xdkazldg"
         method="POST"
         onSubmit={handleFormSubmit}
-        className="flex-col gap-tiny my-tiny content"
+        className="flex flex-col gap-1 py-2 content"
       >
-        <div className="flex-row justify-between  gap-small">
-          <p className="align-end ">sent to: {config.contactMail}</p>
-          {copied && (
-            <p className="align-end success-message">
-              email copied to clipboard
-            </p>
-          )}
+        <div className="flex justify-between items-end gap-4">
+          <p>sent to: {config.contactMail}</p>
+          {copied && <p className="success">email copied to clipboard</p>}
           <button
             type="button"
-            className="button align-end shadow button-blue"
+            className="button-rectangular shadow button-blue"
             onClick={() => {
-              navigator.clipboard.writeText(config.contactMail);
+              navigator.clipboard.writeText(config.contactMail); // TODO: what this means?
               setCopied(true);
-              setTimeout(() => setCopied(false), 2000); // Hide after 2s
+              setTimeout(() => setCopied(false), 2000);
             }}
             title={`copy ${config.contactMail} to clipboard`}
           >
@@ -99,17 +92,17 @@ export default function ContactForm() {
             style={{ minHeight: "48px" }}
           ></textarea>
         </label>
-        <div className="align-end flex-row gap-small justify-end">
+        <div className="items-end flex gap-4 justify-end">
           {responseMessage && (
             <p
               id="responseMessage"
-              className="align-end"
+              className="items-end"
               style={{
                 visibility: responseMessage ? "visible" : "hidden",
                 color:
                   responseMessage === "Message sent successfully!"
-                    ? "var(--success-color)"
-                    : "var(--error-color)",
+                    ? "success"
+                    : "fail",
               }}
             >
               {responseMessage}
@@ -117,7 +110,7 @@ export default function ContactForm() {
           )}
           <button
             type="submit"
-            className="button shadow button-green "
+            className="button-rectangular shadow button-green "
             title={`send mail to ${config.contactMail}`}
           >
             Send
