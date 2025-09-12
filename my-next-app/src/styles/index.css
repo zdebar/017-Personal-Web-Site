@@ -26,7 +26,7 @@
 
 html {
   font-size: 14px;
-  @apply font-base text-black dark:text-white font-light leading-[1.5];
+  @apply font-base text-black font-light leading-[1.5];
 }
 
 h1,
@@ -42,8 +42,13 @@ body {
   @apply flex flex-col items-start;
 }
 
-main {
+/* main {
   flex: 1;
+} */
+
+span {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 /** Component size */
@@ -53,19 +58,31 @@ main {
 }
 
 .content {
-  @apply w-4xl m-auto py-4;
+  @apply w-3xl m-auto;
 }
 
-.button {
+.column {
+  @apply w-40;
+}
+
+.button-rectangular {
   @apply w-[200px] h-[40px] cursor-pointer text-white rounded-[25px] border-0 font-bold;
 }
 
+.link-button {
+  @apply inline-flex text-center no-underline items-center justify-center align-middle;
+}
+
 .gitIcon {
-  @apply w-7 h-7 rounded-full flex items-center justify-center border-0 bg-none fill-white  bg-black; /** TODO: set for dark mode */
+  @apply w-7 h-7 rounded-full flex items-center justify-center border-0 bg-none fill-white  bg-black; /** TODO: se for dark mode, separate shape and style */
 }
 
 .icon {
   @apply w-7 h-7 rounded-full flex items-center justify-center border-0 bg-none fill-none stroke-black stroke-[1.8];
+}
+
+.themeIcon {
+  @apply w-7 h-7 rounded-full flex items-center justify-center border-0 bg-none fill-white stroke-black stroke-[1.8];
 }
 
 /** Component styling */
@@ -75,7 +92,7 @@ main {
   box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
 }
 
-.bg-gradient-primary {
+.button-blue {
   /* TODO: redo to tailwind */
   background: linear-gradient(
     to right,
@@ -85,7 +102,7 @@ main {
   color: black;
 }
 
-.bg-gradient-primary:hover {
+.button-blue:hover {
   /* TODO: redo to tailwind */
   background: var(--color-primary-2);
 }
@@ -104,17 +121,33 @@ main {
   background: var(--color-secondary-2);
 }
 
-/*Layout */
+/**
+  * NOT DONE YET
+  */
+
+.flex-row-col {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col-row {
+  display: default;
+}
+
+@media (max-width: 800px) {
+  .flex-row-col {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .flex-col-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 section:nth-of-type(odd) {
   background-color: var(--background-color-2); /** Alternate background color */
-}
-
-footer {
-  padding: var(--gap-small) 0px;
-  align-items: right;
-  align-content: right;
-  self-align: right;
 }
 
 input,
@@ -146,25 +179,11 @@ form {
   margin-top: var(--gap-small);
 }
 
-a,
-a svg {
-  cursor: pointer;
-}
-
 .button-transparent {
   background: none;
   cursor: pointer;
   border: none;
   color: var(--color);
-}
-
-.link-button {
-  display: inline-flex;
-  text-align: center;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
 }
 
 .shadow:active {

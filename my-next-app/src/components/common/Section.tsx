@@ -7,7 +7,7 @@ interface SectionProps {
 const Section: React.FC<SectionProps> = ({ children }) => {
   return (
     <section>
-      <div className="content py-big">{children}</div>
+      <div className="content py-12">{children}</div>
     </section>
   );
 };

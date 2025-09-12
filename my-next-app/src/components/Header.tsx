@@ -16,26 +16,28 @@ export default function Header() {
   };
 
   return (
-    <div className="sticky z-100 top-0 bg-A-100 content">
+    <div className="sticky z-100 top-0 bg-A-100 panel">
       <header className="relative">
-        <div className="flex justify-between items-center overflow-hidden">
-          <HomeIcon />
-          <div className="flex justify-between items-center gap-4">
-            <ThemeSwitchButton theme={theme} toggleTheme={toggleTheme} />
-            <GitHubIcon href="https://github.com/zdebar" />
-
-            <button
-              onClick={toggleForm}
-              id="emailAddress"
-              className="button button-green shadow"
-              title="contact form"
-            >
-              <span>{!formVisible ? "contact me" : "close contact form"}</span>
-            </button>
+        <div className="content py-4">
+          <div className="flex justify-between items-center overflow-hidden">
+            <HomeIcon />
+            <div className="flex justify-between items-center gap-4">
+              <ThemeSwitchButton theme={theme} toggleTheme={toggleTheme} />
+              <GitHubIcon href="https://github.com/zdebar" />
+              <button
+                onClick={toggleForm}
+                id="emailAddress"
+                className="button-rectangular button-green shadow"
+                title="contact form"
+              >
+                <span>
+                  {!formVisible ? "contact me" : "close contact form"}
+                </span>
+              </button>
+            </div>
           </div>
+          {formVisible && <ContactForm />}
         </div>
-
-        {formVisible && <ContactForm />}
       </header>
     </div>
   );

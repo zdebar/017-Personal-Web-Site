@@ -61,7 +61,7 @@ export default function ContactForm() {
           )}
           <button
             type="button"
-            className="button align-end shadow bg-gradient-primary"
+            className="button align-end shadow button-blue"
             onClick={() => {
               navigator.clipboard.writeText(config.contactMail);
               setCopied(true);

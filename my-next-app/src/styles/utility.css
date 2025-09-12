@@ -1,56 +1,15 @@
 /** Utility CSS classes */
 
 /** Flexbox Utilities */
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-col {
-  display: flex;
-  flex-direction: column;
-}
 
 .grid {
   display: grid;
   grid-template-columns: 150px 1fr;
 }
 
-.justify-end {
-  justify-content: flex-end;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.align-end {
-  align-items: end;
-}
-
-.align-start {
-  align-items: start;
-}
-
-.self-center {
-  align-self: center;
-}
-
-.align-end {
-  align-self: flex-end;
-}
-
 /** Text Utilities */
 strong {
   font-weight: bold;
-}
-
-text-left {
-  text-align: left;
 }
 
 /** Size Utilities */
@@ -61,116 +20,6 @@ text-left {
 .w-background {
   width: var(--background-width);
   margin: 0 auto;
-}
-
-/** Spacing Utilities */
-.gap-tiny {
-  gap: var(--gap-tiny);
-}
-
-.gap-small {
-  gap: var(--gap-small);
-}
-
-.gap-medium {
-  gap: var(--gap-medium);
-}
-
-.gap-big {
-  gap: var(--gap-big);
-}
-
-.gap-large {
-  gap: var(--gap-large);
-}
-
-.py-small {
-  padding-top: var(--gap-small);
-  padding-bottom: var(--gap-small);
-}
-
-.py-medium {
-  padding-top: var(--gap-medium);
-  padding-bottom: var(--gap-medium);
-}
-
-.py-big {
-  padding-top: var(--gap-big);
-  padding-bottom: var(--gap-big);
-}
-
-.py-large {
-  padding-top: var(--gap-large);
-  padding-bottom: var(--gap-large);
-}
-
-.py-xlarge {
-  padding-top: var(--gap-xlarge);
-  padding-bottom: var(--gap-xlarge);
-}
-
-.pb-small {
-  padding-bottom: var(--gap-small);
-}
-
-.pb-medium {
-  padding-bottom: var(--gap-medium);
-}
-
-.pb-big {
-  padding-bottom: var(--gap-big);
-}
-
-.pb-large {
-  padding-bottom: var(--gap-large);
-}
-
-.pl-small {
-  padding-left: var(--gap-small);
-}
-
-.my-tiny {
-  margin-top: var(--gap-tiny);
-  margin-bottom: var(--gap-tiny);
-}
-
-.my-small {
-  margin-top: var(--gap-small);
-  margin-bottom: var(--gap-small);
-}
-
-.my-big {
-  margin-top: var(--gap-big);
-  margin-bottom: var(--gap-big);
-}
-
-.my-medium {
-  margin-top: var(--gap-medium);
-  margin-bottom: var(--gap-medium);
-}
-
-.mt-tiny {
-  margin-top: var(--gap-tiny);
-}
-
-.mt-small {
-  margin-top: var(--gap-small);
-}
-
-.ml-small {
-  margin-left: var(--gap-small);
-}
-
-.ml-medium {
-  margin-left: var(--gap-medium);
-}
-
-.mb-small {
-  margin-bottom: var(--gap-small);
-}
-
-.mb-big {
-  margin-bottom: var(--gap-big);
 }
 
 /* Color Utilities */
