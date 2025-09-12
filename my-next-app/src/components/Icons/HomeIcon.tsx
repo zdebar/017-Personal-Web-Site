@@ -1,38 +1,9 @@
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import "./Icon.css";
+import NavigateIcon from "./LinkIcon";
 
-export default function HomeIcon({
-  color = "black", // transparent
-  strokeWidth = 1.5,
-}: {
-  color?: string;
-  strokeWidth?: number;
-}) {
-  const pathname = usePathname();
-
-  const handleClick = (e: React.MouseEvent) => {
-    if (pathname === "/") {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "auto" });
-    }
-  };
-
+export default function HomeIcon() {
   return (
-    <Link
-      href="/"
-      className="icon"
-      title="Home"
-      onClick={handleClick}
-      style={{ width: 27, height: 27 }}
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={strokeWidth}
-        stroke={color}
-      >
+    <NavigateIcon href="/" title="Home" className="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path
           xmlns="http://www.w3.org/2000/svg"
           d="M3 9.5L12 4L21 9.5"
@@ -46,6 +17,6 @@ export default function HomeIcon({
           strokeLinejoin="round"
         />
       </svg>
-    </Link>
+    </NavigateIcon>
   );
 }

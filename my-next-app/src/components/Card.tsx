@@ -18,7 +18,7 @@ export default function Card({
   return (
     <>
       <section id={title}>
-        <article className="w-main py-large " style={{ position: "relative" }}>
+        <article className="content py-large " style={{ position: "relative" }}>
           <ChevronDownButton targetId={title} />
           <h2 className="pb-big">{title}</h2>
           <div className="flex-row-col gap-big justify-between">
@@ -59,7 +59,7 @@ export default function Card({
                     <Link
                       href={link}
                       title="more about this project"
-                      className="button bg-gradient-secondary shadow link-button"
+                      className="button button-green shadow link-button"
                     >
                       ..more
                     </Link>
@@ -72,7 +72,7 @@ export default function Card({
                       target="_blank"
                       rel="noopener noreferrer"
                       title={hosting}
-                      className="button bg-gradient-secondary shadow link-button"
+                      className="button button-green shadow link-button"
                     >
                       try it here
                     </Link>

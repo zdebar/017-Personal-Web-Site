@@ -13,7 +13,7 @@ export default function Intro() {
       style={{ position: "relative", overflow: "hidden" }}
     >
       <AnimatedSvgWave widthPx={1000} />
-      <div className="w-main " style={{ zIndex: 2, position: "relative" }}>
+      <div className="content " style={{ zIndex: 2, position: "relative" }}>
         <div className="pb-big">
           <h1>
             <span>Hi, I&apos;m</span> <span>Zdeněk Barth</span>

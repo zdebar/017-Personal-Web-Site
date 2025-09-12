@@ -23,7 +23,7 @@ export default function FlashCardApp() {
                 target="_blank"
                 rel="noopener noreferrer"
                 title={project.hosting ?? "#"}
-                className="button bg-gradient-secondary shadow link-button"
+                className="button button-green shadow link-button"
               >
                 try it here
               </Link>

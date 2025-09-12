@@ -13,12 +13,14 @@ export const metadata = {
   authors: [{ name: "Zdeněk Barth" }],
 };
 
+// TODO: tailwind solution
 const montserrat = Montserrat({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
   variable: "--font-headings",
 });
 
+// TODO: tailwind solution
 const ubuntu = Ubuntu({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],

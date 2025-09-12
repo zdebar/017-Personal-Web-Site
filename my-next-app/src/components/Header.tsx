@@ -16,34 +16,25 @@ export default function Header() {
   };
 
   return (
-    <div
-      className="bg-color-1 "
-      style={{ position: "sticky", top: 0, zIndex: 100 }}
-    >
-      <header className="py-small bg-color-1" style={{ position: "relative" }}>
-        <div className="w-main">
-          <div
-            className="flex-row justify-between align-center"
-            style={{ overflow: "hidden" }}
-          >
-            <HomeIcon color="var(--color)" strokeWidth={1.8} />
-            <div className="flex-row justify-between align-center gap-small">
-              <ThemeSwitchButton theme={theme} toggleTheme={toggleTheme} />
-              <GitHubIcon gitHubHref="https://github.com/zdebar" />
+    <div className="sticky z-100 top-0 bg-A-100 content">
+      <header className="relative">
+        <div className="flex justify-between items-center overflow-hidden">
+          <HomeIcon />
+          <div className="flex justify-between items-center gap-4">
+            <ThemeSwitchButton theme={theme} toggleTheme={toggleTheme} />
+            <GitHubIcon href="https://github.com/zdebar" />
 
-              <button
-                onClick={toggleForm}
-                id="emailAddress"
-                className="button bg-gradient-secondary shadow my-small"
-                title="contact form"
-              >
-                <span>
-                  {!formVisible ? "contact me" : "close contact form"}
-                </span>
-              </button>
-            </div>
+            <button
+              onClick={toggleForm}
+              id="emailAddress"
+              className="button button-green shadow"
+              title="contact form"
+            >
+              <span>{!formVisible ? "contact me" : "close contact form"}</span>
+            </button>
           </div>
         </div>
+
         {formVisible && <ContactForm />}
       </header>
     </div>

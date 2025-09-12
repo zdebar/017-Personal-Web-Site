@@ -1,38 +1,110 @@
 /* Import */
-@import url("./reset.css");
 @import url("./variables.css");
-@import url("./utility.css");
-@import url("./text.css");
+@import url("./styling.css");
 
 /** tailwind import */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/*Layout */
+@theme {
+  --color-A-100: white; /* Sidepanels background */
+  --color-A-200: #ffffff; /* Top background */
+  --color-A-300: #efefef; /* Alternate background color */
+  --color-button-100: #8ed1fc; /* Button background */
+  --color-button-200: #68c2fbff; /* Button hover background */
+}
+
+@theme {
+  --font-base: "Ubuntu", serif; /* Paragraphs, Links, Buttons */
+  --font-headings: "Montserrat", serif; /* Headings */
+}
+
+@theme {
+  --spacing: 4px; /* General spacing unit */
+}
+
+/** Base Styles */
+
 html {
-  background-color: var(--background-color-0);
-  color: var(--color);
-  height: 100%;
+  font-size: 14px;
+  @apply font-base text-black dark:text-white font-light leading-[1.5];
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-headings font-bold leading-[1.2];
 }
 
 body {
-  max-width: var(--background-width);
-  background-color: var(--background-color-1);
-  min-width: 300px;
-  margin: 0 auto;
-  overflow-y: auto;
-  box-shadow: var(--card-shadow);
-  color: var(--color);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: left;
+  @apply bg-A-200 min-w-xs max-w-5xl m-auto overflow-y-auto shadow-2xl min-h-screen;
+  @apply flex flex-col items-start;
 }
 
 main {
   flex: 1;
 }
+
+/** Component size */
+
+.panel {
+  @apply w-5xl m-auto;
+}
+
+.content {
+  @apply w-4xl m-auto py-4;
+}
+
+.button {
+  @apply w-[200px] h-[40px] cursor-pointer text-white rounded-[25px] border-0 font-bold;
+}
+
+.gitIcon {
+  @apply w-7 h-7 rounded-full flex items-center justify-center border-0 bg-none fill-white  bg-black; /** TODO: set for dark mode */
+}
+
+.icon {
+  @apply w-7 h-7 rounded-full flex items-center justify-center border-0 bg-none fill-none stroke-black stroke-[1.8];
+}
+
+/** Component styling */
+
+.shadow {
+  /* TODO: redo to tailwind */
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bg-gradient-primary {
+  /* TODO: redo to tailwind */
+  background: linear-gradient(
+    to right,
+    var(--color-primary-1),
+    var(--color-primary-2)
+  );
+  color: black;
+}
+
+.bg-gradient-primary:hover {
+  /* TODO: redo to tailwind */
+  background: var(--color-primary-2);
+}
+
+.button-green {
+  /* TODO: redo to tailwind */
+  background: linear-gradient(
+    to right,
+    var(--color-secondary-1),
+    var(--color-secondary-2)
+  );
+}
+
+.button-green:hover {
+  /* TODO: redo to tailwind */
+  background: var(--color-secondary-2);
+}
+
+/*Layout */
 
 section:nth-of-type(odd) {
   background-color: var(--background-color-2); /** Alternate background color */
@@ -79,19 +151,6 @@ a svg {
   cursor: pointer;
 }
 
-/* Component Styles */
-.button {
-  width: 200px;
-  height: 40px;
-  cursor: pointer;
-
-  color: white;
-  font-weight: var(--bold-font-weight);
-
-  border-radius: 25px;
-  border: none;
-}
-
 .button-transparent {
   background: none;
   cursor: pointer;
@@ -108,37 +167,8 @@ a svg {
   vertical-align: middle;
 }
 
-.shadow {
-  box-shadow: var(--button-shadow);
-}
-
 .shadow:active {
   box-shadow: none;
-}
-
-.bg-gradient-primary {
-  background: linear-gradient(
-    to right,
-    var(--color-primary-1),
-    var(--color-primary-2)
-  );
-  color: black;
-}
-
-.bg-gradient-primary:hover {
-  background: var(--color-primary-2);
-}
-
-.bg-gradient-secondary {
-  background: linear-gradient(
-    to right,
-    var(--color-secondary-1),
-    var(--color-secondary-2)
-  );
-}
-
-.bg-gradient-secondary:hover {
-  background: var(--color-secondary-2);
 }
 
 /* Link style for inline links and buttons */

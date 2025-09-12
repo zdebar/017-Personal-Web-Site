@@ -50,7 +50,7 @@ export default function ContactForm() {
         action="https://formspree.io/f/xdkazldg"
         method="POST"
         onSubmit={handleFormSubmit}
-        className="flex-col gap-tiny my-tiny w-main"
+        className="flex-col gap-tiny my-tiny content"
       >
         <div className="flex-row justify-between  gap-small">
           <p className="align-end ">sent to: {config.contactMail}</p>
@@ -117,7 +117,7 @@ export default function ContactForm() {
           )}
           <button
             type="submit"
-            className="button shadow bg-gradient-secondary "
+            className="button shadow button-green "
             title={`send mail to ${config.contactMail}`}
           >
             Send

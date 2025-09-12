@@ -10,26 +10,21 @@ export default function ThemeSwitchButton({
   toggleTheme,
 }: ThemeSwitchButtonProps) {
   return (
-    <button
-      onClick={toggleTheme}
-      className="icon"
-      title="switch theme"
-      style={{ color: "var(--color)" }}
-    >
+    <button onClick={toggleTheme} className="icon" title="switch theme">
       {theme === "dark" ? (
         <Image
           src="/icons/moon.svg"
           alt="dark icon"
-          width={24}
-          height={24}
+          width={28}
+          height={28}
           title="dark theme"
         />
       ) : (
         <Image
           src="/icons/sun.svg"
           alt="light icon"
-          width={24}
-          height={24}
+          width={28}
+          height={28}
           title="light theme"
         />
       )}

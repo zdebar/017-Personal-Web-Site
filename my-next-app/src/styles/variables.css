@@ -1,19 +1,6 @@
 :root {
-  /* Text */
-  font-size: 14px;
-  --font-normal: "Ubuntu", serif; /* Paragraphs, Links, Buttons */
-  --font-headings: "Montserrat", serif; /* Headings */
-
   /* Borders */
   --border-radius: 2px; /* Border radius for inputs, cards, buttons */
-
-  /* Spacing */
-  --gap-xlarge: 12rem; /* Intro vertical padding */
-  --gap-large: 6rem; /* Section vertical padding */
-  --gap-big: 3rem; /* Header top/bottom padding */
-  --gap-medium: 1.33rem;
-  --gap-small: 0.66rem;
-  --gap-tiny: 0.33rem; /* Section horizontal padding */
 
   /* Sizes */
   --background-width: 1000px; /* Width for background elements */
