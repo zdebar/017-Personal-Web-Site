@@ -6,7 +6,7 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ children }) => {
   return (
-    <section>
+    <section className="panel">
       <div className="content py-12">{children}</div>
     </section>
   );

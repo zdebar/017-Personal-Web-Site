@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function GitHubIcon({
+export default function LinkButton({
   title = "Link",
   className = "icon",
   href,

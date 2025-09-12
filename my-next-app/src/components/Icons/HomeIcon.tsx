@@ -1,4 +1,4 @@
-import NavigateIcon from "./LinkIcon";
+import NavigateIcon from "./NavigateButton";
 
 export default function HomeIcon() {
   return (

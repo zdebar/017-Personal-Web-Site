@@ -1,4 +1,3 @@
-// AnimatedSvgWave.tsx
 "use client";
 
 // Colors used in AnimatedSvgWave:

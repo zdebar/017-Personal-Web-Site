@@ -11,6 +11,7 @@
   --color-A-300: #efefef; /* Alternate background color */
   --color-button-100: #8ed1fc; /* Button background */
   --color-button-200: #68c2fbff; /* Button hover background */
+  --color-chevron: white; /* Chevron color */
 }
 
 @theme {
@@ -109,6 +110,14 @@ main {
   @apply w-[200px] h-[40px] cursor-pointer text-white rounded-[25px] border-0 font-bold;
 }
 
+.chevronBtn {
+  /* TODO: rozdělit na shape a style */
+  @apply no-underline w-10 h-10 rounded-full text-black absolute -top-5 right-1 text-center p-2.5 flex items-center justify-center text-xs cursor-pointer z-10 shadow bg-white;
+}
+.chevronBtn:hover {
+  @apply bg-gray-200;
+}
+
 .link-button {
   @apply inline-flex text-center no-underline items-center justify-center align-middle;
 }
@@ -174,20 +183,6 @@ main {
   * NOT DONE YET
   */
 
-.flex-row-col {
-  display: flex;
-  flex-direction: row;
-}
-.flex-col-row {
-  display: default;
-}
-
-@media (max-width: 800px) {
-  .flex-row-col {
-    flex-direction: column;
-  }
-}
-
 @media (min-width: 500px) and (max-width: 800px) {
   .flex-col-row {
     display: grid;
@@ -195,27 +190,27 @@ main {
   }
 }
 
-.button-transparent {
-  background: none;
-  cursor: pointer;
-  border: none;
-  color: var(--color);
+.flex-row-col {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .flex-row-col {
+    flex-direction: column;
+  }
+  .flex-row-col > :first-child {
+    align-self: flex-start;
+  }
+  .flex-row-col > :nth-child(2) {
+    align-self: flex-end;
+  }
 }
 
-.shadow:active {
-  box-shadow: none;
+/* Column text */
+.columns-2 {
+  @apply [column-count:2] [column-gap:2rem] max-[550px]:[column-count:1]; /* TODO: set container query */
 }
 
-/* Link style for inline links and buttons */
-.link {
-  color: var(--color-link);
-  text-decoration: underline;
-  font-family: var(--font-normal);
-  font-weight: var(--normal-font-weight);
-  font-size: 1rem;
-  background: none;
-  border: "none";
-  padding: 0;
-  cursor: "pointer";
-  marginleft: "5px";
+.columns-2 p {
+  @apply mb-6;
 }

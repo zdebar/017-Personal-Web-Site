@@ -23,23 +23,12 @@ strong {
 }
 
 /* Color Utilities */
-.bg-color-1 {
-  background-color: var(--background-color-1);
-}
 
 .color {
   color: var(--color);
 }
 
 /* Text Spacing */
-.multi-column-text {
-  column-count: 2;
-  column-gap: 2rem;
-}
-
-.multi-column-text p {
-  margin-bottom: var(--gap-medium);
-}
 
 @media (max-width: 550px) {
   .multi-column-text {

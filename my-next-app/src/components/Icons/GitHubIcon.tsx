@@ -1,6 +1,11 @@
-import LinkIcon from "./LinkIcon";
+import LinkIcon from "./LinkButton";
 
-export default function GitHubIcon({ href = "" }: { href: string }) {
+export default function GitHubIcon({
+  href = undefined,
+}: {
+  href: string | undefined;
+}) {
+  if (!href) return null;
   return (
     <LinkIcon href={href} title={href} className="gitIcon">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

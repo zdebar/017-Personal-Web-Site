@@ -1,7 +1,7 @@
 "use client";
 
-import NavigateIcon from "./Icons/NavigateIcon";
-import LinkIcon from "./Icons/LinkIcon";
+import NavigateButton from "./Icons/NavigateButton";
+import LinkIcon from "./Icons/LinkButton";
 import { CardData } from "../data/cards";
 import GitHubIcon from "./Icons/GitHubIcon";
 import ImageCarousel from "./common/ImageCarousel";
@@ -51,13 +51,13 @@ export default function Card({
                 </div>
               )}
               {link && (
-                <NavigateIcon
+                <NavigateButton
                   title="more about this project"
                   href={link}
                   className="button-rectangular button-green shadow link-button mb-2"
                 >
                   ..more
-                </NavigateIcon>
+                </NavigateButton>
               )}
               <div className="flex items-center gap-4">
                 {hosting && (
