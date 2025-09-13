@@ -40,7 +40,7 @@ export default function RootLayout({
       </head>
       <body>
         <Header />
-        <main>{children}</main>
+        <main className="w-full">{children}</main>
         <Footer />
       </body>
     </html>

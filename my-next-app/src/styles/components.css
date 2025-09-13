@@ -7,10 +7,27 @@
   @apply max-w-cnt w-full m-auto px-2;
 }
 
-/** Buttons */
+.int {
+  /** Hero text */
+  @apply flex flex-col justify-center;
+  height: 500px;
+}
+
+@media (max-height: 500px) {
+  .int {
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
+/** Buttons*/
 .btn-rec {
   @apply cursor-pointer rounded-full border-0 font-bold w-[var(--width-btn)] h-[var(--height-btn)];
   @apply shadow-btn active:shadow-none dark:shadow-none;
+}
+
+.btn-lnk {
+  @apply bg-none border-none p-0 cursor-pointer ml-1;
 }
 
 .btn-green {
@@ -38,4 +55,8 @@
 
 .themeIcn {
   @apply bg-none fill-black stroke-black stroke-[1] dark:fill-white dark:stroke-white;
+}
+
+.chvIcn {
+  @apply bg-none fill-[var(--color-chv)] stroke-0;
 }

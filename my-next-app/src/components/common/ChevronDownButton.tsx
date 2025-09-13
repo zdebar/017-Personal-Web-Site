@@ -8,7 +8,7 @@ export default function ChevronDownButton({
   title?: string;
 }) {
   return (
-    <a href={`#${targetId}`} title={title} className="chevronBtn">
+    <a href={`#${targetId}`} title={title} className="chvIcon icn">
       <ChevronDownIcon />
     </a>
   );

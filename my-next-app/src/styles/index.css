@@ -23,12 +23,6 @@
   @apply inline-flex text-center no-underline items-center justify-center align-middle;
 }
 
-/** Component styling */
-
-/**
-  * NOT DONE YET
-  */
-
 @media (min-width: 500px) and (max-width: 800px) {
   .flex-col-row {
     display: grid;

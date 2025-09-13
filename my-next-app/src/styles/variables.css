@@ -52,5 +52,6 @@
   --border-radius-sm: 2px;
 
   --z-index-base: 0;
+  --z-index-intro: 10;
   --z-index-bar: 100;
 }

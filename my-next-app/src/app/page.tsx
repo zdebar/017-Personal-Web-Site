@@ -1,13 +1,13 @@
 import React from "react";
-import Intro from "../components/Intro";
+import Hero from "../components/Hero";
 import ProjectList from "../components/ProjectList";
 import "../styles/index.css";
 
 export default function HomePage() {
   return (
     <>
-      {/* <Intro />
-      <ProjectList /> */}
+      <Hero />
+      {/* <ProjectList /> */}
     </>
   );
 }
