@@ -20,6 +20,15 @@
   }
 }
 
+/* Column text */
+.clm-2 {
+  @apply [column-count:2] [column-gap:2rem] max-[550px]:[column-count:1];
+}
+
+.clm-2 p {
+  @apply mb-6;
+}
+
 /** Buttons*/
 .btn-rec {
   @apply cursor-pointer rounded-full border-0 font-bold w-[var(--width-btn)] h-[var(--height-btn)];
@@ -29,6 +38,11 @@
 
 .btn-lnk {
   @apply bg-none border-none p-0 cursor-pointer ml-1;
+}
+
+.btn-car {
+  /** Carousel buttons */
+  @apply absolute top-1/2 z-bar bg-none border-none cursor-pointer;
 }
 
 .btn-green {

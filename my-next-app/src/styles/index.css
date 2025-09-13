@@ -4,37 +4,3 @@
 @import "./elements.css";
 @import "./components.css";
 @custom-variant dark (&:where(.dark, .dark *));
-
-/** Component size */
-
-@media (min-width: 500px) and (max-width: 800px) {
-  .flex-col-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.flex-row-col {
-  display: flex;
-  flex-direction: row;
-}
-@media (max-width: 500px) {
-  .flex-row-col {
-    flex-direction: column;
-  }
-  .flex-row-col > :first-child {
-    align-self: flex-start;
-  }
-  .flex-row-col > :nth-child(2) {
-    align-self: flex-end;
-  }
-}
-
-/* Column text */
-.columns-2 {
-  @apply [column-count:2] [column-gap:2rem] max-[550px]:[column-count:1]; /* TODO: set container query */
-}
-
-.columns-2 p {
-  @apply mb-6;
-}

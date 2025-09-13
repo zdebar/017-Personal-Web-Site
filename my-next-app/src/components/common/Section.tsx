@@ -6,8 +6,8 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ children }) => {
   return (
-    <section className="panel">
-      <div className="content py-12">{children}</div>
+    <section className="pnl">
+      <div className="cnt py-12">{children}</div>
     </section>
   );
 };

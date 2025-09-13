@@ -13,20 +13,22 @@ export default function FlashCardApp() {
   return (
     <div>
       <Section>
-        <div className="flex justify-between mb-12 gap-6 items-end ">
-          <h2>English App</h2>
-          <div className="flex gap-4 items-center">
-            <GitHubIcon href={project.github} />
-            <LinkButton
-              href={project.hosting ?? "#"}
-              title={project.hosting ?? "#"}
-              className="button-rectangular button-green shadow link-button"
-            >
-              try it here
-            </LinkButton>
+        <div className="@container">
+          <div className="flex flex-col @sm:flex-row justify-between mb-12 gap-6 items-end ">
+            <h2 className="self-start">English App</h2>
+            <div className="flex gap-4 items-center">
+              <GitHubIcon href={project.github} />
+              <LinkButton
+                href={project.hosting ?? "#"}
+                title={project.hosting ?? "#"}
+                className="btn-rec btn-green"
+              >
+                try it here
+              </LinkButton>
+            </div>
           </div>
         </div>
-        <div className="columns-2">
+        <div className="clm-2">
           <p>
             <strong>Intro</strong> – I couldn&#39;t find a suitable app for
             myself, so I created one. It&#39;s designed to help me improve my
@@ -71,7 +73,7 @@ export default function FlashCardApp() {
       </Section>
       <Section>
         <h2 className="mb-12">Summary</h2>
-        <div className="columns-2">
+        <div className="clm-2">
           <p>
             <strong>Overall</strong> – Fast flashcard practice, speaking and
             listening, any time of day, in small chunks.
@@ -93,7 +95,7 @@ export default function FlashCardApp() {
       </Section>
       <Section>
         <h2 className="mb-12">Database</h2>
-        <div className="columns-2 mb-12">
+        <div className="clm-2 mb-12">
           <p>
             <strong>Technologies</strong> – PostgreSQL, DBeaver, PgAdmin,
             Supabase for hosting.
@@ -121,7 +123,7 @@ export default function FlashCardApp() {
       </Section>
       <Section>
         <h2 className="mb-12">English Data</h2>
-        <div className="columns-2">
+        <div className="clm-2">
           <p>
             <strong>Technologies</strong> – Python for scripting, Google APIs,
             and various other tools.
@@ -141,7 +143,7 @@ export default function FlashCardApp() {
       </Section>
       <Section>
         <h2 className="mb-12">Backend</h2>
-        <div className="columns-2">
+        <div className="clm-2 mb-12">
           <p>
             <strong>Technologies</strong> – TypeScript, Node.js, Express.js,
             Winston logger, Vitest, Railway for hosting.
@@ -167,7 +169,7 @@ export default function FlashCardApp() {
       </Section>
       <Section>
         <h2 className="mb-12">Frontend</h2>
-        <div className="columns-2 mb-12">
+        <div className="clm-2 mb-12">
           <p>
             <strong>Technologies</strong> – React, React Router, TypeScript,
             Tailwind CSS, Vercel for hosting, Firebase for authentication.

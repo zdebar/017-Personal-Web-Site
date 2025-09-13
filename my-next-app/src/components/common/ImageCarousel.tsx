@@ -68,33 +68,23 @@ export default function ImageCarousel({
 
   return (
     <div
-      className={`flex-row align-center self-center ${className}`}
+      className={`flex justify-center items-center relative w-full h-auto ${className}`}
       style={{
-        position: "relative",
-        width: "100%",
-        maxWidth: `${imageWidth}px`, // max natural width
-        aspectRatio: `${aspectRatio}`, // keep aspect ratio
-        height: "auto",
+        maxWidth: `${imageWidth}px`,
+        aspectRatio: `${aspectRatio}`,
       }}
     >
       {hasMultipleImages && (
         <button
+          className="btn-car"
           style={{
-            position: "absolute",
             left: 0,
-            top: "50%",
             transform: "translate(50%, -50%)",
-            zIndex: 2,
-            background: "none",
-            border: "none",
-            fontSize: "2rem",
-            cursor: "pointer",
-            color: "inherit",
           }}
           onClick={handlePrev}
           aria-label="Previous image"
         >
-          <ChevronLeftIcon />
+          <ChevronLeftIcon className="icn fill-err" />
         </button>
       )}
       <Image
@@ -107,22 +97,15 @@ export default function ImageCarousel({
       />
       {hasMultipleImages && (
         <button
+          className="btn-car"
           style={{
-            position: "absolute",
             right: 0,
-            top: "50%",
             transform: "translate(-50%, -50%)",
-            zIndex: 2,
-            background: "none",
-            border: "none",
-            fontSize: "2rem",
-            cursor: "pointer",
-            color: "inherit",
           }}
           onClick={handleNext}
           aria-label="Next image"
         >
-          <ChevronRightIcon />
+          <ChevronRightIcon className="icn fill-err" />
         </button>
       )}
     </div>
