@@ -1,9 +1,14 @@
-import NavigateIcon from "./NavigateButton";
+import NavigateIcon from "../common/NavigateButton";
 
 export default function HomeIcon() {
   return (
-    <NavigateIcon href="/" title="Home" className="blackIcn icn">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <NavigateIcon href="/" title="Home">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        className="icn-black icn"
+        strokeWidth={2}
+      >
         <path
           xmlns="http://www.w3.org/2000/svg"
           d="M3 9.5L12 4L21 9.5"

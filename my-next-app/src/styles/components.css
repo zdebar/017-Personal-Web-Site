@@ -60,24 +60,25 @@
   @apply w-[var(--size-icn)] h-[var(--size-icn)] rounded-full flex items-center justify-center border-0;
 }
 
-.gitIcn {
+/** Every svg should react to bg, fill, stroke color, stroke width, a dark mode */
+.icn-git {
   @apply bg-none fill-white  bg-black;
   @apply dark:fill-black  dark:bg-white;
 }
 
-.blackIcn {
-  @apply bg-none fill-none stroke-black stroke-[1.8];
+.icn-black {
+  @apply bg-none fill-none stroke-black dark:stroke-white;
 }
 
-.themeIcn {
-  @apply bg-none fill-black stroke-black stroke-[1] dark:fill-white dark:stroke-white;
+.icn-theme {
+  @apply bg-none fill-black stroke-black dark:fill-white dark:stroke-white cursor-pointer;
 }
 
-.chvIcn {
+.icn-chv {
   @apply bg-none fill-white stroke-0;
 }
 
 .btn-chv {
-  @apply no-underline w-12 h-12 rounded-full text-black absolute -top-6 right-1 text-center p-2.5 flex items-center justify-center text-xs cursor-pointer z-10 shadow bg-white;
+  @apply w-12 h-12 absolute bg-white rounded-full flex items-center justify-center shadow-btn -top-6 right-1 z-bar;
   @apply hover:bg-gray-200;
 }

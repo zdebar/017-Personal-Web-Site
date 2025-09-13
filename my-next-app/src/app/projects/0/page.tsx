@@ -3,9 +3,10 @@
 import Image from "next/image";
 import Section from "@/components/common/Section";
 import { cards } from "../../../data/cards";
-import GitHubIcon from "@/components/Icons/GitHubIcon";
+import GitHubIcon from "@/components/icons/GitHubIcon";
 import ImageCarousel from "@/components/common/ImageCarousel";
-import LinkButton from "@/components/Icons/LinkButton";
+import LinkButton from "@/components/icons/LinkButton";
+import StrongParagraph from "@/components/common/StrongParagraph";
 
 export default function FlashCardApp() {
   const project = cards[2];
@@ -15,7 +16,7 @@ export default function FlashCardApp() {
       <Section>
         <div className="@container">
           <div className="flex flex-col @sm:flex-row justify-between mb-12 gap-6 items-end ">
-            <h2 className="self-start">English App</h2>
+            <h1 className="self-start">English App</h1>
             <div className="flex gap-4 items-center">
               <GitHubIcon href={project.github} />
               <LinkButton
@@ -29,11 +30,11 @@ export default function FlashCardApp() {
           </div>
         </div>
         <div className="clm-2">
-          <p>
-            <strong>Intro</strong> – I couldn&#39;t find a suitable app for
-            myself, so I created one. It&#39;s designed to help me improve my
-            pronunciation and help others learn more efficiently.
-          </p>
+          <StrongParagraph label="Intro">
+            I couldn&#39;t find a suitable app for myself, so I created one.
+            It&#39;s designed to help me improve my pronunciation and help
+            others learn more efficiently.
+          </StrongParagraph>
           <p>
             <strong>Main</strong> – Fast-paced speaking and listening practice,
             designed to maximize daily repetitions.

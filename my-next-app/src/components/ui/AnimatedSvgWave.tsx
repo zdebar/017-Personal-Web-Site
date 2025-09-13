@@ -4,13 +4,13 @@
 // Pink: #F78DA7
 // Blue: #8ED1FC
 
-interface AnimatedSvgWaveProps {
-  widthPx?: number;
-}
-
 export default function AnimatedSvgWave({
   widthPx = 1440,
-}: AnimatedSvgWaveProps) {
+  animate = true,
+}: {
+  widthPx?: number;
+  animate?: boolean;
+}) {
   // Parent container should have position: relative and overflow: hidden for proper clipping
   return (
     <svg
@@ -39,6 +39,9 @@ export default function AnimatedSvgWave({
             animation:pathAnim-1 12s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
+          }
+          .paused {
+            animation-play-state: paused !important;
           }
           @media (prefers-reduced-motion: reduce) {
             .path-0, .path-1 {
@@ -92,7 +95,9 @@ export default function AnimatedSvgWave({
         strokeWidth="0"
         fill="url(#gradient)"
         fillOpacity="0.53"
-        className="transition-all duration-300 ease-in-out delay-150 path-0"
+        className={`transition-all duration-300 ease-in-out delay-150 path-0 ${
+          !animate ? " paused" : ""
+        }`}
       ></path>
       <path
         d="M 0,500 L 0,291 C 95.24401913875599,266.36842105263156 190.48803827751198,241.73684210526318 283,260 C 375.511961722488,278.2631578947368 465.291866028708,339.42105263157896 550,343 C 634.708133971292,346.57894736842104 714.3444976076555,292.57894736842104 827,284 C 939.6555023923445,275.42105263157896 1085.3301435406697,312.2631578947369 1193,321 C 1300.6698564593303,329.7368421052631 1370.3349282296651,310.36842105263156 1440,291 L 1440,500 L 0,500 Z"
@@ -100,7 +105,9 @@ export default function AnimatedSvgWave({
         strokeWidth="0"
         fill="url(#gradient)"
         fillOpacity="1"
-        className="transition-all duration-300 ease-in-out delay-150 path-1"
+        className={`transition-all duration-300 ease-in-out delay-150 path-1 ${
+          !animate ? " paused" : ""
+        }`}
       ></path>
     </svg>
   );

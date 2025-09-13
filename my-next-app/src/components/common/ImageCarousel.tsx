@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import ChevronLeftIcon from "./ChevronLeftIcon";
-import ChevronRightIcon from "./ChevronRightIcon";
+import ChevronLeftIcon from "../icons/ChevronLeftIcon";
+import ChevronRightIcon from "../icons/ChevronRightIcon";
 
 interface ImageCarouselProps {
   images: string[];

@@ -1,6 +1,11 @@
-export default function SunIcon() {
+export default function SunIcon({ className }: { className?: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      className={className}
+      strokeWidth={0}
+    >
       <g>
         <path
           id="Subtract"

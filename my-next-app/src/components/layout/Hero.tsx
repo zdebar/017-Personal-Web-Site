@@ -7,10 +7,20 @@ import type { SkillGroup } from "../../data/skills";
 
 export default function Hero() {
   const [showSkills, setShowSkills] = useState(false);
+  const [animateWave, setAnimateWave] = useState(true);
 
   return (
     <div className="int relative overflow-hidden pnl">
-      <AnimatedSvgWave widthPx={1000} />
+      <AnimatedSvgWave widthPx={1000} animate={animateWave} />
+      <button
+        type="button"
+        id="btnAnimateWave"
+        className=" absolute bottom-2 left-2 text-xs btn-lnk z-10 text-black"
+        onClick={() => setAnimateWave((prev) => !prev)}
+        title={animateWave ? "stop animation" : "start animation"}
+      >
+        {animateWave ? "stop animation" : "start animation"}
+      </button>
       <div className="cnt z-intro relative">
         <div className="pb-12">
           <h1>

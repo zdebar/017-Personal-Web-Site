@@ -1,7 +1,9 @@
 /** Base Styles */
 
 html {
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
   @apply bg-base-100;
   @apply font-base text-txt font-light leading-[1.5];
 }
@@ -15,7 +17,7 @@ main {
   @apply flex-1;
 }
 
-section:nth-of-type(odd) {
+article:nth-of-type(odd) {
   @apply bg-base-300;
 }
 
@@ -24,7 +26,8 @@ h2,
 h3,
 h4,
 h5 {
-  @apply font-headings font-bold leading-[1.2];
+  @apply font-headings font-bold;
+  line-height: 1.2;
 }
 
 h1 {
