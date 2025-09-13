@@ -20,7 +20,7 @@ export default function Header() {
       <header className="relative w-full">
         <div className="flex justify-between items-center overflow-hidden cnt">
           <HomeIcon />
-          <div className="flex justify-between items-center gap-2">
+          <div className="flex gap-2 items-center">
             <ThemeSwitchButton theme={theme} toggleTheme={toggleTheme} />
             <GitHubIcon href="https://github.com/zdebar" />
             <button

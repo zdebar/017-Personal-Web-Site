@@ -17,18 +17,9 @@ export default function NavigateButton({
   const handleClick = (e: React.MouseEvent) => {
     if (pathname === href) {
       e.preventDefault();
-      if (href.includes("#")) {
-        const id = href.split("#")[1];
-        const el = document.getElementById(id);
-        if (el) {
-          el.scrollIntoView({ behavior: "auto" });
-        }
-      } else {
-        window.scrollTo({ top: 0, behavior: "auto" });
-      }
+      window.scrollTo({ top: 0, behavior: "auto" });
     }
   };
-
   return (
     <Link href={href} className={className} title={title} onClick={handleClick}>
       {children}

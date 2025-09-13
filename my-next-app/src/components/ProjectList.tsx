@@ -1,4 +1,4 @@
-import Card from "./Card";
+import ProjectCard from "./ProjectCard";
 import { cards } from "../data/cards";
 
 export default function ProjectList() {
@@ -8,7 +8,7 @@ export default function ProjectList() {
         .slice()
         .reverse()
         .map((card) => {
-          return <Card key={card.id} {...card} />;
+          return <ProjectCard key={card.id} {...card} />;
         })}
     </div>
   );

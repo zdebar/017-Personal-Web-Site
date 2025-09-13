@@ -15,7 +15,7 @@ export default function AnimatedSvgWave({
   return (
     <svg
       width={widthPx}
-      height="auto"
+      height="100%"
       id="svg"
       viewBox="0 0 1440 490"
       xmlns="http://www.w3.org/2000/svg"

@@ -7,22 +7,6 @@
 
 /** Component size */
 
-.column {
-  @apply w-40;
-}
-
-.chevronBtn {
-  /* TODO: rozdělit na shape a style */
-  @apply no-underline w-10 h-10 rounded-full text-black absolute -top-5 right-1 text-center p-2.5 flex items-center justify-center text-xs cursor-pointer z-10 shadow bg-white;
-}
-.chevronBtn:hover {
-  @apply bg-gray-200;
-}
-
-.link-button {
-  @apply inline-flex text-center no-underline items-center justify-center align-middle;
-}
-
 @media (min-width: 500px) and (max-width: 800px) {
   .flex-col-row {
     display: grid;
