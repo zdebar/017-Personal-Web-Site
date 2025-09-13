@@ -23,10 +23,6 @@
   @apply inline-flex text-center no-underline items-center justify-center align-middle;
 }
 
-.themeIcon {
-  @apply w-7 h-7 rounded-full flex items-center justify-center border-0 bg-none fill-white stroke-black stroke-[1.8];
-}
-
 /** Component styling */
 
 /**

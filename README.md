@@ -7,3 +7,5 @@
 ## HOSTING
 
 **Provider** Github Pages, Githubs Actions Cl/CD
+
+icon - sizes, styles etc - with css classes

@@ -4,7 +4,7 @@
 }
 
 .cnt {
-  @apply max-w-cnt w-full m-auto;
+  @apply max-w-cnt w-full m-auto px-2;
 }
 
 /** Buttons */
@@ -34,4 +34,8 @@
 
 .blackIcn {
   @apply bg-none fill-none stroke-black stroke-[1.8];
+}
+
+.themeIcn {
+  @apply bg-none fill-black stroke-black stroke-[1] dark:fill-white dark:stroke-white;
 }

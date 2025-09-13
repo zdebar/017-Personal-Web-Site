@@ -27,7 +27,7 @@ export default function Header() {
               onClick={toggleForm}
               id="emailAddress"
               className="btn-rec btn-green my-4"
-              title="contact form"
+              title="open contact form"
             >
               <span>{!formVisible ? "contact me" : "close contact form"}</span>
             </button>

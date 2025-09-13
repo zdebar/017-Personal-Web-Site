@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply bg-base-200 max-w-pnl m-auto w-full overflow-y-auto min-h-screen min-w-low shadow-pnl px-2;
+  @apply bg-base-200 max-w-pnl m-auto w-full overflow-y-auto min-h-screen min-w-low shadow-pnl;
   @apply flex flex-col items-start;
 }
 
