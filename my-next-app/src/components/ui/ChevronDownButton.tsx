@@ -1,4 +1,4 @@
-import ChevronDownIcon from "./ChevronDownIcon";
+import ChevronDownIcon from "../common/ChevronDownIcon";
 
 export default function ChevronDownButton({
   targetId,

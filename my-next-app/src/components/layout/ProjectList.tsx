@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import { cards } from "../data/cards";
+import { cards } from "../../data/cards";
 
 export default function ProjectList() {
   return (

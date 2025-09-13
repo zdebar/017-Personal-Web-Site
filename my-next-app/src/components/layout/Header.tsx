@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import ContactForm from "../common/ContactForm";
+import ContactForm from "../ui/ContactForm";
 import GitHubIcon from "../Icons/GitHubIcon";
 import HomeIcon from "../Icons/HomeIcon";
 import { useTheme } from "@/hooks/useTheme";
-import ThemeSwitchButton from "../common/ThemeSwitchButton";
+import ThemeSwitchButton from "../ui/ThemeSwitchButton";
 
 export default function Header() {
   const [formVisible, setFormVisible] = useState(false);

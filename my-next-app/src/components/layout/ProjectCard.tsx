@@ -1,11 +1,11 @@
 "use client";
 
-import NavigateButton from "./Icons/NavigateButton";
-import LinkIcon from "./Icons/LinkButton";
-import { CardData } from "../data/cards";
-import GitHubIcon from "./Icons/GitHubIcon";
-import ImageCarousel from "./common/ImageCarousel";
-import ChevronDownButton from "./common/ChevronDownButton";
+import NavigateButton from "../Icons/NavigateButton";
+import LinkIcon from "../Icons/LinkButton";
+import { CardData } from "../../data/cards";
+import GitHubIcon from "../Icons/GitHubIcon";
+import ImageCarousel from "../common/ImageCarousel";
+import ChevronDownButton from "../ui/ChevronDownButton";
 
 export default function ProjectCard({
   title,

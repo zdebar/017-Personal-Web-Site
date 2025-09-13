@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "../components/Hero";
-import ProjectList from "../components/ProjectList";
+import Hero from "../components/layout/Hero";
+import ProjectList from "../components/layout/ProjectList";
 import "../styles/index.css";
 
 export default function HomePage() {

@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import AnimatedSvgWave from "./AnimatedSvgWave";
-import skillGroups from "../data/skills";
-import type { SkillGroup } from "../data/skills";
+import AnimatedSvgWave from "../ui/AnimatedSvgWave";
+import skillGroups from "../../data/skills";
+import type { SkillGroup } from "../../data/skills";
 
 export default function Hero() {
   const [showSkills, setShowSkills] = useState(false);
