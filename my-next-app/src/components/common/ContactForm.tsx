@@ -10,17 +10,13 @@ export default function ContactForm() {
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
-
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
-
-    const JSONdata = JSON.stringify(data);
-
     const endpoint = form.getAttribute("action");
 
     const options: RequestInit = {
       method: "POST",
-      body: JSONdata,
+      body: JSON.stringify(data),
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
