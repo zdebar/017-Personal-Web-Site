@@ -2,8 +2,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function NavigateButton({
-  title = "Link",
-  className = "icon",
+  title = "Navigate",
+  className = "icn",
   href,
   children,
 }: {
@@ -17,7 +17,15 @@ export default function NavigateButton({
   const handleClick = (e: React.MouseEvent) => {
     if (pathname === href) {
       e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "auto" });
+      if (href.includes("#")) {
+        const id = href.split("#")[1];
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "auto" });
+        }
+      } else {
+        window.scrollTo({ top: 0, behavior: "auto" });
+      }
     }
   };
 

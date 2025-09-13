@@ -1,6 +1,6 @@
 import "../styles/index.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 import { Montserrat } from "next/font/google";
 import { Ubuntu } from "next/font/google";
 
@@ -13,14 +13,12 @@ export const metadata = {
   authors: [{ name: "Zdeněk Barth" }],
 };
 
-// TODO: tailwind solution
 const montserrat = Montserrat({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
   variable: "--font-headings",
 });
 
-// TODO: tailwind solution
 const ubuntu = Ubuntu({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
@@ -36,13 +34,6 @@ export default function RootLayout({
     <html lang="en" className={montserrat.className + " " + ubuntu.className}>
       <head>
         <meta charSet="UTF-8" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

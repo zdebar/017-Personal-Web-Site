@@ -1,61 +1,56 @@
 :root {
-  /* Borders */
-  --border-radius: 2px; /* Border radius for inputs, cards, buttons */
-
-  /* Sizes */
-  --background-width: 1000px; /* Width for background elements */
-  --main-width: 700px; /* Max width for header, main, footer content */
-  --column-width: 40px; /* Max width for text content */
-  --button-width: 100px; /* Width for buttons */
-  --button-height: 35px; /* Height for buttons */
-  --icon-size: 24px; /* Size for icons */
-
-  /* Font Weights */
-  --normal-font-weight: 300;
-  --bold-font-weight: 700;
-
-  /* Colors */
-
-  --color-primary-1: #8ed1fc; /* Gradient color 1 for buttons */
-  --color-primary-2: #68c2fbff; /* Gradient color 2 for buttons */
-  --color-chevron: #f78da7; /* Chevron icon color */
-  --color-secondary-1: #23ae19; /* Secondary color for highlights */
-  --color-secondary-2: #018f06; /* Secondary color 2 for highlights */
-  --success-color: green; /* Success message color */
-  --error-color: red; /* Error message color */
-  --color-link: #f40f48ff; /* Link color */
+  --color-bg-1: #ffffff;
+  --color-bg-2: #ffffff;
+  --color-bg-3: #efefef;
+  --color-txt: black;
+  --shadow-pnl: 0 0 50px 20px rgba(0, 0, 0, 0.05);
+  --shadow-btn: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-height: 500px) and (max-height: 799px) {
-  :root {
-    --gap-xlarge: 8rem;
-  }
+.dark {
+  --color-bg-1: #161616ff;
+  --color-bg-2: #1a1a1aff;
+  --color-bg-3: #1d1d1dff;
+  --color-text: white;
+  --shadow-pnl: none;
+  --shadow-btn: none;
 }
 
-@media (max-height: 499px) {
-  :root {
-    --gap-xlarge: 3rem;
-  }
-}
+@theme {
+  --font-base: "Ubuntu", serif;
+  --font-headings: "Montserrat", serif;
 
-/* Light theme overrides (optional, for clarity) */
-body.light,
-html.light {
-  --background-color-0: #ffffff;
-  --background-color-1: #ffffff;
-  --background-color-2: #efefef;
-  --color: black;
-  --card-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.05);
-  --button-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
-}
+  --color-base-100: var(--color-bg-1);
+  --color-base-200: var(--color-bg-2);
+  --color-base-300: var(--color-bg-3);
+  --color-test-100: green;
 
-/* Dark theme overrides */
-body.dark,
-html.dark {
-  --background-color-0: #161616ff;
-  --background-color-1: #1a1a1aff;
-  --background-color-2: #1d1d1dff;
-  --color: white;
-  --card-shadow: none;
-  --button-shadow: none;
+  --color-txt: var(--color-txt);
+
+  --color-btn-100: #23ae19;
+  --color-btn-200: #018f06;
+
+  --color-btn2-100: #8ed1fc;
+  --color-btn2-200: #68c2fbff;
+
+  --color-scs: green;
+  --color-err: red;
+  --color-chv: white;
+  --color-lnk: #f40f48ff;
+
+  --shadow-pnl: var(--shadow-pnl);
+  --shadow-btn: var(--shadow-btn);
+
+  --min-width-low: 300px;
+  --max-width-cnt: 700px;
+  --max-width-pnl: 1000px;
+  --width-btn: 200px;
+  --width-cln: 40px;
+  --height-btn: 40px;
+  --size-icn: 24px;
+
+  --border-radius-sm: 2px;
+
+  --z-index-base: 0;
+  --z-index-bar: 100;
 }

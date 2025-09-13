@@ -1,5 +1,5 @@
 interface ThemeSwitchButtonProps {
-  theme: "light" | "dark";
+  theme: "light" | "dark" | "system";
   toggleTheme: () => void;
 }
 

@@ -37,22 +37,25 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="panel bg-A-200 absolute w-screen z-10 ">
+    <div className="pnl absolute z-bar bg-base-200">
       <form
         id="contactForm"
         action="https://formspree.io/f/xdkazldg"
         method="POST"
         onSubmit={handleFormSubmit}
-        className="flex flex-col gap-1 py-2 content"
+        className="flex flex-col gap-1 cnt @container"
       >
-        <div className="flex justify-between items-end gap-4">
-          <p>sent to: {config.contactMail}</p>
-          {copied && <p className="success">email copied to clipboard</p>}
+        <div className="flex flex-col items-end @md:flex-row @md:justify-between gap-1">
+          {copied ? (
+            <p className="text-scs pr-1">email copied to clipboard</p>
+          ) : (
+            <p className="pr-1">sent to: {config.contactMail}</p>
+          )}
           <button
             type="button"
-            className="button-rectangular shadow button-blue"
+            className="btn-rec btn-blue"
             onClick={() => {
-              navigator.clipboard.writeText(config.contactMail); // TODO: what this means?
+              navigator.clipboard.writeText(config.contactMail);
               setCopied(true);
               setTimeout(() => setCopied(false), 2000);
             }}
@@ -79,13 +82,12 @@ export default function ContactForm() {
             placeholder="your subject"
           />
         </label>
-        <label htmlFor="message">
+        <label htmlFor="message" className="mb-[-5px]">
           <textarea
             name="message"
             id="message"
             required
             placeholder="your message"
-            style={{ minHeight: "48px" }}
           ></textarea>
         </label>
         <div className="items-end flex gap-4 justify-end">
@@ -106,7 +108,7 @@ export default function ContactForm() {
           )}
           <button
             type="submit"
-            className="button-rectangular shadow button-green "
+            className="btn-rec btn-green "
             title={`send mail to ${config.contactMail}`}
           >
             Send

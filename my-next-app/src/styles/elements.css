@@ -1,0 +1,65 @@
+/** Base Styles */
+
+html {
+  font-size: 14px;
+  @apply bg-base-100;
+  @apply font-base text-txt font-light leading-[1.5];
+}
+
+body {
+  @apply bg-base-200 max-w-pnl m-auto w-full overflow-y-auto min-h-screen min-w-low shadow-pnl px-2;
+  @apply flex flex-col items-start;
+}
+
+main {
+  @apply flex-1;
+}
+
+section:nth-of-type(odd) {
+  @apply bg-base-300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-headings font-bold leading-[1.2];
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+span {
+  @apply inline-block whitespace-nowrap;
+}
+
+input,
+textarea {
+  @apply w-full p-1 bg-base-100 text-txt font-normal border;
+}
+
+input {
+  @apply h-6;
+}
+
+textarea {
+  @apply h-18 resize-y max-h-96;
+}

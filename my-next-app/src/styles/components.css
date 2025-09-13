@@ -1,0 +1,37 @@
+/** Layout Components */
+.pnl {
+  @apply max-w-pnl w-full m-auto;
+}
+
+.cnt {
+  @apply max-w-cnt w-full m-auto;
+}
+
+/** Buttons */
+.btn-rec {
+  @apply cursor-pointer rounded-full border-0 font-bold w-[var(--width-btn)] h-[var(--height-btn)];
+  @apply shadow-btn active:shadow-none dark:shadow-none;
+}
+
+.btn-green {
+  @apply hover:from-[var(--color-btn-200)] bg-gradient-to-r from-[var(--color-btn-100)] to-[var(--color-btn-200)];
+  @apply text-white font-bold;
+}
+
+.btn-blue {
+  @apply text-black hover:from-[var(--color-btn2-200)] bg-gradient-to-r from-[var(--color-btn2-100)] to-[var(--color-btn2-200)];
+  @apply text-black font-normal;
+}
+
+/** Icons */
+.icn {
+  @apply w-[var(--size-icn)] h-[var(--size-icn)] rounded-full flex items-center justify-center border-0;
+}
+
+.gitIcn {
+  @apply bg-none fill-white  bg-black;
+}
+
+.blackIcn {
+  @apply bg-none fill-none stroke-black stroke-[1.8];
+}

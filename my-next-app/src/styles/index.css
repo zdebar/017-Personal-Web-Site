@@ -1,113 +1,14 @@
 /* Import */
-@import url("./variables.css");
-@import url("./styling.css");
-
-/** tailwind import */
 @import "tailwindcss";
-
-@theme {
-  --color-A-100: white; /* Sidepanels background */
-  --color-A-200: #ffffff; /* Top background */
-  --color-A-300: #efefef; /* Alternate background color */
-  --color-button-100: #8ed1fc; /* Button background */
-  --color-button-200: #68c2fbff; /* Button hover background */
-  --color-chevron: white; /* Chevron color */
-}
-
-@theme {
-  --font-base: "Ubuntu", serif; /* Paragraphs, Links, Buttons */
-  --font-headings: "Montserrat", serif; /* Headings */
-}
-
-@theme {
-  --spacing: 4px; /* General spacing unit */
-}
-
-/** Base Styles */
-html {
-  font-size: 14px;
-  @apply font-base text-black font-light leading-[1.5];
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  @apply font-headings font-bold leading-[1.2];
-}
-
-h1 {
-  font-size: 2.6rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-h5 {
-  font-size: 1.125rem;
-}
-
-body {
-  @apply bg-A-200 min-w-xs max-w-5xl m-auto overflow-y-auto shadow-2xl min-h-screen;
-  @apply flex flex-col items-start;
-}
-
-span {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-section:nth-of-type(odd) {
-  @apply bg-A-300;
-}
-
-input,
-textarea {
-  @apply w-full p-1 text-black bg-white text-base font-normal border border-black rounded-md m-0;
-}
-
-input {
-  @apply h-6;
-}
-
-textarea {
-  @apply h-24 resize-y mb-[-4px];
-}
-
-form {
-  margin-top: var(--gap-small);
-}
-
-main {
-  @apply flex-1;
-}
+@import "./variables.css";
+@import "./elements.css";
+@import "./components.css";
+@custom-variant dark (&:where(.dark, .dark *));
 
 /** Component size */
 
-.panel {
-  @apply w-5xl my-auto;
-}
-
-.content {
-  @apply w-3xl m-auto;
-}
-
 .column {
   @apply w-40;
-}
-
-.button-rectangular {
-  @apply w-[200px] h-[40px] cursor-pointer text-white rounded-[25px] border-0 font-bold;
 }
 
 .chevronBtn {
@@ -122,62 +23,11 @@ main {
   @apply inline-flex text-center no-underline items-center justify-center align-middle;
 }
 
-.gitIcon {
-  @apply w-7 h-7 rounded-full flex items-center justify-center border-0 bg-none fill-white  bg-black; /** TODO: se for dark mode, separate shape and style */
-}
-
-.icon {
-  @apply w-7 h-7 rounded-full flex items-center justify-center border-0 bg-none fill-none stroke-black stroke-[1.8];
-}
-
 .themeIcon {
   @apply w-7 h-7 rounded-full flex items-center justify-center border-0 bg-none fill-white stroke-black stroke-[1.8];
 }
 
 /** Component styling */
-
-.success {
-  @apply text-green-600;
-}
-
-.fail {
-  @apply text-red-600;
-}
-
-.shadow {
-  /* TODO: redo to tailwind */
-  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
-}
-
-.button-blue {
-  /* TODO: redo to tailwind */
-  background: linear-gradient(
-    to right,
-    var(--color-primary-1),
-    var(--color-primary-2)
-  );
-  color: black;
-  font-weight: normal;
-}
-
-.button-blue:hover {
-  /* TODO: redo to tailwind */
-  background: var(--color-primary-2);
-}
-
-.button-green {
-  /* TODO: redo to tailwind */
-  background: linear-gradient(
-    to right,
-    var(--color-secondary-1),
-    var(--color-secondary-2)
-  );
-}
-
-.button-green:hover {
-  /* TODO: redo to tailwind */
-  background: var(--color-secondary-2);
-}
 
 /**
   * NOT DONE YET

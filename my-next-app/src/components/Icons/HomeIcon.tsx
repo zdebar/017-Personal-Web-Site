@@ -2,7 +2,7 @@ import NavigateIcon from "./NavigateButton";
 
 export default function HomeIcon() {
   return (
-    <NavigateIcon href="/" title="Home" className="icon">
+    <NavigateIcon href="/" title="Home" className="blackIcn icn">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path
           xmlns="http://www.w3.org/2000/svg"

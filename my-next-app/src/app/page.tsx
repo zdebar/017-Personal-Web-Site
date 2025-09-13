@@ -6,8 +6,8 @@ import "../styles/index.css";
 export default function HomePage() {
   return (
     <>
-      <Intro />
-      <ProjectList />
+      {/* <Intro />
+      <ProjectList /> */}
     </>
   );
 }
