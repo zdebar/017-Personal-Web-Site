@@ -162,7 +162,7 @@ export default function FlashCardApp() {
         </div>
         <Image
           src="/images/02/02-rep-01.png"
-          alt="0.7.0 Database Scheme"
+          alt="0.7.0 Repository Example"
           width={560}
           height={995}
           layout="responsive"

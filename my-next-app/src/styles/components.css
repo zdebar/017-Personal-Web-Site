@@ -42,7 +42,12 @@
 
 .btn-car {
   /** Carousel buttons */
-  @apply absolute top-1/2 z-bar bg-none border-none cursor-pointer;
+  @apply absolute top-1/2 z-icn bg-none border-none cursor-pointer;
+}
+
+.btn-chv {
+  @apply w-12 h-12 absolute bg-white rounded-full flex items-center justify-center shadow-btn -top-6 right-1 z-icn;
+  @apply hover:bg-gray-200;
 }
 
 .btn-green {
@@ -76,9 +81,4 @@
 
 .icn-chv {
   @apply bg-none fill-white stroke-0;
-}
-
-.btn-chv {
-  @apply w-12 h-12 absolute bg-white rounded-full flex items-center justify-center shadow-btn -top-6 right-1 z-bar;
-  @apply hover:bg-gray-200;
 }

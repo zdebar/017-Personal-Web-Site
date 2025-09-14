@@ -53,5 +53,6 @@
 
   --z-index-base: 0;
   --z-index-intro: 10;
+  --z-index-icn: 50;
   --z-index-bar: 100;
 }

@@ -18,8 +18,8 @@ export default function ProjectCard({
   hosting,
 }: CardData) {
   return (
-    <section id={title}>
-      <article className="cnt py-24 relative">
+    <article id={title}>
+      <div className="cnt py-24 relative">
         <ChevronDownButton targetId={title} />
         <div className="flex-col flex gap-12 justify-between items-center sm:flex-row sm:items-start">
           <div className="flex flex-col flex-1 gap-6 max-w-100">
@@ -77,7 +77,7 @@ export default function ProjectCard({
             <ImageCarousel images={images} alt={title} maxHeight={800} />
           )}
         </div>
-      </article>
-    </section>
+      </div>
+    </article>
   );
 }
