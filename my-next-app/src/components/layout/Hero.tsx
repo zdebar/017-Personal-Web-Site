@@ -1,23 +1,9 @@
-"use client";
-
-import { useState } from "react";
-import AnimatedSvgWave from "../ui/AnimatedSvgWave";
+import SvgWave from "../ui/SvgWave";
 
 export default function Hero() {
-  const [animateWave, setAnimateWave] = useState(false);
-
   return (
     <div className="int relative overflow-hidden pnl">
-      <AnimatedSvgWave widthPx={1000} animate={animateWave} />
-      <button
-        type="button"
-        id="btnAnimateWave"
-        className=" absolute bottom-2 left-2 text-xs btn-lnk z-10 text-black"
-        onClick={() => setAnimateWave((prev) => !prev)}
-        title={animateWave ? "pause animation" : "unpause animation"}
-      >
-        {animateWave ? "stop animation" : "start animation"}
-      </button>
+      <SvgWave widthPx={1000} />
       <div className="cnt z-intro relative">
         <div className="pb-12">
           <h1>

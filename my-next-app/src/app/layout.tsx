@@ -34,9 +34,6 @@ export default function RootLayout({
     <html lang="en" className={montserrat.className + " " + ubuntu.className}>
       <head>
         <meta charSet="UTF-8" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/favicon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body>
         <Header />
