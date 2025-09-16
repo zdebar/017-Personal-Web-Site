@@ -1,5 +1,3 @@
-"use client";
-
 import NavigateButton from "../common/NavigateButton";
 import LinkIcon from "../icons/LinkButton";
 import { CardData } from "../../data/cards";

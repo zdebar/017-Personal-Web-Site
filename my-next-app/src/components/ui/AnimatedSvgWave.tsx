@@ -1,5 +1,3 @@
-"use client";
-
 // Colors used in AnimatedSvgWave:
 // Pink: #F78DA7
 // Blue: #8ED1FC
