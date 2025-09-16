@@ -52,7 +52,7 @@
   @apply bg-none border-none p-0 cursor-pointer ml-1;
 }
 
-. .btn-car {
+.btn-car {
   @apply absolute top-1/2 z-icn bg-none border-none cursor-pointer;
 }
 

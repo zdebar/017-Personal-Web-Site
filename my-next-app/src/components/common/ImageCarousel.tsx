@@ -22,7 +22,7 @@ export default function ImageCarousel({
 }: ImageCarouselProps) {
   const [currentImage, setCurrentImage] = useState(0);
   const [imageWidth, setImageWidth] = useState<number>(maxWidth);
-  const [aspectRatio, setAspectRatio] = useState<number>(maxWidth / maxHeight); // width / height
+  const [aspectRatio, setAspectRatio] = useState<number>(maxWidth / maxHeight);
   const hasMultipleImages = images.length > 1;
 
   const handlePrev = () => {
@@ -76,7 +76,7 @@ export default function ImageCarousel({
     >
       {hasMultipleImages && (
         <button
-          className="btn-car"
+          className="btn-car "
           style={{
             left: 0,
             transform: "translate(50%, -50%)",
@@ -85,6 +85,7 @@ export default function ImageCarousel({
           aria-label="Previous image"
         >
           <ChevronLeftIcon className="icn fill-err" />
+          <p>A</p>
         </button>
       )}
       <Image

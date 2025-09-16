@@ -71,14 +71,10 @@ export default function ProjectCard({
                   {github && <GitHubIcon href={github} />}
                 </div>
               </div>
+              <div className="sm:self-start self-center"></div>
             </div>
             {images && (
-              <ImageCarousel
-                images={images}
-                alt={title}
-                maxHeight={800}
-                className="sm:self-start self-center"
-              />
+              <ImageCarousel images={images} alt={title} maxHeight={800} />
             )}
           </div>
         </div>
