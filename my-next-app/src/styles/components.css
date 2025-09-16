@@ -20,7 +20,7 @@
   }
 }
 
-/* Column text */
+/* Text */
 .clm-2 {
   @apply [column-count:2] [column-gap:2rem] max-[550px]:[column-count:1];
 }
@@ -29,19 +29,26 @@
   @apply mb-6;
 }
 
+.nowrap {
+  @apply inline-block whitespace-nowrap;
+}
+
 /** Buttons*/
-.btn-rec {
-  @apply cursor-pointer rounded-full border-0 font-bold w-[var(--width-btn)] h-[var(--height-btn)];
+.btn-beh {
+  @apply cursor-pointer rounded-full border-0 font-bold;
   @apply shadow-btn active:shadow-none dark:shadow-none;
   @apply inline-flex text-center no-underline items-center justify-center align-middle;
+}
+
+.btn-rec {
+  @apply w-[var(--width-btn)] h-[var(--height-btn)];
 }
 
 .btn-lnk {
   @apply bg-none border-none p-0 cursor-pointer ml-1;
 }
 
-.btn-car {
-  /** Carousel buttons */
+. .btn-car {
   @apply absolute top-1/2 z-icn bg-none border-none cursor-pointer;
 }
 
@@ -60,6 +67,10 @@
   @apply text-black font-normal;
 }
 
+/** Links */
+.lnk {
+  @apply hover:underline hover:font-bold inline-block min-w-[40px] text-center;
+}
 /** Icons */
 .icn {
   @apply w-[var(--size-icn)] h-[var(--size-icn)] rounded-full flex items-center justify-center border-0;

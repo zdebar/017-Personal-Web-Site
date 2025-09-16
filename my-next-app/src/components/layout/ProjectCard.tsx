@@ -54,7 +54,7 @@ export default function ProjectCard({
                 <NavigateButton
                   title="more about this project"
                   href={link}
-                  className="btn-rec btn-green"
+                  className="btn-rec btn-beh btn-green"
                 >
                   ..more
                 </NavigateButton>
@@ -64,7 +64,7 @@ export default function ProjectCard({
                   <LinkIcon
                     title={hosting}
                     href={hosting}
-                    className="btn-rec btn-green"
+                    className="btn-rec btn-beh btn-green"
                   >
                     try it here
                   </LinkIcon>

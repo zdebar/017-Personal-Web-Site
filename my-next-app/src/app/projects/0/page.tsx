@@ -22,7 +22,7 @@ export default function FlashCardApp() {
               <LinkButton
                 href={project.hosting ?? "#"}
                 title={project.hosting ?? "#"}
-                className="btn-rec btn-green"
+                className="btn-rec btn-beh btn-green"
               >
                 try it here
               </LinkButton>

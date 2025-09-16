@@ -53,7 +53,7 @@ export default function ContactForm() {
           )}
           <button
             type="button"
-            className="btn-rec btn-blue"
+            className="btn-rec btn-beh btn-blue"
             onClick={() => {
               navigator.clipboard.writeText(config.contactMail);
               setCopied(true);
@@ -108,7 +108,7 @@ export default function ContactForm() {
           )}
           <button
             type="submit"
-            className="btn-rec btn-green "
+            className="btn-rec btn-beh btn-green "
             title={`send mail to ${config.contactMail}`}
           >
             Send

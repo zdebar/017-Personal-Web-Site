@@ -55,5 +55,8 @@ module.exports = {
         base: 0,
       },
     },
+    screens: {
+      header: "400px",
+    },
   },
 };
