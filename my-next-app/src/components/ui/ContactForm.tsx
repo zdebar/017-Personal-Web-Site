@@ -3,7 +3,11 @@
 import { useState } from "react";
 import config from "../../../app.config";
 
-export default function ContactForm() {
+export default function ContactForm({
+  className = "",
+}: {
+  className?: string;
+}) {
   const [responseMessage, setResponseMessage] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
 
@@ -37,7 +41,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="pnl absolute z-bar bg-base-200">
+    <div className={`pnl absolute z-bar bg-base-200 mt-1 ${className}`}>
       <form
         id="contactForm"
         action="https://formspree.io/f/xdkazldg"
@@ -49,7 +53,7 @@ export default function ContactForm() {
           {copied ? (
             <p className="text-scs pr-1">email copied to clipboard</p>
           ) : (
-            <p className="pr-1">mail: {config.contactMail}</p>
+            <p className="pr-1">mail to: {config.contactMail}</p>
           )}
           <button
             type="button"
