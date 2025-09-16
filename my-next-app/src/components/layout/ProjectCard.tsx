@@ -21,10 +21,10 @@ export default function ProjectCard({
     <article id={title}>
       <div className="cnt py-24 relative">
         <ChevronDownButton targetId={title} />
-        <div className="flex-col flex gap-12 justify-between items-center sm:flex-row sm:items-start">
-          <div className="flex flex-col flex-1 gap-6 max-w-100">
-            <h2 className="pb-6">{title}</h2>
-            <div>
+        <div className="flex flex-col gap-12 ">
+          <h2 className="pb-6">{title}</h2>
+          <div className="flex-col flex gap-12 justify-between sm:flex-row sm:items-start">
+            <div className="flex flex-col flex-1 gap-6 ">
               <div className="grid grid-cols-[80px_1fr]">
                 <p>
                   <strong>version:</strong>
@@ -35,47 +35,52 @@ export default function ProjectCard({
                 </p>
                 <p>09/2025</p>
               </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              {texts.map((text, index) => (
-                <p key={index}>{text}</p>
-              ))}
-            </div>
-            {technologies && (
-              <div className="mb-4">
-                <p>
-                  <strong>Technologies:</strong>
-                </p>
-                <p>{technologies}</p>
+              <div className="flex flex-col gap-2">
+                {texts.map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
               </div>
-            )}
-            <div className="flex flex-col gap-2">
-              {link && (
-                <NavigateButton
-                  title="more about this project"
-                  href={link}
-                  className="btn-rec btn-beh btn-green"
-                >
-                  ..more
-                </NavigateButton>
+              {technologies && (
+                <div className="mb-4">
+                  <p>
+                    <strong>Technologies:</strong>
+                  </p>
+                  <p>{technologies}</p>
+                </div>
               )}
-              <div className="flex items-center gap-2">
-                {hosting && (
-                  <LinkIcon
-                    title={hosting}
-                    href={hosting}
+              <div className="flex flex-col gap-2">
+                {link && (
+                  <NavigateButton
+                    title="more about this project"
+                    href={link}
                     className="btn-rec btn-beh btn-green"
                   >
-                    try it here
-                  </LinkIcon>
+                    ..more
+                  </NavigateButton>
                 )}
-                {github && <GitHubIcon href={github} />}
+                <div className="flex items-center gap-2">
+                  {hosting && (
+                    <LinkIcon
+                      title={hosting}
+                      href={hosting}
+                      className="btn-rec btn-beh btn-green"
+                    >
+                      try it here
+                    </LinkIcon>
+                  )}
+                  {github && <GitHubIcon href={github} />}
+                </div>
               </div>
             </div>
+            {images && (
+              <ImageCarousel
+                images={images}
+                alt={title}
+                maxHeight={800}
+                className="sm:self-start self-center"
+              />
+            )}
           </div>
-          {images && (
-            <ImageCarousel images={images} alt={title} maxHeight={800} />
-          )}
         </div>
       </div>
     </article>

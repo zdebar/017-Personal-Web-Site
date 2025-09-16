@@ -49,7 +49,7 @@ export default function ContactForm() {
           {copied ? (
             <p className="text-scs pr-1">email copied to clipboard</p>
           ) : (
-            <p className="pr-1">sent to: {config.contactMail}</p>
+            <p className="pr-1">mail: {config.contactMail}</p>
           )}
           <button
             type="button"

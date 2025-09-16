@@ -20,6 +20,10 @@
   }
 }
 
+.disabled {
+  @apply pointer-events-none opacity-50;
+}
+
 /* Text */
 .clm-2 {
   @apply [column-count:2] [column-gap:2rem] max-[550px]:[column-count:1];

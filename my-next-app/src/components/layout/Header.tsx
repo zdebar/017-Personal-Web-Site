@@ -22,10 +22,15 @@ export default function Header() {
         <nav className="flex justify-between items-center overflow-hidden cnt">
           <HomeIcon />
           <div className="flex gap-2 items-center">
-            <Link href="/projects/AboutMe" className="lnk">
+            <Link href="/about" className="lnk">
               about
             </Link>
-            <Link href="/projects/AboutMe" className="lnk">
+            <Link
+              href="/blog"
+              className="lnk disabled"
+              tabIndex={-1}
+              aria-disabled="true"
+            >
               blog
             </Link>
             <ThemeSwitchButton theme={theme} toggleTheme={toggleTheme} />
