@@ -17,12 +17,12 @@ export default function Header() {
   };
 
   return (
-    <div className="sticky z-bar top-0 bg-base-200 w-full ">
+    <div className="sticky z-bar top-0 bg-base-200 w-full py-1 sm:py-4">
       <header className="relative w-full">
-        <nav className="flex justify-between items-center overflow-hidden cnt">
+        <nav className="flex justify-between items-center cnt">
           <HomeIcon />
           <div className="flex gap-2 items-center">
-            <Link href="/about" className="lnk">
+            <Link href="/about" className="lnk" title="learn more about me">
               about
             </Link>
             <Link
@@ -38,7 +38,7 @@ export default function Header() {
             <button
               onClick={toggleForm}
               id="emailAddress"
-              className="btn-beh btn-green my-4 w-[var(--height-btn)] h-[var(--height-btn)] min-[420px]:w-[var(--width-btn)] p-0"
+              className="btn-beh btn-green w-[var(--height-btn)] h-[var(--height-btn)] min-[420px]:w-[var(--width-btn)] p-0"
               title="open contact form"
             >
               <span className="block min-[420px]:hidden pb-0.5 text-lg">@</span>

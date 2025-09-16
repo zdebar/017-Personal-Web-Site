@@ -14,7 +14,7 @@ export default function Hero() {
         id="btnAnimateWave"
         className=" absolute bottom-2 left-2 text-xs btn-lnk z-10 text-black"
         onClick={() => setAnimateWave((prev) => !prev)}
-        title={animateWave ? "stop animation" : "start animation"}
+        title={animateWave ? "pause animation" : "unpause animation"}
       >
         {animateWave ? "stop animation" : "start animation"}
       </button>
