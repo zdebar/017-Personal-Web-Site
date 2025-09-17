@@ -58,7 +58,7 @@
 
 .btn-chv {
   @apply w-12 h-12 absolute bg-white rounded-full flex items-center justify-center shadow-btn -top-6 right-1 z-icn;
-  @apply hover:bg-gray-200;
+  @apply hover:bg-gray-100;
 }
 
 .btn-green {
