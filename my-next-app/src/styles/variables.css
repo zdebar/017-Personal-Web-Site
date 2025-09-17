@@ -4,7 +4,7 @@
   --color-bg-3: #efefef;
   --color-txt: black;
   --shadow-pnl: 0 0 50px 20px rgba(0, 0, 0, 0.05);
-  --shadow-btn: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+  --shadow-btn: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
 }
 
 .dark {
